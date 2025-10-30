@@ -1,0 +1,33 @@
+baseURL = "https://kristiansagi.com/"
+title = "Kristian Sägi"
+theme = "PaperMod"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowShareButtons = true
+  ShowReadingTime = false
+  # Avalehe “hero” (saab hiljem kohandada)
+  homeInfoParams = { Title = "Quiet Operator — Ready for the Next Mission", Content = "Scaling People, Product & Purpose" }
+
+[menu]
+  [[menu.main]]
+    name = "My Story"
+    url = "/my-story/"
+    weight = 10
+  [[menu.main]]
+    name = "Track Record"
+    url = "/track-record/"
+    weight = 20
+  [[menu.main]]
+    name = "Leadership & Impact"
+    url = "/leadership-impact/"
+    weight = 30
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
+
