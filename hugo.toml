@@ -1,4 +1,4 @@
-baseURL = "https://kristiansagi.com/"
+baseURL = "https://staging.kristiansagi.com/"
 title = "Kristian Sägi"
 theme = "PaperMod"
 enableRobotsTXT = true
