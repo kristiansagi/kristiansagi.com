@@ -7,7 +7,7 @@ draft: false
 
 _I’m open to leadership roles and strategic engagements where technology, teams, and clarity can make a measurable difference._
 
-### Here’s how I can contribute right now:
+### Here’s how I can contribute:
 
 ***
 

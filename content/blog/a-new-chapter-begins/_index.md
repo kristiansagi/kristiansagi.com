@@ -2,7 +2,6 @@
 title: "A New Chapter Begins"
 description: "Walking away from a great job isn’t easy — but sometimes, saying no is the only way to say yes to what truly matters."
 slug: "a-new-chapter-begins"
-weight: 10
 draft: false
 ShowReadingTime: true
 pubdate: 2025-01-27

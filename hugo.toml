@@ -20,16 +20,19 @@ enableRobotsTXT = true
 [params.profileMode]
 enabled = true
 title = "Kristian Sägi"
-subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose"
+subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose. Building high-performing teams. Driving clarity. Turning complexity into growth."
+# "Open to Director / VP of Engineering & Product Leadership roles (Estonia & EU)"
+author = "Kristian Sägi"
+
 imageUrl = "kristian-sagi.jpg"
 # imageTitle = "<title of image as alt>" # optional
-imageWidth = 360
-imageHeight = 360
+imageWidth = 240
+imageHeight = 240
 
 # Buttons (array of tables)
 [[params.profileMode.buttons]]
 name = "Explore My Track Record"
-url = "/track-record"
+url = "/work"
 
 [[params.profileMode.buttons]]
 name = "Let's Talk"
@@ -44,6 +47,9 @@ url = "https://www.linkedin.com/in/kristiansagi/"
 name = "x"
 url = "https://x.com/kristiansagi"
 
+[[params.socialIcons]]
+name = "facebook"
+url = "https://facebook.com/kristiansagi.public"
 
 
 [menu]
