@@ -1,4 +1,23 @@
 /*
-  X-Frame-Options: DENY
+  # Security
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:;
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  # CSP — minimaalne; kui lisad väliseid fonte/skripte, täienda vastavate domeenidega
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data: https:;
+
+/*.html
+  # HTML: ära cache'i (navigatsioon ja sisu värskus)
+  Cache-Control: no-store, max-age=0
+
+/assets/*
+  # Teema/Hugo varad: agressiivne cache (failinimed on sõrmejäljega)
+  Cache-Control: public, max-age=31536000, immutable
+
+/static/*
+  # Sinu staatilised pildid/CSS/JS: agressiivne cache
+  Cache-Control: public, max-age=31536000, immutable
+
+/404.html
+  Cache-Control: no-store, max-age=0

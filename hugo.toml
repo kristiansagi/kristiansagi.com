@@ -10,24 +10,60 @@ enableRobotsTXT = true
   defaultTheme = "auto"
   ShowShareButtons = true
   ShowReadingTime = false
-  # Avalehe “hero” (saab hiljem kohandada)
-  homeInfoParams = { Title = "Quiet Operator — Ready for the Next Mission", Content = "Scaling People, Product & Purpose" }
+ 
+
+ # ---- Meta / SEO ----
+  description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
+  keywords = ["Kristian Sägi", "Technology Leader", "CTO", "Quiet Operator"]
+
+
+[params.profileMode]
+enabled = true
+title = "Kristian Sägi"
+subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose"
+imageUrl = "kristian-sagi.jpg"
+# imageTitle = "<title of image as alt>" # optional
+imageWidth = 360
+imageHeight = 360
+
+# Buttons (array of tables)
+[[params.profileMode.buttons]]
+name = "Explore My Track Record"
+url = "/track-record"
+
+[[params.profileMode.buttons]]
+name = "Let's Talk"
+url = "/contact"
+
+# Social icons (array of tables)
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/kristiansagi/"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/kristiansagi"
+
+
 
 [menu]
   [[menu.main]]
     name = "My Story"
-    url = "/my-story/"
+    url = "/story/"
     weight = 10
   [[menu.main]]
-    name = "Track Record"
-    url = "/track-record/"
+    name = "My Track Record"
+    url = "/work/"
     weight = 20
   [[menu.main]]
     name = "Leadership & Impact"
-    url = "/leadership-impact/"
+    url = "/leadership/"
     weight = 30
+#  [[menu.main]]
+#    name = "Contact"
+#    url = "/contact/"
+#    weight = 50
   [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
+    name = "Perspectives"
+    url = "https://blog.kristiansagi.com/"
     weight = 40
-

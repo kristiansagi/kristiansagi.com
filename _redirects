@@ -1,2 +1,5 @@
+# vana index → root
 /index.html   /   301
+
+# 404 fallback
 /*            /404.html  404
