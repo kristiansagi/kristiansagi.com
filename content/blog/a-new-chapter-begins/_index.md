@@ -1,11 +1,24 @@
 ---
 title: "A New Chapter Begins"
 description: "Walking away from a great job isn’t easy — but sometimes, saying no is the only way to say yes to what truly matters."
+summary: "Walking away from a great job isn’t easy — but sometimes, saying no is the only way to say yes to what truly matters."
+author: "Kristian Sägi"
+
 slug: "a-new-chapter-begins"
 draft: false
 ShowReadingTime: true
 pubdate: 2025-01-27
+
+cover:
+  image: "dynatrace.webp"
+  caption: "Dynatrace Estonia. (c) Raido Nurk, droonipildid.ee"
+  relative: true
+
 ---
+
+<!--more-->
+{{< figure src="dynatrace.webp" caption="Photo by Raido Nurk (droonipildid.ee, courtesy of Dynatrace Estonia)." >}}
+
 
 Last week marked a significant milestone in my career — I wrapped up my final day at Dynatrace. It was just before the winter holidays, and as I took a moment to reflect on the year and my future, I realized how much has been achieved during my nearly three years with the company.
 

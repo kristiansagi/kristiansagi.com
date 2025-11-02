@@ -19,15 +19,16 @@ enableRobotsTXT = true
 
 [params.profileMode]
 enabled = true
-title = "Kristian Sägi"
 subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose. Building high-performing teams. Driving clarity. Turning complexity into growth."
 # "Open to Director / VP of Engineering & Product Leadership roles (Estonia & EU)"
-author = "Kristian Sägi"
 
-imageUrl = "kristian-sagi.jpg"
+imageUrl = "kristian-sagi.webp"
 # imageTitle = "<title of image as alt>" # optional
 imageWidth = 240
 imageHeight = 240
+
+[params.assets]
+  css = ["css/extended/figure.css", "css/extended/medium-list.css"]
 
 # Buttons (array of tables)
 [[params.profileMode.buttons]]
@@ -65,12 +66,12 @@ url = "https://facebook.com/kristiansagi.public"
     name = "Leadership & Impact"
     url = "/leadership/"
     weight = 30
+  [[menu.main]]
+    name = "Perspectives"
+    url = "/blog/"
+    weight = 40
+
 #  [[menu.main]]
 #    name = "Contact"
 #    url = "/contact/"
 #    weight = 50
-  [[menu.main]]
-    name = "Perspectives"
-    url = "https://blog.kristiansagi.com/"
-    weight = 40
-    

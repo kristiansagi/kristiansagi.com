@@ -1,13 +1,22 @@
 ---
 title: "A Quiet Return — From Stillness to Leadership"
 description: "Nine months away from the noise. Focus rebuilt. Mission clear."
+summary: "Nine months away from the noise. Focus rebuilt. Mission clear."
 slug: "a-quiet-return-from-stillness-to-leadership"
 draft: false
 ShowReadingTime: true
 pubdate: 2025-10-24
+author: "Kristian Sägi"
+
+cover:
+  image: "perspective.webp"
+  caption: "The view before the return — quiet, wide, and clear. (c) Kristian Sägi"
+  relative: true
+
 ---
 
-PILT1: The view before the return — quiet, wide, and clear.
+<!--more-->
+{{< figure src="perspective.webp" caption="The view before the return — quiet, wide, and clear." >}}
 
 ## The Decision
 
@@ -27,7 +36,7 @@ People maintain systems. Leaders must maintain themselves.
 I needed to refit — the mental, physical, and strategic layers that make execution sharp.
 That’s what this pause was: a **leadership refit**.
 
-PILT2: Precision work teaches patience — the same skill that builds lasting systems.
+{{< figure src="jalgratas.webp" caption="Precision work teaches patience — the same skill that builds lasting systems." >}}
 
 ## The Stillness
 
@@ -39,7 +48,7 @@ The pace slowed. My awareness sharpened.
 + Stopped optimizing. Started observing.
 + Found clarity in **Italy** and **Japan** — two cultures that understand discipline through beauty.
 
-PILT3: Our 1986 UAZ — rebuilt, tested, and ready for new roads.
+{{< figure src="uaz.webp" caption="Our 1986 UAZ — rebuilt, tested, and ready for new roads." >}}
 
 Stillness isn’t inaction.
 It’s **controlled detachment** — the ability to see clearly when others react emotionally.
@@ -104,4 +113,4 @@ Thank you, love — my co-pilot through every climb and dive.
 
 Now, the Quiet Operator returns — **Calm. Focused. Ready for the next mission.**
 
-PILT4: The future ahead — quiet, steady, and open.
+{{< figure src="japan.webp" caption="The future ahead — quiet, steady, and open." >}}
