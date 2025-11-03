@@ -13,6 +13,7 @@ enableRobotsTXT = true
  
  [params.label]
   text = "KS"
+#  icon = "favicon-32x32.png"
  
 
  # ---- Meta / SEO ----
