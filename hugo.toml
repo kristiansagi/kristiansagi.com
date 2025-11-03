@@ -82,7 +82,7 @@ url = "https://facebook.com/kristiansagi.public"
     weight = 40
   [[menu.main]]
     name = "Résumé"
-    url = "/Kristian_Sagi_Resume.pdf"
+    url = "/kristian-sagi-resume.pdf"
     weight = 50
     
     
