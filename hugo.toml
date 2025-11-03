@@ -11,6 +11,9 @@ enableRobotsTXT = true
   ShowShareButtons = true
   ShowReadingTime = false
  
+ [params.label]
+  text = "KS"
+ 
 
  # ---- Meta / SEO ----
   description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
@@ -20,15 +23,17 @@ enableRobotsTXT = true
 [params.profileMode]
 enabled = true
 subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose. Building high-performing teams. Driving clarity. Turning complexity into growth."
-# "Open to Director / VP of Engineering & Product Leadership roles (Estonia & EU)"
+
+# Sub title, not in the original theme
+notice = "Open to Director / VP of Engineering & Product Leadership roles (Estonia & EU)"
 
 imageUrl = "kristian-sagi.webp"
 # imageTitle = "<title of image as alt>" # optional
 imageWidth = 240
 imageHeight = 240
 
-[params.assets]
-  css = ["css/extended/figure.css", "css/extended/medium-list.css"]
+# [params.assets]
+#  css = ["css/extended/figure.css", "css/extended/custom.css"]
 
 # Buttons (array of tables)
 [[params.profileMode.buttons]]
@@ -38,6 +43,10 @@ url = "/work"
 [[params.profileMode.buttons]]
 name = "Let's Talk"
 url = "/contact"
+
+# [[params.profileMode.buttons]]
+# name = "Download My Résumé (PDF)"
+# url = "Kristian_Sagi_Resume.pdf"
 
 # Social icons (array of tables)
 [[params.socialIcons]]
@@ -70,6 +79,12 @@ url = "https://facebook.com/kristiansagi.public"
     name = "Perspectives"
     url = "/blog/"
     weight = 40
+  [[menu.main]]
+    name = "Résumé"
+    url = "/Kristian_Sagi_Resume.pdf"
+    weight = 50
+    
+    
 
 #  [[menu.main]]
 #    name = "Contact"
