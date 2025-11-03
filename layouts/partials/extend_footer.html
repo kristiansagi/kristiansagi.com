@@ -1,2 +1,6 @@
 {{ $navMenu := resources.Get "js/extended/menu-trigger.js" | js.Build "menu-trigger.js" | minify | fingerprint }}
 <script language="javascript" type="text/javascript" src="{{ $navMenu.Permalink }}"></script>
+
+<!-- Cloudflare Web Analytics -->
+ <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "88827937d62542059f14366cb1408eaa"}'></script>
+<!-- End Cloudflare Web Analytics -->
