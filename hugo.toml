@@ -20,7 +20,6 @@ enableRobotsTXT = true
   description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
   keywords = ["Kristian Sägi", "Technology Leader", "CTO", "Quiet Operator"]
 
-
 [params.profileMode]
 enabled = true
 subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose. Building high-performing teams. Driving clarity. Turning complexity into growth."
