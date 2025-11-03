@@ -22,10 +22,10 @@ enableRobotsTXT = true
 
 [params.profileMode]
 enabled = true
-subtitle = "Engineering & Technology Leadership | Scaling People, Product & Purpose. Building high-performing teams. Driving clarity. Turning complexity into growth."
+subtitle = "Engineering & Technology Leadership — scaling people, product, and purpose. Building high-performing teams, driving clarity, and turning complexity into growth."
 
 # Sub title, not in the original theme
-notice = "Open to Director / VP of Engineering & Product Leadership roles (Estonia & EU)"
+notice = "Open to Director / VP roles in Engineering & Product Leadership (EU & hybrid)."
 
 imageUrl = "kristian-sagi.webp"
 # imageTitle = "<title of image as alt>" # optional
@@ -37,11 +37,11 @@ imageHeight = 240
 
 # Buttons (array of tables)
 [[params.profileMode.buttons]]
-name = "Explore My Track Record"
+name = "See My Work"
 url = "/work"
 
 [[params.profileMode.buttons]]
-name = "Let's Talk"
+name = "Start a Conversation"
 url = "/contact"
 
 # [[params.profileMode.buttons]]
@@ -77,7 +77,8 @@ url = "https://facebook.com/kristiansagi.public"
     weight = 30
   [[menu.main]]
     name = "Perspectives"
-    url = "/blog/"
+#    url = "/blog/"
+    url = "https://blog.kristiansagi.com/"
     weight = 40
   [[menu.main]]
     name = "Résumé"

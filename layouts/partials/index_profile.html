@@ -32,7 +32,11 @@
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
         <span>{{ .subtitle | markdownify }}</span>
-        <p></p><h6><span>{{ .notice | markdownify }}</span></h6>
+        <span>
+            <p style="font-size: 0.9rem; color: #757575; text-align: center; margin-top: 0.5rem; font-style: italic;">
+            {{ .notice | markdownify }}
+            </p>
+        </span>
 
         {{- partial "social_icons.html" -}}
         {{- with .buttons }}
