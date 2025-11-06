@@ -29,7 +29,7 @@ subtitle = "Engineering & Technology Leadership — scaling people, product, and
 notice = "Open to Director / VP roles in Engineering & Product Leadership (EU & hybrid)."
 
 imageUrl = "kristian-sagi.webp"
-# imageTitle = "<title of image as alt>" # optional
+imageTitle = "Kristian Sägi"
 imageWidth = 240
 imageHeight = 240
 
@@ -58,9 +58,9 @@ url = "https://www.linkedin.com/in/kristiansagi/"
 name = "x"
 url = "https://x.com/kristiansagi"
 
-[[params.socialIcons]]
-name = "facebook"
-url = "https://facebook.com/kristiansagi.public"
+# [[params.socialIcons]]
+# name = "facebook"
+# url = "https://facebook.com/kristiansagi.public"
 
 
 [menu]
