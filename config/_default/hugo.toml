@@ -8,7 +8,8 @@ enableRobotsTXT = true
 
 [params]
   defaultTheme = "auto"
-  ShowShareButtons = true
+  # I need to work on social media sharing first in order to enable it
+  ShowShareButtons = false
   ShowReadingTime = false
  
  [params.label]

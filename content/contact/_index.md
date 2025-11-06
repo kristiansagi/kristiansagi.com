@@ -3,6 +3,7 @@ title: "Want to work together?"
 slug: "contact"
 weight: 50
 draft: false
+ShowCodeCopyButtons: true
 ---
 
 ## Let's talk.
@@ -22,7 +23,7 @@ For secure and verified communication, you can use my public PGP key.
 |Email:|`kristian@kristiansagi.com`|
 |------|-------------------------|
 |PGP Fingerprint:| `0E3C 00EA 9C00 3AD0 DEE3  4132 CAB8 CDE8 7D02 BDB9`|
-|Download:| {{< details summary="Show full public key" >}}
+|Download:| ([kristian-sagi-pub.asc](/kristian-sagi-pub.asc)) {{< details summary="Show full public key" >}}
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -44,7 +45,7 @@ RfEbCi8Mrhi6riC8+dY58V97QuvKRub8UyZb4Z8O
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-{{</details>}}([kristian-sagi-pub.asc](/kristian-sagi-pub.asc))|
+{{</details>}}|
 |Automatic Discovery:| Supported via [WKD](https://keys.openpgp.org/)|
 
 
