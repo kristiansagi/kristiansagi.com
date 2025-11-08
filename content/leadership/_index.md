@@ -1,54 +1,44 @@
 ---
-title: "How I Can Lead Now"
+title: "What I Do Best"
 slug: "leadership"
 weight: 30
 draft: false
 ---
 
-_I’m open to leadership roles and strategic engagements where technology, teams, and clarity can make a measurable difference._
+I focus on roles and collaborations where technology, people, and strategy come together — and where clarity can make a real difference.
 
-### Here’s how I can contribute:
-
-***
+---
 
 ### Engineering Leadership
 
-Step in to lead teams through growth and transformation — uniting engineering, product, and people behind one clear direction.
+I lead teams through growth and transformation, aligning engineering, product, and people around a clear direction.
+_For companies scaling development or bringing multiple teams under shared goals._
 
-_For: Companies scaling development organizations or aligning multiple teams under shared goals._
-
-***
+---
 
 ### Technical Strategy & Execution
 
-Shape the roadmap, architecture, and delivery systems that turn technology into business advantage.
+I connect long-term vision with day-to-day delivery — shaping systems, architecture, and practices that turn technology into advantage.
+_For organizations modernizing their stack or building new product foundations._
 
-_For: Organizations modernizing their stack or building new product foundations._
-
-***
+---
 
 ### Team Alignment & Culture
 
-Create clarity and momentum — building trust, ownership, and collaboration across teams.
+I help teams find clarity, trust, and rhythm. Strong culture isn’t built with slogans — it’s built by consistency and shared ownership.
+_For companies strengthening leadership layers or navigating rapid change._
 
-_For: Tech companies strengthening leadership layers or navigating rapid change._
-
-***
+---
 
 ### Advisory & Mentorship
 
-Support founders, engineering leaders, or boards with insights from scaling global teams and products.
+I support founders, executives, and boards with insights from scaling global teams and complex products.
+_For startups or growth companies looking for a steady outside perspective._
 
-_For: Startups, growth companies, or executives looking for practical guidance on scale and leadership._
+---
 
-***
+## Let’s Work Together
 
-### Let’s Work Together
+I’m exploring opportunities where engineering, leadership, and clarity can shape meaningful growth.
 
-I’m currently exploring new opportunities where engineering, technology, and leadership meet — roles that combine growth, clarity, and impact.
-
-***
-
-_If you’re building something ambitious and need a leader who can align teams and strategy to deliver real results,
-[I’d love to hear from you.](/contact)_
-
+_If you’re building something ambitious and want a leader who unites people, direction, and execution — I’d be glad to [talk.](/contact)_

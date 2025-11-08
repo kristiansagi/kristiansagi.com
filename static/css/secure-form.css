@@ -1,0 +1,84 @@
+/* Compact, calm, PaperMod-friendly */
+
+.pm-secure-form{
+  max-width: 720px;
+  margin: 1rem auto;
+  padding: .75rem .9rem;
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 12px;
+  background: var(--entry, transparent);
+}
+
+.pm-secure-title{
+  margin: 0 0 .6rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: .1px;
+}
+
+.pm-field{ margin: 0 0 .55rem; }
+.pm-field label{
+  display:block;
+  font-size:.9rem;
+  opacity:.7;
+  margin:0 0 .3rem;
+}
+
+.pm-secure-form input[type="text"]{
+  width:100%;
+  border:1px solid var(--border, #e5e7eb);
+  border-radius:10px;
+  padding:.5rem .65rem;
+  font-size:.98rem;
+  background: var(--theme, #fff);
+  color: var(--content, inherit);
+}
+
+.pm-editor{
+  min-height: 16vh;
+  border:1px solid var(--border, #e5e7eb);
+  border-radius:10px;
+  padding:.5rem .65rem;
+  background: var(--theme, #fff);
+  color: var(--content, inherit);
+  line-height:1.42;
+  white-space:pre-wrap;
+}
+
+.pm-secure-form input[type="text"]:focus,
+.pm-editor:focus{
+  outline:none;
+  border-color: var(--primary, #3b82f6);
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary, #3b82f6) 18%, transparent);
+}
+
+/* Actions */
+.pm-actions{ display:flex; justify-content:flex-end; margin-top:.4rem; }
+
+/* Button styles – neutral grey like hero buttons */
+.pm-btn{
+  border:none;
+  border-radius:12px;
+  padding:.5rem .9rem;
+  font-weight:700;
+  cursor:pointer;
+  transition: filter .12s ease, opacity .12s ease;
+}
+
+.pm-btn--neutral{
+  background: var(--tertiary, #e5e7eb);
+  color: var(--content, #111827);
+}
+.pm-btn--neutral:hover{ filter: brightness(0.97); }
+
+/* Sent state – darker grey, disabled */
+.pm-btn--sent{
+  background: color-mix(in oklab, var(--tertiary, #e5e7eb) 70%, #9ca3af);
+  color: var(--content, #111827);
+  opacity: .95;
+}
+.pm-btn:disabled{ cursor:not-allowed; }
+
+@media (max-width:560px){
+  .pm-secure-form{ padding:.65rem .7rem; }
+}

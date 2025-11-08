@@ -6,13 +6,26 @@ draft: false
 ShowCodeCopyButtons: true
 ---
 
-## Let's talk.
-
-I’m open to leadership opportunities where *technology*, *teams*, and *strategy* come together to create lasting impact.
+I’m open to leadership opportunities where technology, teams, and strategy meet to create lasting impact.
 
 Whether your organization is scaling its engineering capability or building the next generation of products, let’s explore how I can help drive that transformation.
 
-**Email:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com)
+---
+
+Use the encrypted form below for a private, end-to-end secure message.
+(Your message is automatically encrypted before it’s sent.)
+
+{{< secure-contact-form
+     title="Send a secure message"
+     subject="Encrypted message via contact page"
+     origin="https://kristiansagi.com"
+>}}
+
+---
+
+## Prefer email instead?
+
+**Email me directly at:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com) or use my PGP key for encrypted communication.
 
 ---
 
