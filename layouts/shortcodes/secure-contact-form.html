@@ -1,4 +1,4 @@
-{{/* secure-contact-form.html — Hugo shortcode with Turnstile integration */}}
+{{/* secure-contact-form.html — Hugo shortcode with Turnstile + client-side PGP */}}
 
 {{- $origin  := .Get "origin"  | default "https://kristiansagi.com" -}}
 {{- $subject := .Get "subject" | default "Encrypted message via contact page" -}}
@@ -33,7 +33,7 @@
     <button type="button" class="pm-btn pm-btn--primary">Send</button>
   </footer>
 
-  <!-- Turnstile widget (key chosen at runtime) -->
+  <!-- Invisible Cloudflare Turnstile -->
   <div id="{{ $id }}-cf" class="cf-turnstile"
        data-size="invisible"
        data-refresh-expired="auto"
@@ -42,9 +42,10 @@
        data-expired-callback="{{ $id }}_cf_expired"></div>
 </section>
 
-<!-- Turnstile runtime -->
+<!-- Turnstile + OpenPGP -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="/js/openpgp.min.js"></script>
+
 <script>
 (function init(id){
   const root = document.getElementById(id);
@@ -53,12 +54,12 @@
 
   const SUBJECT = root.dataset.subject;
 
-  // Resolve endpoints/keys per environment
+  // Environment
   const isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
-  const origin = location.origin; // use the current host (staging/prod)
+  const origin  = location.origin; // staging/prod safe
   const PUBKEY_URL = origin + '/kristian-sagi-pub.asc';
 
-  // Turnstile: choose sitekey by hostname
+  // Turnstile key per hostname
   const SITEKEYS = {
     "kristiansagi.com": "{{ site.Params.turnstile.site_key }}",
     "www.kristiansagi.com": "{{ site.Params.turnstile.site_key }}",
@@ -66,99 +67,125 @@
   };
   const SITEKEY = SITEKEYS[location.hostname] || "{{ site.Params.turnstile.site_key }}";
 
-  // Worker endpoint: workers.dev for local, route for deployed
+  // API endpoint
   const WORKER_SEND_URL = 'https://send-encrypted.kristian-b24.workers.dev/api/send-encrypted';
-  const SEND_ENDPOINT = isLocal ? WORKER_SEND_URL : '/api/send-encrypted';
+  const SEND_ENDPOINT   = isLocal ? WORKER_SEND_URL : '/api/send-encrypted';
 
+  // Elements
   const fromEl = root.querySelector('#' + id + '-from');
   const msgEl  = root.querySelector('#' + id + '-msg');
   const btn    = root.querySelector('.pm-btn');
   const cfDiv  = document.getElementById(id + '-cf');
 
-  // Render Turnstile with the chosen key
+  // Render Turnstile (attach sitekey dynamically)
   const renderTurnstile = () => {
     if (!window.turnstile || !cfDiv) return;
-    // attach sitekey dynamically
     cfDiv.setAttribute('data-sitekey', SITEKEY);
     try { turnstile.render(cfDiv); } catch(_) {}
   };
 
-  // Token state
-  let cfToken = "";
-  let pendingCipher = null;
-  let attemptId = 0;
-
-  // Utilities
-  async function fetchTxt(u){ const r = await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status+' '+u); return r.text(); }
-  let pubKey; async function loadKey(){ if(pubKey) return pubKey; pubKey = await fetchTxt(PUBKEY_URL); return pubKey; }
+  // Crypto helpers
+  async function fetchTxt(u){
+    const r = await fetch(u, { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + u);
+    return r.text();
+  }
+  let pubKey;
+  async function loadKey(){ return pubKey || (pubKey = await fetchTxt(PUBKEY_URL)); }
   async function encryptPlain(text){
-    const k = await loadKey();
-    const key = await openpgp.readKey({armoredKey:k});
-    const m = await openpgp.createMessage({text});
-    return openpgp.encrypt({message:m, encryptionKeys:key});
+    const k   = await loadKey();
+    const key = await openpgp.readKey({ armoredKey: k });
+    const msg = await openpgp.createMessage({ text });
+    return openpgp.encrypt({ message: msg, encryptionKeys: key });
   }
   function clearForm(){ fromEl.value=''; msgEl.value=''; }
 
-  // Turnstile callbacks must be global
+  // ---- Submission state (prevents idle popups) ---------------------------
+  let submitting    = false;   // only true between click and completion
+  let pendingCipher = null;
+  let attemptId     = 0;
+
+  // ---- Turnstile callbacks (must be global) ------------------------------
   window[id + '_cf_ok'] = async (token) => {
     const myId = Number(cfDiv?.dataset.attempt || 0);
-    if (myId !== attemptId) return; // stale callback
+    if (myId !== attemptId) return;             // stale callback
 
-    try{
-      //if (!token || !pendingCipher) throw new Error('Verification error. Please try again.');
-      cfToken = token;
+    // If not in an active submit, ignore quietly (idle widget firing)
+    if (!submitting) { if (window.turnstile && cfDiv) turnstile.reset(cfDiv); return; }
 
+    // On active submit, require both token and ciphertext
+    if (typeof token !== 'string' || token.length === 0 || !pendingCipher) {
+      submitting = false; pendingCipher = null;
+      btn.disabled = false; btn.textContent = 'Send';
+      if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+      alert('Verification error. Please try again.');
+      return;
+    }
+
+    try {
       btn.textContent = 'Sending…';
-      const res = await fetch(SEND_ENDPOINT,{
-        method:'POST',
-        headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ subject: SUBJECT, ciphertext: pendingCipher.trim(), cfToken })
+      const res = await fetch(SEND_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          subject: SUBJECT,
+          ciphertext: pendingCipher.trim(),
+          cfToken: token
+        })
       });
-      const data = await res.json().catch(()=>({}));
+      const data = await res.json().catch(() => ({}));
 
-      if(!res.ok || !data.ok) {
-        // Bubble Turnstile details if present
-        const reason = (data && data.details && (data.details['error-codes']||data.details.error || data.error)) || res.status;
+      if (!res.ok || !data.ok) {
+        const reason = (data && data.details && (data.details['error-codes'] || data.details.error)) || data.error || res.status;
         throw new Error('Send failed: ' + reason);
       }
 
       clearForm();
-      btn.classList.add('pm-btn--sent'); btn.textContent = 'Sent ✓';
-    }catch(err){
-      btn.textContent = 'Send'; btn.disabled = false;
+      btn.classList.add('pm-btn--sent');
+      btn.textContent = 'Sent ✓';
+    } catch (err) {
+      btn.textContent = 'Send';
       alert(err.message || String(err));
-    }finally{
-      pendingCipher = null; cfToken = "";
+    } finally {
+      submitting = false;
+      pendingCipher = null;
       if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+      btn.disabled = false;
     }
   };
+
   window[id + '_cf_err'] = () => {
-    pendingCipher = null; cfToken = "";
-    btn.disabled = false; btn.textContent = 'Send';
+    // Only notify if user was submitting; otherwise reset silently
+    if (!submitting) { if (window.turnstile && cfDiv) turnstile.reset(cfDiv); return; }
+    submitting = false; pendingCipher = null;
     if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+    btn.disabled = false; btn.textContent = 'Send';
     alert('Verification error. Please try again.');
   };
+
   window[id + '_cf_expired'] = () => {
-    cfToken = "";
+    // Token expired while idle — reset quietly
     if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
   };
 
-  // Refresh token when the tab becomes visible
+  // Refresh token when tab regains focus (common idle case)
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && window.turnstile && cfDiv) {
       try { turnstile.reset(cfDiv); } catch(_) {}
     }
   });
 
-  // Bind send
-  btn.addEventListener('click', async (e)=>{
+  // ---- Click handler ------------------------------------------------------
+  btn.addEventListener('click', async (e) => {
     e.preventDefault();
-    const from = (fromEl.value||'').trim();
-    const body = (msgEl.value||'').trim();
-    if(!from || !body){ alert('Please fill both fields.'); return; }
+    const from = (fromEl.value || '').trim();
+    const body = (msgEl.value || '').trim();
+    if (!from || !body) { alert('Please fill both fields.'); return; }
 
-    try{
+    try {
+      submitting = true;
       btn.disabled = true; btn.textContent = 'Encrypting…';
+
       const composed = [
         `From: ${from}`,
         `Origin: ${location.origin}`,
@@ -166,22 +193,24 @@
         '---',
         body
       ].join('\n');
+
       pendingCipher = await encryptPlain(composed);
 
-      // get a fresh token just-in-time
+      // Get a fresh token just-in-time
       btn.textContent = 'Verifying…';
       attemptId += 1;
       if (cfDiv) cfDiv.dataset.attempt = String(attemptId);
       if (!window.turnstile || !cfDiv) throw new Error('Captcha unavailable.');
       try { turnstile.reset(cfDiv); } catch(_) {}
       turnstile.execute(cfDiv);
-    }catch(err){
-      pendingCipher = null; btn.disabled = false; btn.textContent = 'Send';
+    } catch (err) {
+      submitting = false; pendingCipher = null;
+      btn.disabled = false; btn.textContent = 'Send';
       alert(err.message || String(err));
     }
   });
 
-  // Initial render of Turnstile
+  // Initial render
   const ready = () => { if (window.turnstile) renderTurnstile(); else setTimeout(ready, 50); };
   ready();
 })('{{ $id }}');
