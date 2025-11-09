@@ -1,69 +1,99 @@
-// Cloudflare Pages Function / Worker
-// File: /functions/api/send-encrypted.js
-// Purpose: receive encrypted message from the form and send it via Resend
+// Cloudflare Pages Function (JavaScript) with CORS + Turnstile + Resend
 
-export default {
-  async fetch(request, env) {
-    // --- CORS configuration ---
-    const cors = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization'
-    };
+// Env vars (Pages → Settings → Environment variables):
+// TURNSTILE_SECRET_KEY, RESEND_API_KEY
+// Optional: RESEND_FROM, RESEND_TO
 
-    // --- Handle CORS preflight (OPTIONS request) ---
-    if (request.method === 'OPTIONS') {
-      return new Response(null, { headers: cors });
+const corsHeaders = (request) => {
+  const origin = request.headers.get('Origin');
+  // Echo the origin for dev/prod; tighten if you want only your domains.
+  return {
+    'Access-Control-Allow-Origin': origin || '*',
+    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Max-Age': '86400',
+    'Vary': 'Origin',
+  };
+};
+
+const json = (request, obj, status = 200, extra = {}) =>
+  new Response(JSON.stringify(obj), {
+    status,
+    headers: {
+      'content-type': 'application/json; charset=utf-8',
+      ...corsHeaders(request),
+      ...extra,
+    },
+  });
+
+const text = (request, body, status = 200, extra = {}) =>
+  new Response(body, { status, headers: { ...corsHeaders(request), ...extra } });
+
+// Handle CORS preflight
+export const onRequestOptions = async ({ request }) =>
+  new Response(null, { status: 204, headers: corsHeaders(request) });
+
+// Main POST
+export const onRequestPost = async ({ request, env }) => {
+  try {
+    if (!(request.headers.get('content-type') || '').includes('application/json')) {
+      return text(request, 'Unsupported Media Type', 415);
     }
 
-    if (request.method !== 'POST') {
-      return new Response('Only POST allowed', {
-        status: 405,
-        headers: cors
-      });
+    const { subject, ciphertext, cfToken } = await request.json();
+    if (!subject || typeof subject !== 'string')  return json(request, { error: 'invalid_subject' }, 400);
+    if (!ciphertext || typeof ciphertext !== 'string') return json(request, { error: 'invalid_ciphertext' }, 400);
+    if (!cfToken || typeof cfToken !== 'string') return json(request, { error: 'missing_captcha' }, 400);
+
+    // Verify Turnstile
+    const ip = request.headers.get('CF-Connecting-IP') || '';
+    const verifyForm = new URLSearchParams();
+    verifyForm.append('secret', env.TURNSTILE_SECRET_KEY);
+    verifyForm.append('response', cfToken);
+    if (ip) verifyForm.append('remoteip', ip);
+
+    const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body: verifyForm,
+      headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    });
+    if (!verifyRes.ok) return json(request, { error: 'captcha_verify_http_error' }, 502);
+
+    const verify = await verifyRes.json();
+    if (!verify.success) return json(request, { error: 'captcha_failed', details: verify }, 400);
+
+    // Send email via Resend
+    const RESEND_API = 'https://api.resend.com/emails';
+    const from = env.RESEND_FROM || 'Secure Form <secure@kristiansagi.com>';
+    const to = (env.RESEND_TO || 'kristian@kristiansagi.com').split(/\s*,\s*/);
+
+    const mailRes = await fetch(RESEND_API, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from,
+        to,
+        subject,
+        text:
+`You received an encrypted message.
+
+-----BEGIN PGP MESSAGE-----
+${ciphertext}
+-----END PGP MESSAGE-----`,
+      }),
+    });
+
+    if (!mailRes.ok) {
+      const err = await mailRes.text().catch(() => '');
+      return json(request, { error: 'send_failed', details: err || null }, 502);
     }
 
-    try {
-      const { subject, ciphertext } = await request.json();
-      if (!ciphertext || !subject) {
-        return new Response('Missing ciphertext or subject', {
-          status: 400,
-          headers: cors
-        });
-      }
-
-      // Prepare plain text email (Proton auto-decrypts inline)
-      const bodyText = ciphertext.trim();
-
-      // --- Send via Resend API ---
-      const r = await fetch('https://api.resend.com/emails', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${env.RESEND_API_KEY}`,
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          from: 'Kristian <no-reply@kristiansagi.com>',
-          to: ['kristian@kristiansagi.com'],
-          subject,
-          text: bodyText,
-          html: null
-        })
-      });
-
-      if (!r.ok) {
-        const t = await r.text().catch(() => '');
-        throw new Error(`Resend failed: ${r.status} ${t}`);
-      }
-
-      return new Response(JSON.stringify({ ok: true }), {
-        headers: { 'Content-Type': 'application/json', ...cors }
-      });
-    } catch (err) {
-      return new Response(
-        JSON.stringify({ ok: false, error: err.message || String(err) }),
-        { status: 500, headers: { 'Content-Type': 'application/json', ...cors } }
-      );
-    }
+    const payload = await mailRes.json().catch(() => ({}));
+    return json(request, { ok: true, id: payload?.id || null }, 200);
+  } catch (e) {
+    return json(request, { error: 'server_error' }, 500);
   }
 };

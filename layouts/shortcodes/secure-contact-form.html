@@ -1,85 +1,158 @@
+{{/* secure-contact-form.html — Hugo shortcode with Turnstile integration */}}
+
 {{- $origin  := .Get "origin"  | default "https://kristiansagi.com" -}}
-{{- $subject := .Get "subject" | default "Encrypted message from kristiansagi.com/contact" -}}
+{{- $subject := .Get "subject" | default "Encrypted message via contact page" -}}
 {{- $title   := .Get "title"   | default "Send a secure message" -}}
-{{- $id      := printf "pm-secure-form-%d" now.UnixNano -}}
+{{- $id      := printf "contact-secure-%d" now.UnixNano -}}
 
-<section id="{{ $id }}" class="pm-secure-form"
-         data-origin="{{ $origin }}"
-         data-subject="{{ $subject }}">
-  <h2 class="pm-secure-title">{{ $title }}</h2>
-
-  <div class="pm-field">
-    <label for="{{ $id }}-from">From (name & contact)</label>
-    <input id="{{ $id }}-from" type="text" autocomplete="off" spellcheck="false">
-  </div>
-
-  <div class="pm-field">
-    <label for="{{ $id }}-msg">Message</label>
-    <div id="{{ $id }}-msg" class="pm-editor" contenteditable role="textbox" aria-multiline="true"></div>
-  </div>
-
-  <div class="pm-actions">
-    <button type="button" class="pm-btn pm-btn--neutral">Encrypt &amp; Send</button>
-  </div>
-</section>
+{{/* --- choose correct Turnstile site key --- */}}
+{{- $tk := site.Params.turnstile.site_key -}}
+{{- with site.Params.turnstile.site_key_dev -}}
+  {{- if hugo.IsServer -}}
+    {{- $tk = . -}}
+  {{- end -}}
+{{- end -}}
 
 <link rel="stylesheet" href="/css/secure-form.css">
+
+<section id="{{ $id }}" class="pm-card pm-secure"
+         data-origin="{{ $origin }}"
+         data-subject="{{ $subject }}">
+  <header class="pm-card__header">
+    <h3 class="pm-card__title">{{ $title }}</h3>
+  </header>
+
+  <div class="pm-card__body">
+    <div class="pm-field">
+      <label for="{{ $id }}-from" class="pm-label">Your Name &amp; Email</label>
+      <input id="{{ $id }}-from" type="text" class="pm-input"
+             placeholder="Jane Doe · jane@example.com" autocomplete="off" spellcheck="false" />
+      <p class="pm-help">An email address is required.</p>
+    </div>
+
+    <div class="pm-field">
+      <label for="{{ $id }}-msg" class="pm-label">Message</label>
+      <textarea id="{{ $id }}-msg" class="pm-textarea" rows="7"
+                placeholder="Write your message…"></textarea>
+    </div>
+  </div>
+
+  <footer class="pm-card__footer">
+    <button type="button" class="pm-btn pm-btn--primary">Send</button>
+  </footer>
+
+  <!-- Invisible Cloudflare Turnstile -->
+  <div id="{{ $id }}-cf" class="cf-turnstile"
+       data-sitekey="{{ $tk }}"
+       data-size="invisible"
+       data-callback="{{ $id }}_cf_ok"
+       data-error-callback="{{ $id }}_cf_err"
+       data-expired-callback="{{ $id }}_cf_expired"></div>
+</section>
+
 <script src="/js/openpgp.min.js"></script>
 <script>
-(function attachSecureForm(id){
+(function init(id){
   const root = document.getElementById(id);
   if (!root) return;
 
+  // prevent double-binding during Hugo live reload
+  if (root.dataset.bound === '1') return;
+  root.dataset.bound = '1';
+
   const ORIGIN        = root.dataset.origin;
   const SUBJECT       = root.dataset.subject;
-  const PUBKEY_URL    = ORIGIN + '/kristian-sagi-pub.asc';
-  const SEND_ENDPOINT = ORIGIN + '/api/send-encrypted';
+  const PUBKEY_URL    = 'https://staging.kristiansagi.com/kristian-sagi-pub.asc';
+//  const PUBKEY_URL    = ORIGIN + '/kristiansagi-pub.asc';
+//  const SEND_ENDPOINT = (location.hostname.endsWith('kristiansagi.com'))
+//    ? '/api/send-encrypted'
+//    : 'https://kristiansagi.com/api/send-encrypted';
 
-  const fromEl  = root.querySelector('input[type="text"]');
-  const msgEl   = root.querySelector('.pm-editor');
-  const btn     = root.querySelector('.pm-btn');
+// Replace <YOUR_SUBDOMAIN> below with your real workers.dev subdomain
+const WORKER_SEND_URL = 'https://send-encrypted.kristian-b24.workers.dev/api/send-encrypted';
+const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
 
-  let pubKeyArmored = null;
+const SEND_ENDPOINT = isLocal ? WORKER_SEND_URL : '/api/send-encrypted';
 
-  const fetchTxt = async (url) => {
-    const r = await fetch(url, { cache: 'no-store', mode: 'cors' });
-    if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + url);
-    return r.text();
+
+  const fromEl = root.querySelector('#' + id + '-from');
+  const msgEl  = root.querySelector('#' + id + '-msg');
+  const btn    = root.querySelector('.pm-btn');
+  const cfDiv  = document.getElementById(id + '-cf');
+
+  let pubKey = null;
+  async function fetchTxt(u){ const r = await fetch(u,{cache:'no-store'}); if(!r.ok) throw new Error('HTTP '+r.status+' '+u); return r.text(); }
+  async function loadKey(){ if(pubKey) return pubKey; pubKey = await fetchTxt(PUBKEY_URL); return pubKey; }
+  async function encryptPlain(text){
+    const k = await loadKey();
+    const key = await openpgp.readKey({armoredKey:k});
+    const m = await openpgp.createMessage({text});
+    return openpgp.encrypt({message:m, encryptionKeys:key});
+  }
+  function clearForm(){ fromEl.value=''; msgEl.value=''; }
+
+  // attempt state
+  let pendingCipher = null;
+  let attemptId = 0;  // increment per click to ignore old callbacks
+
+  // --- Turnstile callbacks (must be global) ---
+  window[id + '_cf_ok'] = async (token) => {
+    // ignore if not the current attempt
+    const myId = Number(cfDiv?.dataset.attempt || 0);
+    if (myId !== attemptId) return;
+
+    try{
+      if (!token || !pendingCipher) {
+        // stray callback; just reset and bail silently
+        if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+        btn.disabled = false; btn.textContent = 'Send';
+        return;
+      }
+
+      btn.textContent = 'Sending…';
+      const res = await fetch(SEND_ENDPOINT,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ subject: SUBJECT, ciphertext: pendingCipher, cfToken: token })
+      });
+      const data = await res.json().catch(()=>({}));
+      if(!res.ok || !data.ok) throw new Error('Send failed ('+(data?.error||res.status)+')');
+
+      clearForm();
+      btn.classList.add('pm-btn--sent');
+      btn.textContent = 'Sent ✓';
+    }catch(err){
+      btn.disabled = false; btn.textContent = 'Send';
+      alert(err.message || String(err));
+    }finally{
+      // reset state for next attempt
+      pendingCipher = null;
+      if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+    }
   };
 
-  async function loadPubKey(){
-    if (pubKeyArmored) return pubKeyArmored;
-    pubKeyArmored = await fetchTxt(PUBKEY_URL);
-    return pubKeyArmored;
-  }
+  window[id + '_cf_err'] = (code) => {
+    console.error('Turnstile error:', code);
+    pendingCipher = null;
+    if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+    btn.disabled = false; btn.textContent = 'Send';
+    alert('Verification error. Please try again.');
+  };
 
-  const getBody = () => (msgEl.innerText || '').replace(/\r/g,'').trim();
+  window[id + '_cf_expired'] = () => {
+    // Token expired before we used it; next click will generate a new one
+    if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
+  };
 
-  async function encryptPlain(text){
-    const armored = await loadPubKey();
-    const key     = await openpgp.readKey({ armoredKey: armored });
-    const message = await openpgp.createMessage({ text });
-    return openpgp.encrypt({ message, encryptionKeys: key });
-  }
+  // --- Button click handler ---
+  btn.addEventListener('click', async (e)=>{
+    e.preventDefault();
+    const from = (fromEl.value||'').trim();
+    const body = (msgEl.value||'').trim();
+    if(!from || !body){ alert('Please fill both fields.'); return; }
 
-  function clearForm(){
-    fromEl.value = '';
-    msgEl.innerHTML = '';
-    pubKeyArmored = null;
-  }
-
-  async function onSend(e){
-    e?.preventDefault?.();
-    if (typeof window.openpgp === 'undefined') { alert('Encryption library missing.'); return; }
-
-    const from = (fromEl.value || '').trim();
-    const body = getBody();
-    if (!from || !body) { alert('Please fill both fields.'); return; }
-
-    try {
-      btn.disabled = true;
-      btn.textContent = 'Encrypting…';
-
+    try{
+      btn.disabled = true; btn.textContent = 'Encrypting…';
       const composed = [
         `From: ${from}`,
         `Origin: ${location.origin}`,
@@ -87,32 +160,21 @@
         '---',
         body
       ].join('\n');
+      pendingCipher = (await encryptPlain(composed)).trim();
 
-      const ciphertext = (await encryptPlain(composed)).trim();
+      btn.textContent = 'Verifying…';
 
-      btn.textContent = 'Sending…';
-      const res = await fetch(SEND_ENDPOINT, {
-        method: 'POST',
-        mode: 'cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ subject: SUBJECT, ciphertext })
-      });
-      if (!res.ok) throw new Error('Send failed (HTTP ' + res.status + ')');
-
-      // success — clear and switch button to grey "Sent"
-      clearForm();
-      btn.classList.remove('pm-btn--neutral');
-      btn.classList.add('pm-btn--sent');
-      btn.textContent = 'Sent ✓';
-      btn.disabled = true;
-
-    } catch (err){
-      btn.disabled = false;
-      btn.textContent = 'Encrypt & Send';
+      // ensure a fresh widget and tag this attempt
+      attemptId += 1;
+      if (cfDiv) cfDiv.dataset.attempt = String(attemptId);
+      if (!window.turnstile || !cfDiv) throw new Error('Captcha unavailable.');
+      try { turnstile.reset(cfDiv); } catch(_) {}
+      turnstile.execute(cfDiv);
+    }catch(err){
+      pendingCipher = null;
+      btn.disabled = false; btn.textContent = 'Send';
       alert(err.message || String(err));
     }
-  }
-
-  btn.addEventListener('click', onSend);
+  });
 })('{{ $id }}');
 </script>
