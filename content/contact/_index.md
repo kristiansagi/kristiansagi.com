@@ -6,36 +6,27 @@ draft: false
 ShowCodeCopyButtons: true
 ---
 
-I’m open to leadership opportunities where technology, teams, and strategy meet to create lasting impact.
+###### I’m open to leadership opportunities where technology, teams, and strategy meet to create lasting impact.
 
-Whether your organization is scaling its engineering capability or building the next generation of products, let’s explore how I can help drive that transformation.
-
----
-
-Use the encrypted form below for a private, end-to-end secure message.
-(Your message is automatically encrypted before it’s sent.)
+###### Whether your organization is scaling its engineering capability or building the next generation of products, let’s explore how I can help drive that transformation.
 
 {{< secure-contact-form
-     title="Send a secure message"
+     title="Send a private message"
      subject="Encrypted message via contact page"
      origin="https://kristiansagi.com"
 >}}
+Your message is encrypted before it leaves your browser and can only be read by me.
 
 ---
 
 ## Prefer email instead?
 
-**Email me directly at:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com) or use my PGP key for encrypted communication.
+**Email me directly:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com)
 
----
+For verified communication, you can use my public PGP key:
 
-### Encrypt email (PGP)
-
-For secure and verified communication, you can use my public PGP key.
-
-|Email:|`kristian@kristiansagi.com`|
-|------|-------------------------|
 |PGP Fingerprint:| `0E3C 00EA 9C00 3AD0 DEE3  4132 CAB8 CDE8 7D02 BDB9`|
+|------|-------------------------|
 |Download:| ([kristian-sagi-pub.asc](/kristian-sagi-pub.asc)) {{< details summary="Show full public key" >}}
 
 ```text
@@ -78,6 +69,7 @@ gpg --auto-key-locate clear,wkd --locate-key kristian@kristiansagi.com
 
 ---
 
-## Additional contact options
+## Other contact options
 
-If you prefer a professional network introduction or collaboration request, feel free to connect via [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
+Prefer a professional introduction or collaboration request?
+You’re welcome to connect on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
