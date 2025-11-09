@@ -64,7 +64,7 @@ export const onRequestPost = async ({ request, env }) => {
 
     // Send email via Resend
     const RESEND_API = 'https://api.resend.com/emails';
-    const from = env.RESEND_FROM || 'Secure Form <secure@kristiansagi.com>';
+    const from = env.RESEND_FROM || 'Contact Form <no-reply@kristiansagi.com>';
     const to = (env.RESEND_TO || 'kristian@kristiansagi.com').split(/\s*,\s*/);
 
     const mailRes = await fetch(RESEND_API, {
