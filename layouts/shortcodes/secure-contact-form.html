@@ -77,6 +77,13 @@
   const btn    = root.querySelector('.pm-btn');
   const cfDiv  = document.getElementById(id + '-cf');
 
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted || performance.getEntriesByType("navigation")[0].type === "reload") {
+      if (fromEl) fromEl.value = "";
+      if (msgEl) msgEl.value = "";
+    }
+  });
+
   // Render Turnstile (attach sitekey dynamically)
   const renderTurnstile = () => {
     if (!window.turnstile || !cfDiv) return;

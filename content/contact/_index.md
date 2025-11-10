@@ -1,21 +1,18 @@
 ---
-title: "Want to work together?"
+title: "Contact Kristian"
 slug: "contact"
 weight: 50
 draft: false
 ShowCodeCopyButtons: true
 ---
 
-###### I’m open to leadership opportunities where technology, teams, and strategy meet to create lasting impact.
-
-###### Whether your organization is scaling its engineering capability or building the next generation of products, let’s explore how I can help drive that transformation.
+Your message will be encrypted before it leaves your browser and only I can read it.
 
 {{< secure-contact-form
      title="Send a private message"
      subject="Encrypted message via contact page"
      origin="https://kristiansagi.com"
 >}}
-Your message is encrypted before it leaves your browser and can only be read by me.
 
 ---
 

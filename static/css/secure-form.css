@@ -54,7 +54,11 @@
   line-height: 1.5;
   transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
 }
-.pm-textarea { min-height: 7rem; resize: vertical; }
+.pm-textarea {
+  min-height: 2.2rem;       /* smaller initial height */
+  height: 4rem;
+  resize: vertical;         /* user can still expand */ 
+}
 
 .pm-input::placeholder, .pm-textarea::placeholder {
   color: color-mix(in oklab, var(--content) 55%, transparent);
@@ -66,6 +70,16 @@
   background: var(--entry);
   border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
   box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary) 18%, transparent);
+}
+
+/*.pm-textarea::placeholder {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}*/
+
+/* When focused, fade placeholder away */
+.pm-input:focus::placeholder, .pm-textarea:focus::placeholder {
+  opacity: 0;
 }
 
 /* Button */
