@@ -9,8 +9,8 @@ description: "A reflection on why speed without awareness leads nowhere — and 
 ShowToc: true
 ShowReadingTime: true
 TocOpen: false
-draft: true
-hidden: true
+draft: false
+hidden: false
 canonicalURL: ""
 cover:
   image: "to-build-fast.webp"
