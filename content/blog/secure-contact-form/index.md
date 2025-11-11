@@ -14,7 +14,8 @@ ShowToc: true
 ShowReadingTime: true
 TocOpen: false
 draft: false
-relative: true
+hidden: false
+canonicalURL: ""
 ---
 
 There’s something deeply satisfying about a good weekend project.

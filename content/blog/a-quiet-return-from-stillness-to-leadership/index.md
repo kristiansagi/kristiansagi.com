@@ -5,18 +5,25 @@ summary: "Nine months away from the noise. Focus rebuilt. Mission clear."
 slug: "a-quiet-return-from-stillness-to-leadership"
 draft: false
 ShowReadingTime: true
-pubdate: 2025-10-24
+date: 2025-10-24
 author: "Kristian Sägi"
+
+type: post
+ShowToc: true
+TocOpen: false
+hidden: false
+canonicalURL: "https://medium.com/into-the-wide-open/the-quiet-operator-returns-from-stillness-to-leadership-ready-for-the-next-mission-1d5daffc113c"
+
+tags: ["Leadership", "Career Restar", "Mindfulness", "Technology", "Personal Growth"]
+
 
 cover:
   image: "perspective.webp"
-  caption: "The view before the return — quiet, wide, and clear. (c) Kristian Sägi"
+  caption: "The view before the return — quiet, wide, and clear."
+  alt: "The view before the return — quiet, wide, and clear."
   relative: true
 
 ---
-
-<!--more-->
-{{< figure src="perspective.webp" caption="The view before the return — quiet, wide, and clear." >}}
 
 ## The Decision
 

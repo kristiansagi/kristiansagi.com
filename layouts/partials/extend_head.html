@@ -1,0 +1,24 @@
+{{/* compile SCSS and load plain CSS */}}
+{{- $files := slice
+    "css/extended/custom.css"
+    "css/extended/figure.css"
+    "css/extended/thumbnail.css"
+-}}
+
+{{- $compiled := slice -}}
+{{- range $files -}}
+  {{- $in := resources.Get . -}}
+  {{- $out := $in -}} {{/* predeclare in this scope */}}
+  {{- if strings.HasSuffix . ".scss" -}}
+    {{- $out = $in | css.Sass (dict "targetPath" (replace . ".scss" ".css")) -}}
+  {{- else -}}
+    {{- $out = $in | resources.Minify -}}
+  {{- end -}}
+  {{- $compiled = $compiled | append $out -}}
+{{- end -}}
+
+{{- $bundle := $compiled
+  | resources.Concat "css/extended/_bundle.css"
+  | resources.Minify
+  | resources.Fingerprint -}}
+<link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}">

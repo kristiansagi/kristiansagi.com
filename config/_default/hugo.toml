@@ -85,8 +85,8 @@ url = "https://x.com/kristiansagi"
     weight = 30
   [[menu.main]]
     name = "Perspectives"
-#    url = "/blog/"
-    url = "https://blog.kristiansagi.com/"
+    url = "/blog/"
+#    url = "https://blog.kristiansagi.com/"
     weight = 40
   [[menu.main]]
     name = "Résumé"

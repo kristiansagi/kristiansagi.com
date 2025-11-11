@@ -6,15 +6,25 @@ slug: "how-i-lost-weight-and-gained-my-life-back"
 author: "Kristian Sägi"
 draft: false
 ShowReadingTime: true
-pubdate: 2025-02-08
+date: 2025-02-08
+
+type: post
+ShowToc: true
+TocOpen: false
+hidden: false
+canonicalURL: "https://medium.com/into-the-wide-open/how-i-lost-weight-and-gained-my-life-back-81052cab7b39"
+
+tags: ["Health", "Nutrition", "Weight Loss", "Longevity", "Discipline", "Alcohol-Free"]
+
 
 cover:
   image: "kehakaal.webp"
   caption: "Photo by Ronit Shaked on Unsplash."
+  alt: "Photo by Ronit Shaked on Unsplash."
   relative: true
 
 ---
-<!--more-->
+
 A year ago, I found myself standing in a doctor’s office, unprepared for the reality I was about to face.
 
 “Please step on the scale,” the nurse said.
