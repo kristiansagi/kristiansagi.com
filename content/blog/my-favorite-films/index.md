@@ -10,6 +10,11 @@ cover:
 tags: ["reflections", "film", "philosophy", "self-discovery"]
 description: "Stories that shaped how I see light, discipline, and meaning — films about reason, wonder, and the quiet pursuit of clarity."
 
+# These 4 new lines enhance metadata
+images: ["https://kristiansagi.com/blog/my-favourite-films/cinema-reflection.webp"]
+ogTitle: "Notes from Stories That Stayed With Me"
+ogDescription: "Reflections on stories that shaped how I see light, discipline, curiosity, and meaning."
+ogImage: "https://kristiansagi.com/blog/my-favourite-films/cinema-reflection.webp"
 
 
 slug: "my-favourite-films"

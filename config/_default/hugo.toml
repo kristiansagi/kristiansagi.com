@@ -12,6 +12,17 @@ enableRobotsTXT = true
   ShowShareButtons = false
   disableShare = true
   ShowReadingTime = false
+
+  # PaperMod site-wide OG defaults
+
+  env = "production"
+  description = "Kristian Sägi — Notes on leadership, clarity, stillness, and meaningful work."
+
+  # global opengraph settings (PaperMod supports these)
+  images = ["https://kristiansagi.com/kristian-sagi.webp"]
+  title = "Kristian Sägi"
+
+  # end of site-wide OG defaults
  
  [params.label]
     text = "KS"
