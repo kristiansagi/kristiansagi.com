@@ -19,7 +19,7 @@ unsafe = true
   # PaperMod site-wide OG defaults
 
   env = "production"
-  description = "Kristian Sägi — Notes on leadership, clarity, stillness, and meaningful work."
+  description = "Kristian Sägi—Notes on leadership, clarity, stillness, and meaningful work."
 
   # global opengraph settings (PaperMod supports these)
   images = ["https://kristiansagi.com/kristian-sagi.webp"]
@@ -39,15 +39,15 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 site_key_dev = "1x00000000000000000000AA"
  
  # ---- Meta / SEO ----
-  description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
+  description = "Technology leader, builder, and quiet operator—scaling people, product, and purpose."
   keywords = ["Kristian Sägi", "Technology Leader", "CTO", "Quiet Operator"]
 
 [params.profileMode]
 enabled = true
-subtitle = "Engineering & Technology Leadership — scaling people, product, and purpose. Building high-performing teams, driving clarity, and turning complexity into growth."
+subtitle = "Engineering & Technology Leadership—scaling people, product, and purpose. Building high-performing teams, driving clarity, and turning complexity into growth."
 
 # Sub title, not in the original theme
-notice = "Open to Director / VP roles in Engineering & Product Leadership (EU & hybrid)."
+notice = "Open to Director/VP roles in Engineering & Product Leadership (EU & hybrid)."
 
 imageUrl = "kristian-sagi.webp"
 imageTitle = "Kristian Sägi"
