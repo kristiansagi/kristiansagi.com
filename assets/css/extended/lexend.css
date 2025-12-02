@@ -216,3 +216,75 @@ html.dark .post-single .post-content a {
   opacity: 0.75;
   margin-top: 0.5em;
 }
+
+/* Apple-like body tuning */
+body {
+  font-family: var(--font-family);
+  font-size: 1.05rem;        /* ~16.8px */
+  font-weight: 300;
+  line-height: 1.6;          /* slightly tighter, more SF-like */
+  letter-spacing: -0.005em;  /* tiny negative tracking like SF Pro */
+}
+
+/* Navigation typography – closer to SF Pro */
+.header ul li a,
+.menu a {
+  font-weight: 400;          /* a bit stronger, but not bold */
+  letter-spacing: -0.01em;   /* SF-style tightening */
+  font-size: 0.98rem;
+}
+
+/* Article H1 — SF-like */
+.post-single h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 2.7rem;         /* ~43px on desktop */
+  font-weight: 550;          /* between 500 and 600 */
+  line-height: 1.18;
+  letter-spacing: -0.02em;   /* tighter, SF Pro style */
+  margin-bottom: 0.45em;
+  max-width: 22ch;
+}
+
+/* H2 / H3 – calm but clear */
+.post-single .post-content h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-single .post-content h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.01em;
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 1rem;
+    line-height: 1.65;
+    letter-spacing: -0.004em;
+  }
+
+  .post-single h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    letter-spacing: -0.018em;
+  }
+
+  .post-single .post-content h2 {
+    font-size: 1.35rem;
+    line-height: 1.24;
+  }
+
+  .post-single .post-content h3 {
+    font-size: 1.15rem;
+    line-height: 1.26;
+  }
+}

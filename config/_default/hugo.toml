@@ -3,6 +3,9 @@ title = "Kristian Sägi"
 theme = "PaperMod"
 enableRobotsTXT = true
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [pagination]
   pagerSize = 10
 
