@@ -16,15 +16,16 @@ Your message will be encrypted before it leaves your browser and only I can read
 
 ---
 
-## Prefer Email Instead?
+## Prefer email instead?
 
 **Email me directly:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com)
 
 For verified communication, you can use my public PGP key:
 
-| PGP Fingerprint: | `0E3C 00EA 9C00 3AD0 DEE3  4132 CAB8 CDE8 7D02 BDB9` |
-|------------------|-------------------------------------------------------|
-| Download: | ([kristian-sagi-pub.asc](/kristian-sagi-pub.asc)) {{< details summary="Show full public key" >}}
+|PGP Fingerprint:| `0E3C 00EA 9C00 3AD0 DEE3  4132 CAB8 CDE8 7D02 BDB9`|
+|------|-------------------------|
+|Download:| ([kristian-sagi-pub.asc](/kristian-sagi-pub.asc)) {{< details summary="Show full public key" >}}
+
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -45,14 +46,17 @@ RfEbCi8Mrhi6riC8+dY58V97QuvKRub8UyZb4Z8O
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-{{</details>}} |
-| Automatic Discovery: | Supported via [WKD](https://keys.openpgp.org/) |
+{{</details>}}|
+|Automatic Discovery:| Supported via [WKD](https://keys.openpgp.org/)|
+
 
 {{< details summary="How to import and verify my public key" >}}
+
 ```sh
 # Import directly
 curl -s https://kristiansagi.com/kristian-sagi-pub.asc | gpg --import
 ```
+
 ```sh
 # Or use automatic lookup (WKD)
 gpg --auto-key-locate clear,wkd --locate-key kristian@kristiansagi.com
@@ -62,6 +66,7 @@ gpg --auto-key-locate clear,wkd --locate-key kristian@kristiansagi.com
 
 ---
 
-## Other Contact Options
+## Other contact options
 
-Prefer a professional introduction or collaboration request? You're welcome to connect on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
+Prefer a professional introduction or collaboration request?
+You’re welcome to connect on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
