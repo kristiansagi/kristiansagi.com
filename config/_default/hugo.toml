@@ -46,8 +46,10 @@ subtitle = "Engineering & Technology Leadership — scaling people, product, and
 # Sub title, not in the original theme
 notice = "Open to Director / VP roles in Engineering & Product Leadership (EU & hybrid)."
 
+# casual
 # imageUrl = "kristian-sagi.webp"
 
+# suit
 imageUrl = "kristian-sagi-profile-suit1.webp"
 imageTitle = "Kristian Sägi"
 imageWidth = 240
