@@ -1,42 +1,41 @@
 ---
 title: "My Track Record"
-# subtitle: "I’ve built, scaled, and led—here’s the proof."
 slug: "work"
 weight: 20
 draft: false
 ---
 
-#### _I’ve built, scaled, and led—here’s the proof._
+#### _Selected experience building and scaling engineering organizations._
 
+---
 
-### Dynatrace Tallinn - Director of Engineering
-#### 2022 - 2025
-+ Built and led engineering organization in a global software company.
-+ Drove site strategy, talent growth, and technical alignment.
-+ Established culture of ownership and long-term scalability.
+### Dynatrace Tallinn — Director of Engineering  
+#### 2022 – 2025
 
-***
-
-### Nevercode - Co-Founder & CTO
-#### 2017 - 2022
-+ Created CI/CD developer platform used globally.
-+ Led product architecture and early-stage growth.
-+ Positioned Nevercode as one of Europe’s top devtool innovators.
++ Built and scaled a multi-team engineering organization within a global observability platform serving enterprise customers worldwide.  
++ Defined site strategy, established leadership structure, and aligned distributed teams with global product and architectural direction.  
++ Strengthened hiring, performance standards, and long-term technical scalability.
 
 ***
 
-### Playtech Mobile - CTO & Co-Founder
-#### 2005 - 2015
-+ Scaled division from 0 to $120M revenue.
-+ Built and led 100+ people engineering team.
-+ Delivered product strategy and execution across global markets.
+### Nevercode — Co-Founder & CTO  
+#### 2017 – 2022
+
++ Co-founded and architected a globally used CI/CD platform serving professional development teams.  
++ Led product direction, system architecture, and early-stage scaling in a competitive developer tooling market.  
++ Built engineering foundations that positioned Nevercode among Europe’s notable devtool companies.
+
+***
+
+### Playtech Mobile — CTO & Co-Founder  
+#### 2005 – 2015
+
++ Scaled a mobile division from inception to $120M in annual revenue across multiple international markets.  
++ Built and led a 100+ person engineering organization delivering high-availability, revenue-critical systems.  
++ Drove product strategy and execution at scale in a fast-growing global business environment.
 
 ***
 
 ## Let’s Build What’s Next
-Every company faces a moment where growth demands clarity —
-where technology, people, and vision must align to move forward.
 
-That’s where I bring the most value: turning complex challenges into scalable, human-centered systems that deliver results.
-
-If you’re looking for leadership that connects strategy with execution — [let’s talk](/contact) about how I can help your organization grow stronger.
+I work best at moments where growth requires structure — when technology, people, and long-term direction mu
