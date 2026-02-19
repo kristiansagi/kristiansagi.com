@@ -36,8 +36,16 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 site_key_dev = "1x00000000000000000000AA"
  
  # ---- Meta / SEO ----
-  description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
-  keywords = ["Kristian Sägi", "Technology Leader", "CTO", "Quiet Operator"]
+ description = "Engineering leader building world-class teams and resilient systems in global product organizations. Director and VP level technology leadership across Europe."
+ keywords = [
+  "Kristian Sägi",
+  "Kristian Sagi",
+  "Engineering Leadership",
+  "Director of Engineering",
+  "VP Engineering",
+  "Technology Leadership",
+  "Global Product Organizations"
+]
 
 [params.profileMode]
 enabled = true
