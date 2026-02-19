@@ -42,7 +42,7 @@ site_key_dev = "1x00000000000000000000AA"
 [params.profileMode]
 enabled = true
 subtitle = """
-<strong>Engineering Leadership at Scale</strong><br>
+<strong>Engineering Leadership at Scale.</strong><br>
 World-class teams. Resilient systems. Global impact.
 """
 
