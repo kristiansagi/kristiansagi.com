@@ -41,10 +41,15 @@ site_key_dev = "1x00000000000000000000AA"
 
 [params.profileMode]
 enabled = true
-subtitle = "Engineering Leadership at Scale, building world class teams, resilient systems, and products that matter. I lead high performing engineering organizations in global product companies, bringing clarity to complexity, aligning technology with strategy, and creating environments where strong engineers can do their best work."
+subtitle = """
+<strong>Engineering Leadership at Scale</strong><br>
+World-class teams. Resilient systems. Global impact.
+"""
+
+
 
 # Sub title, not in the original theme
-notice = "Currently exploring Director and VP opportunities in engineering leadership across Europe."
+notice = "Open to select Director and VP opportunities in global product organizations."
 
 # casual
 # imageUrl = "kristian-sagi.webp"
