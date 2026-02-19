@@ -38,4 +38,6 @@ draft: false
 
 ## Let’s Build What’s Next
 
-I work best at moments where growth requires structure — when technology, people, and long-term direction mu
+I work best at moments where growth requires structure — when technology, people, and long-term direction must align.
+
+If you are building a global product or platform organization and value engineering excellence, clarity, and disciplined execution, I would welcome the conversation.
