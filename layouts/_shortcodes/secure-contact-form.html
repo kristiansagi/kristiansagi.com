@@ -59,13 +59,8 @@
   const origin  = location.origin; // staging/prod safe
   const PUBKEY_URL = origin + '/kristian-sagi-pub.asc';
 
-  // Turnstile key per hostname
-  const SITEKEYS = {
-    "kristiansagi.com": "{{ site.Params.turnstile.site_key }}",
-    "www.kristiansagi.com": "{{ site.Params.turnstile.site_key }}",
-    "staging.kristiansagi.com": "{{ site.Params.turnstile.site_key_staging }}"
-  };
-  const SITEKEY = SITEKEYS[location.hostname] || "{{ site.Params.turnstile.site_key }}";
+  // One Turnstile widget covers prod, www and staging (add hostnames in the Cloudflare dashboard)
+  const SITEKEY = "{{ site.Params.turnstile.site_key }}";
 
   // API endpoint
   const WORKER_SEND_URL = 'https://send-encrypted.kristian-b24.workers.dev/api/send-encrypted';

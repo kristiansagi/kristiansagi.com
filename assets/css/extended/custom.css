@@ -7,6 +7,11 @@
     white-space:nowrap
 }
 
+/* PaperMod >= 2026 spaces menu items with column-gap; keep li margin off to avoid double spacing */
+.menu {
+    column-gap:0
+}
+
 .menu li+li {
     margin-inline-start:var(--gap)
 }
@@ -17,6 +22,7 @@
 
 .menu .active {
     font-weight:500;
+    text-decoration:none;
     border-bottom:2px solid
 }
 
@@ -48,7 +54,7 @@
      float:right;
      margin:auto var(--gap)
     }
-    .hidden {
+    .menu-collapsed {
         display:none
     }
 }
