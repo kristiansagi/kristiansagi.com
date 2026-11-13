@@ -3,3 +3,7 @@
 .DS_Store
 *.log
 .hugo_build.lock
+
+# Wrangler dry-run / build output
+workers/*/dryrun/
+.wrangler/
