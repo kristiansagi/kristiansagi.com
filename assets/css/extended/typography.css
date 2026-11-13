@@ -1,0 +1,297 @@
+/* ==========================================================================
+   TYPOGRAPHY & LOOK — Apple-style
+   Apple devices render SF Pro through -apple-system (no download).
+   Everyone else gets self-hosted Inter (static/fonts/inter/, SIL OFL 1.1).
+   Loaded last in layouts/_partials/extend_head.html so it wins.
+   ========================================================================== */
+
+/* ---- Self-hosted Inter: one variable file covers weights 100–900 ------- */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/inter/InterVariable-Italic.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---- Tokens ------------------------------------------------------------- */
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter",
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter",
+                  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --apple-bg: #f5f5f7;
+  --apple-text: #1d1d1f;
+  --apple-subtle: #6e6e73;
+  --apple-link: #0066cc;
+  --apple-blue: #0071e3;
+  --apple-blue-hover: #0077ed;
+  --apple-nav-bg: rgba(245, 245, 247, 0.8);
+  --apple-hairline: rgba(0, 0, 0, 0.08);
+
+  /* PaperMod variables */
+  --theme: var(--apple-bg);
+  --entry: #ffffff;
+  --primary: var(--apple-text);
+  --secondary: var(--apple-subtle);
+  --tertiary: #d2d2d7;
+  --content: var(--apple-text);
+  --border: #d2d2d7;
+}
+
+[data-theme="dark"],
+html.dark {
+  --apple-bg: #000000;
+  --apple-text: #f5f5f7;
+  --apple-subtle: #86868b;
+  --apple-link: #2997ff;
+  --apple-nav-bg: rgba(22, 22, 23, 0.8);
+  --apple-hairline: rgba(255, 255, 255, 0.12);
+
+  --theme: var(--apple-bg);
+  --entry: #1d1d1f;
+  --primary: var(--apple-text);
+  --secondary: var(--apple-subtle);
+  --tertiary: #424245;
+  --content: var(--apple-text);
+  --border: #424245;
+}
+
+/* ---- Base --------------------------------------------------------------- */
+body {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.022em;
+  color: var(--apple-text);
+  background: var(--apple-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--apple-text);
+  letter-spacing: -0.015em;
+}
+
+/* ---- Navigation: small, translucent, blurred ---------------------------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--apple-nav-bg);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--apple-hairline);
+}
+
+.nav,
+.header-nav {
+  line-height: 48px;
+}
+
+.logo a {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--apple-text);
+}
+
+.header ul li a,
+.menu a,
+#menu a {
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--apple-text);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+.header ul li a:hover,
+#menu a:hover { opacity: 1; }
+#menu .active { font-weight: 400; border-bottom: none; opacity: 1; }
+
+@media screen and (max-width: 768px) {
+  /* mobile dropdown menu: larger tap targets */
+  #menu a { font-size: 17px; opacity: 1; }
+  .menu { background: var(--entry); border: 1px solid var(--apple-hairline); border-radius: 14px; }
+}
+
+/* ---- Home hero (profile mode) ------------------------------------------- */
+.profile {
+  min-height: calc(100vh - 49px - 60px);
+  padding: 72px 0;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 32px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.profile .profile_inner h1 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 7vw, 64px);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 16px;
+}
+
+.profile .profile_inner > span:first-of-type {
+  display: block;
+  max-width: 640px;
+  font-family: var(--font-display);
+  font-size: clamp(19px, 2.4vw, 24px);
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0.009em;
+  color: var(--apple-text);
+}
+
+.profile .profile-notice {
+  font-size: 17px;
+  color: var(--apple-subtle);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.social-icons { margin-top: 24px; }
+.social-icons a { color: var(--apple-subtle); transition: color 0.2s ease; }
+.social-icons a:hover { color: var(--apple-text); }
+
+/* ---- Buttons: blue pill + text link with chevron ------------------------ */
+.buttons {
+  margin-top: 32px;
+  gap: 28px;
+  align-items: center;
+}
+
+.buttons .button {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  border-radius: 980px;
+  background: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.buttons .button .button-inner { padding: 0; }
+
+.buttons .button:first-child {
+  background: var(--apple-blue);
+  color: #ffffff;
+  padding: 11px 22px;
+}
+.buttons .button:first-child:hover { background: var(--apple-blue-hover); }
+
+.buttons .button:not(:first-child) {
+  color: var(--apple-link);
+  padding: 11px 0;
+}
+.buttons .button:not(:first-child) .button-inner::after { content: "\00a0›"; }
+.buttons .button:not(:first-child):hover { text-decoration: underline; }
+
+/* ---- Articles: width and rhythm (kept from the previous lexend.css) ---- */
+.post-single .post-content {
+  max-width: 70ch;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  font-size: 19px;
+  line-height: 1.58;
+  letter-spacing: -0.012em;
+}
+
+.post-single .post-content p { margin: 0 0 1.3em; }
+
+.page-header h1,
+.post-title {
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.post-single .post-content h1 {
+  font-size: clamp(30px, 4vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 2.2em 0 0.5em;
+}
+.post-single .post-content h2 {
+  font-size: clamp(26px, 3.2vw, 32px);
+  line-height: 1.125;
+  letter-spacing: -0.02em;
+  margin: 2em 0 0.5em;
+}
+.post-single .post-content h3 {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 1.7em 0 0.45em;
+}
+
+.post-single .post-content a {
+  color: var(--apple-link);
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+.post-single .post-content a:hover { text-decoration: underline; }
+
+.post-single figure { margin: 2em 0; text-align: center; }
+.post-single figure figcaption {
+  font-size: 14px;
+  color: var(--apple-subtle);
+  margin-top: 0.5em;
+}
+
+.post-meta,
+.entry-footer { color: var(--apple-subtle); font-size: 14px; letter-spacing: -0.016em; }
+
+/* ---- List pages & cards -------------------------------------------------- */
+.post-entry,
+.first-entry,
+.home-info {
+  border: none;
+  border-radius: 18px;
+  background: var(--entry);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post-entry:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* ---- Footer -------------------------------------------------------------- */
+.footer {
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  color: var(--apple-subtle);
+  border-top: 1px solid var(--apple-hairline);
+}
+.footer a { color: var(--apple-subtle); border-bottom: none; }
+.footer a:hover { color: var(--apple-text); text-decoration: underline; }
+
+/* ---- Small screens ------------------------------------------------------- */
+@media (max-width: 768px) {
+  .profile { padding: 48px 0; min-height: auto; }
+  .profile img { width: 160px; height: 160px; }
+  .buttons { flex-direction: column; gap: 12px; }
+  .post-single .post-content { font-size: 17px; }
+}
