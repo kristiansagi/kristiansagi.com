@@ -13,6 +13,8 @@ draft: false
 #### 2026 – Present
 
 + Leading Entringo, a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software and purpose-built hardware.
++ Moving **Tallinn Airport** to fully ticketless, number-plate-based parking, with every parking product — taxi lanes, rideshare, short and long term, VIP and tenant access — unified on one Entringo platform, delivered with Hansab Eesti.
++ Serving customers across the Baltics, including frictionless paid parking for Business Garden Vilnius.
 
 ***
 
@@ -40,6 +42,13 @@ draft: false
 + Built and scaled the mobile division from inception to $120M in annual revenue across multiple regulated international markets.
 + Built and led an organization of 100+ engineers and product managers delivering high-availability, revenue-critical systems for 100+ clients.
 + Introduced an agile delivery model that moved release cycles from quarterly to monthly.
+
+***
+
+### Assert / Fujitsu Estonia — Software Engineer → Product Manager, Persona
+#### 1996 – 2003
+
++ Part of the original team that built the first version of **Persona**, the HR and payroll software still in daily use three decades later; later led the team responsible for Persona V2.
 
 ***
 
