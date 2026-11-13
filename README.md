@@ -28,7 +28,7 @@ The site is focused on:
   - Simple content-first structure: `content/`, `layouts/`, `assets/`, `static/`
 
 - **Custom typography**
-  - Self-hosted **Lexend** (primary) and **Inter** (supporting) fonts
+  - Apple-style system font stack: **SF Pro** on Apple devices, self-hosted **Inter** (variable, `static/fonts/inter/`) everywhere else
   - Tuned line heights and font sizes for long-form reading
   - Consistent typography between the website and exported PDFs (e.g. résumé)
 
