@@ -120,10 +120,6 @@ url = "https://x.com/kristiansagi"
     name = "Media"
     url = "/media/"
     weight = 45
-  [[menu.main]]
-    name = "Résumé"
-    url = "/kristian-sagi-resume.pdf"
-    weight = 50
     
     
 

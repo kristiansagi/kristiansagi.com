@@ -14,6 +14,6 @@ Alongside this role, I advise technology companies on scaling engineering organi
 
 I am open to **non-executive board and advisory roles** with technology and product companies where engineering excellence, resilience and long-term thinking matter.
 
-I am based in Tallinn, Estonia, and open to relocation for the right opportunity.
+I am based in Tallinn, Estonia.
 
 [Start a conversation →](/contact/)
