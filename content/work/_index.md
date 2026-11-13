@@ -17,7 +17,7 @@ draft: false
 ***
 
 ### Dynatrace Tallinn — Director of Engineering & Site Lead
-#### May 2022 – January 2025
+#### 2022 – 2025
 
 + Built and scaled the Tallinn engineering hub of a global observability platform, tripling headcount and establishing culture, processes and a new office from the ground up.
 + Directed delivery of high-performance monitoring products, aligning teams across multiple countries with global product and architectural direction.
