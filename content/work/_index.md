@@ -5,34 +5,41 @@ weight: 20
 draft: false
 ---
 
-#### _Selected experience building and scaling engineering organizations._
+#### _Selected experience building and scaling technology companies and engineering organizations._
 
 ---
 
-### Dynatrace Tallinn — Director of Engineering  
-#### 2022 – 2025
+### Entringo — Chief Executive Officer
+#### Present
 
-+ Built and scaled a multi-team engineering organization within a global observability platform serving enterprise customers worldwide.  
-+ Defined site strategy, established leadership structure, and aligned distributed teams with global product and architectural direction.  
-+ Strengthened hiring, performance standards, and long-term technical scalability.
++ Leading Entringo, a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software and purpose-built hardware.
 
 ***
 
-### Nevercode — Co-Founder & CTO  
-#### 2017 – 2022
+### Dynatrace Tallinn — Director of Engineering & Site Lead
+#### May 2022 – January 2025
 
-+ Co-founded and architected a globally used CI/CD platform serving professional development teams.  
-+ Led product direction, system architecture, and early-stage scaling in a competitive developer tooling market.  
-+ Built engineering foundations that positioned Nevercode among Europe’s notable devtool companies.
++ Built and scaled the Tallinn engineering hub of a global observability platform, tripling headcount and establishing culture, processes and a new office from the ground up.
++ Directed delivery of high-performance monitoring products, aligning teams across multiple countries with global product and architectural direction.
++ Partnered with global leadership on portfolio strategy, hiring standards and long-term scaling plans.
 
 ***
 
-### Playtech Mobile — CTO & Co-Founder  
+### Nevercode / Codemagic — Co-Founder & Head of Product Strategy
+#### 2017 – 2019 · Advisory Board Member 2019 – 2022
+
++ Co-founded and scaled Codemagic, a CI/CD platform for mobile developers now used globally, recognized in the Google Flutter ecosystem.
++ Defined and executed product strategy and led engineering and product teams through early-stage growth and funding.
++ As advisory board member, advised leadership on scaling, product strategy, market positioning and investor relations.
+
+***
+
+### Playtech Mobile (Playtech plc) — Co-Founder & CTO, Mobile Division
 #### 2005 – 2015
 
-+ Scaled a mobile division from inception to $120M in annual revenue across multiple international markets.  
-+ Built and led a 100+ person engineering organization delivering high-availability, revenue-critical systems.  
-+ Drove product strategy and execution at scale in a fast-growing global business environment.
++ Built and scaled the mobile division from inception to $120M in annual revenue across multiple regulated international markets.
++ Built and led an organization of 100+ engineers and product managers delivering high-availability, revenue-critical systems for 100+ clients.
++ Introduced an agile delivery model that moved release cycles from quarterly to monthly.
 
 ***
 

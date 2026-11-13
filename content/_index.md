@@ -1,6 +1,6 @@
 ---
 title: "Kristian Sägi — Engineering & Technology Leadership"
-description: "Scaling people, product, and purpose. Open to Director / VP roles (EU, hybrid)."
+description: "Technology and engineering leader. CEO of Entringo. Builder of Playtech Mobile, Codemagic and Dynatrace Tallinn. Based in Tallinn, open to relocation."
 images:
   - "https://kristiansagi.com/og/home-1200x630.jpg"  # use JPG for OG previews
 
