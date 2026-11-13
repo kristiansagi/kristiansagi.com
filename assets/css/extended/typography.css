@@ -28,18 +28,25 @@
   --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter",
                   "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  --apple-bg: #f5f5f7;
+  /* apple.com: white page, light-grey (#f5f5f7) tiles and footer band */
+  --apple-bg: #ffffff;
+  --apple-surface: #f5f5f7;
   --apple-text: #1d1d1f;
   --apple-subtle: #6e6e73;
   --apple-link: #0066cc;
   --apple-blue: #0071e3;
   --apple-blue-hover: #0077ed;
-  --apple-nav-bg: rgba(245, 245, 247, 0.8);
-  --apple-hairline: rgba(0, 0, 0, 0.08);
+  --apple-nav-bg: rgba(255, 255, 255, 0.8);
+  --apple-nav-link: rgba(0, 0, 0, 0.8);
+  --apple-footer-text: rgba(0, 0, 0, 0.56);
+  --apple-footer-link: rgba(0, 0, 0, 0.8);
+  --apple-hairline: #d2d2d7;
 
   /* PaperMod variables */
+  --header-height: 44px;
   --theme: var(--apple-bg);
-  --entry: #ffffff;
+  --entry: var(--apple-surface);
+  --code-bg: var(--apple-surface);
   --primary: var(--apple-text);
   --secondary: var(--apple-subtle);
   --tertiary: #d2d2d7;
@@ -50,14 +57,19 @@
 /* :root[...] matches PaperMod's selector strength, so these win by load order */
 :root[data-theme="dark"] {
   --apple-bg: #000000;
+  --apple-surface: #161617;
   --apple-text: #f5f5f7;
   --apple-subtle: #86868b;
   --apple-link: #2997ff;
   --apple-nav-bg: rgba(22, 22, 23, 0.8);
-  --apple-hairline: rgba(255, 255, 255, 0.12);
+  --apple-nav-link: rgba(255, 255, 255, 0.8);
+  --apple-footer-text: rgba(255, 255, 255, 0.56);
+  --apple-footer-link: rgba(255, 255, 255, 0.8);
+  --apple-hairline: #424245;
 
   --theme: var(--apple-bg);
   --entry: #1d1d1f;
+  --code-bg: #1d1d1f;
   --primary: var(--apple-text);
   --secondary: var(--apple-subtle);
   --tertiary: #424245;
@@ -100,40 +112,68 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--apple-nav-bg);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--apple-hairline);
+  border-bottom: none;
 }
 
+/* apple.com global nav: 44px tall, 12px links at 80% opacity */
 .nav,
 .header-nav {
-  line-height: 48px;
+  line-height: 44px;
 }
 
 .logo a {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--apple-text);
 }
 
 .header ul li a,
-.menu a,
-#menu a {
-  font-size: 13px;
+.menu a {
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: var(--apple-text);
-  opacity: 0.8;
-  transition: opacity 0.2s ease;
+  color: var(--apple-nav-link);
+  transition: color 0.2s ease;
 }
 .header ul li a:hover,
-#menu a:hover { opacity: 1; }
-#menu .active { font-weight: 400; border-bottom: none; opacity: 1; }
+.menu a:hover,
+.menu a:has(.active) { color: var(--apple-text); }
+.menu .active { font-weight: 400; border-bottom: none; }
+.logo-switches .theme-toggle { color: var(--apple-nav-link); }
 
+/* Phones: full-screen menu with large links, like apple.com on iPhone */
 @media screen and (max-width: 768px) {
-  /* mobile dropdown menu: larger tap targets */
-  #menu a { font-size: 17px; opacity: 1; }
-  .menu { background: var(--entry); border: 1px solid var(--apple-hairline); border-radius: 14px; }
+  .header .menu:not(.menu-collapsed) {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - var(--header-height));
+    height: calc(100dvh - var(--header-height));
+    max-height: none;
+    margin: 0;
+    padding: 16px 32px 40px;
+    background: var(--apple-bg);
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    line-height: 1.2;
+  }
+  .header .menu li + li { margin: 0; }
+  .header ul.menu li a {
+    display: block;
+    padding: 10px 0;
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    color: var(--apple-text);
+  }
+  .header ul.menu li a:has(.active) { color: var(--apple-subtle); }
+  #menu-trigger { color: var(--apple-nav-link); font-size: 24px; }
 }
 
 /* ---- Home hero (profile mode) ------------------------------------------- */
@@ -201,10 +241,10 @@ body:has(.main .profile) .main {
 .social-icons a { color: var(--apple-subtle); transition: color 0.2s ease; }
 .social-icons a:hover { color: var(--apple-text); }
 
-/* ---- Buttons: blue pill + text link with chevron ------------------------ */
+/* ---- Buttons: apple.com pair — filled blue pill + outlined blue pill ---- */
 .buttons {
   margin-top: clamp(16px, 3svh, 32px);
-  gap: 28px;
+  gap: 14px;
   align-items: center;
 }
 
@@ -220,19 +260,23 @@ body:has(.main .profile) .main {
 
 .buttons .button .button-inner { padding: 0; }
 
+.buttons .button {
+  margin: 0;
+  padding: 11px 21px;
+  border: 1px solid var(--apple-blue);
+}
+
 .buttons .button:first-child {
   background: var(--apple-blue);
   color: #ffffff;
-  padding: 11px 22px;
 }
-.buttons .button:first-child:hover { background: var(--apple-blue-hover); }
+.buttons .button:first-child:hover { background: var(--apple-blue-hover); border-color: var(--apple-blue-hover); }
 
 .buttons .button:not(:first-child) {
   color: var(--apple-link);
-  padding: 11px 0;
+  border-color: var(--apple-link);
 }
-.buttons .button:not(:first-child) .button-inner::after { content: "\00a0›"; }
-.buttons .button:not(:first-child):hover { text-decoration: underline; }
+.buttons .button:not(:first-child):hover { background: var(--apple-link); color: #ffffff; }
 
 /* ---- Articles: width and rhythm (kept from the previous lexend.css) ---- */
 .post-single .post-content {
@@ -272,13 +316,164 @@ body:has(.main .profile) .main {
   margin: 1.7em 0 0.45em;
 }
 
+/* ---- Content on every page (Story, Now, Work, Media, Contact, posts) ---- */
+.page-header { margin-bottom: 24px; }
+.page-header .post-description,
+.post-description {
+  margin-top: 12px;
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 1.38;
+  letter-spacing: 0.011em;
+  color: var(--apple-subtle);
+}
+
+.post-content a:not(.anchor),
 .post-single .post-content a {
   color: var(--apple-link);
   text-decoration: none;
   border-bottom: none;
   box-shadow: none;
 }
-.post-single .post-content a:hover { text-decoration: underline; }
+.post-content a:not(.anchor):hover { text-decoration: underline; }
+
+.post-content h2 { margin-top: 1.6em; }
+.post-content h3 { margin-top: 1.4em; margin-bottom: 0.25em; }
+
+/* Intro line written as "#### _text_" at the top of a page → Apple intro copy */
+.post-content > h4:first-child {
+  margin: 0 0 8px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: 0.011em;
+  color: var(--apple-subtle);
+}
+.post-content > h4:first-child em { font-style: normal; }
+
+/* Dates written as "#### 2026 – Present" under a role → small grey eyebrow */
+.post-content h3 + h4 {
+  margin: 0 0 10px;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: var(--apple-subtle);
+}
+
+.post-content hr {
+  height: 1px;
+  margin: 40px 0;
+  background: var(--apple-hairline);
+  border: none;
+}
+
+.post-content ul,
+.post-content ol { padding-inline-start: 1.2em; }
+.post-content li { margin: 0.35em 0; }
+.post-content li::marker { color: var(--apple-subtle); }
+
+.post-content blockquote {
+  margin: 1.5em 0;
+  padding: 0 0 0 20px;
+  border-inline-start: 3px solid var(--apple-hairline);
+  font-size: 21px;
+  line-height: 1.38;
+  color: var(--apple-subtle);
+}
+
+/* Photos and embedded videos: rounded like apple.com tiles */
+.post-content img,
+.post-content iframe,
+.post-content video,
+.post-single .entry-cover img {
+  border-radius: 18px;
+}
+.post-content iframe { display: block; border: 0; }
+
+/* Tables (e.g. PGP key on Contact): hairline rows, no grid */
+.post-content table:not(.highlighttable):not(.lntable) {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+.post-content table:not(.highlighttable):not(.lntable) th,
+.post-content table:not(.highlighttable):not(.lntable) td {
+  padding: 12px 16px 12px 0;
+  border: none;
+  border-bottom: 1px solid var(--apple-hairline);
+  text-align: start;
+  vertical-align: top;
+}
+.post-content table tr:first-child th,
+.post-content table tr:first-child td { border-top: 1px solid var(--apple-hairline); }
+.post-content table td:first-child,
+.post-content table th:first-child { color: var(--apple-subtle); white-space: nowrap; }
+
+/* Expandable sections: blue text with a chevron, like apple.com "Show more" */
+.post-content details { margin: 0.5em 0; }
+.post-content details > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--apple-link);
+  cursor: pointer;
+  list-style: none;
+}
+.post-content details > summary::-webkit-details-marker { display: none; }
+.post-content details > summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-top: -3px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.post-content details[open] > summary::after { transform: rotate(-135deg); margin-top: 3px; }
+.post-content details > summary:hover { text-decoration: underline; }
+
+/* Code: quiet grey panels instead of the dark Monokai theme */
+.post-content pre,
+.post-content .highlight pre,
+.post-content pre code {
+  background: var(--code-bg) !important;
+  color: var(--apple-text) !important;
+}
+.post-content pre span { color: inherit !important; }
+.post-content pre { border-radius: 12px; padding: 16px 20px; font-size: 13px; line-height: 1.5; }
+.post-content .highlight { border-radius: 12px; overflow: hidden; }
+.post-content :not(pre) > code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: var(--code-bg);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.copy-code { border-radius: 980px; background: var(--apple-bg); color: var(--apple-text); font-size: 12px; }
+
+/* Table of contents & tags */
+.toc {
+  border: none;
+  border-radius: 18px;
+  background: var(--entry);
+  padding: 4px 20px;
+}
+.toc summary { font-weight: 500; }
+.toc .inner a { color: var(--apple-link); }
+
+.post-tags a {
+  border: none;
+  border-radius: 980px;
+  background: var(--entry);
+  color: var(--apple-text);
+  font-size: 12px;
+  padding: 6px 14px;
+  height: auto;
+  line-height: 1.4;
+}
+.post-tags a:hover { background: var(--apple-hairline); }
 
 .post-single figure { margin: 2em 0; text-align: center; }
 .post-single figure figcaption {
@@ -291,29 +486,45 @@ body:has(.main .profile) .main {
 .entry-footer { color: var(--apple-subtle); font-size: 14px; letter-spacing: -0.016em; }
 
 /* ---- List pages & cards -------------------------------------------------- */
+/* apple.com tiles: flat light-grey cards on white, gentle grow on hover */
 .post-entry,
 .first-entry,
 .home-info {
   border: none;
   border-radius: 18px;
   background: var(--entry);
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+  transition: transform 0.3s cubic-bezier(0, 0, 0.5, 1), box-shadow 0.3s ease;
 }
 .post-entry:hover {
   transform: scale(1.01);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
 }
+.post-entry:active { transform: scale(0.995); }
+.entry-header h2 {
+  font-size: 21px;
+  line-height: 1.19;
+  letter-spacing: 0.011em;
+}
+.entry-content { font-size: 15px; line-height: 1.45; color: var(--apple-subtle); }
+.entry-footer { font-size: 12px; }
 
 /* ---- Footer -------------------------------------------------------------- */
+/* apple.com footer: full-width light-grey band, 12px text at 56% opacity */
 .footer {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 17px max(22px, calc((100% - 980px) / 2));
   font-size: 12px;
+  line-height: 1.33;
   letter-spacing: -0.01em;
-  color: var(--apple-subtle);
-  border-top: 1px solid var(--apple-hairline);
+  color: var(--apple-footer-text);
+  background: var(--apple-surface);
+  border-top: none;
 }
-.footer a { color: var(--apple-subtle); border-bottom: none; }
-.footer a:hover { color: var(--apple-text); text-decoration: underline; }
+.footer a { color: var(--apple-footer-link); text-decoration: none; border-bottom: none; }
+.footer a:hover { text-decoration: underline; }
 
 /* ---- Small screens ------------------------------------------------------- */
 @media (max-width: 768px) {
