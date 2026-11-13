@@ -12,24 +12,30 @@
          data-subject="{{ $subject }}">
   <header class="pm-card__header">
     <h3 class="pm-card__title">{{ $title }}</h3>
+    <p class="pm-card__subtitle">
+      <svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true" fill="currentColor"><path d="M6 0a3.5 3.5 0 0 0-3.5 3.5V6H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-.5V3.5A3.5 3.5 0 0 0 6 0Zm2 6H4V3.5a2 2 0 1 1 4 0V6Z"/></svg>
+      OpenPGP encrypted · Protected by Cloudflare Turnstile
+    </p>
   </header>
 
   <div class="pm-card__body">
     <div class="pm-field">
-      <label for="{{ $id }}-from" class="pm-label">Your Name &amp; Contact Details</label>
+      <label for="{{ $id }}-from" class="pm-label">Name and contact details</label>
       <input id="{{ $id }}-from" type="text" class="pm-input"
-             placeholder="Alex Example · alex@example.com" autocomplete="off" spellcheck="false" />
-      <p class="pm-help">Please include at least one way to reach you.</p>
+             placeholder="Alex Example · alex@example.com" autocomplete="off" spellcheck="false"
+             aria-describedby="{{ $id }}-from-help" />
+      <p id="{{ $id }}-from-help" class="pm-help">Include at least one way to reach you.</p>
     </div>
 
     <div class="pm-field">
       <label for="{{ $id }}-msg" class="pm-label">Message</label>
-      <textarea id="{{ $id }}-msg" class="pm-textarea" rows="7"
+      <textarea id="{{ $id }}-msg" class="pm-textarea" rows="6"
                 placeholder="Write your message…"></textarea>
     </div>
   </div>
 
   <footer class="pm-card__footer">
+    <p class="pm-status" role="status" aria-live="polite"></p>
     <button type="button" class="pm-btn pm-btn--primary">Send</button>
   </footer>
 
@@ -71,6 +77,22 @@
   const msgEl  = root.querySelector('#' + id + '-msg');
   const btn    = root.querySelector('.pm-btn');
   const cfDiv  = document.getElementById(id + '-cf');
+  const statusEl = root.querySelector('.pm-status');
+
+  // Inline status line (replaces browser alert() pop-ups)
+  function setStatus(text, kind){
+    statusEl.textContent = text || '';
+    statusEl.className = 'pm-status' + (kind ? ' pm-status--' + kind : '');
+  }
+  function markInvalid(el, bad){
+    if (bad) el.setAttribute('aria-invalid', 'true'); else el.removeAttribute('aria-invalid');
+  }
+  [fromEl, msgEl].forEach(el => el && el.addEventListener('input', () => {
+    markInvalid(el, false);
+    btn.classList.remove('pm-btn--sent');
+    if (btn.textContent !== 'Send' && !submitting) btn.textContent = 'Send';
+    if (statusEl.classList.contains('pm-status--error')) setStatus('');
+  }));
 
   window.addEventListener("pageshow", (event) => {
     if (event.persisted || performance.getEntriesByType("navigation")[0].type === "reload") {
@@ -129,7 +151,7 @@
       submitting = false; pendingCipher = null;
       btn.disabled = false; btn.textContent = 'Send';
       if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
-      alert('Verification error. Please try again.');
+      setStatus('Verification failed. Please try again.', 'error');
       return;
     }
 
@@ -154,9 +176,10 @@
       clearForm();
       btn.classList.add('pm-btn--sent');
       btn.textContent = 'Sent ✓';
+      setStatus('Message sent. Thank you, I will get back to you soon.', 'success');
     } catch (err) {
       btn.textContent = 'Send';
-      alert(err.message || String(err));
+      setStatus(err.message || String(err), 'error');
     } finally {
       submitting = false;
       pendingCipher = null;
@@ -171,7 +194,7 @@
     submitting = false; pendingCipher = null;
     if (window.turnstile && cfDiv) turnstile.reset(cfDiv);
     btn.disabled = false; btn.textContent = 'Send';
-    alert('Verification error. Please try again.');
+    setStatus('Verification failed. Please try again.', 'error');
   };
 
   window[id + '_cf_expired'] = () => {
@@ -191,7 +214,14 @@
     e.preventDefault();
     const from = (fromEl.value || '').trim();
     const body = (msgEl.value || '').trim();
-    if (!from || !body) { alert('Please fill both fields.'); return; }
+    markInvalid(fromEl, !from);
+    markInvalid(msgEl, !body);
+    if (!from || !body) {
+      setStatus(!from ? 'Add your name and a way to reach you.' : 'Write a message first.', 'error');
+      (!from ? fromEl : msgEl).focus();
+      return;
+    }
+    setStatus('');
 
     try {
       submitting = true;
@@ -217,7 +247,7 @@
     } catch (err) {
       submitting = false; pendingCipher = null;
       btn.disabled = false; btn.textContent = 'Send';
-      alert(err.message || String(err));
+      setStatus(err.message || String(err), 'error');
     }
   });
 

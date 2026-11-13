@@ -1,174 +1,178 @@
-/* --- Secure form: light, flat, PaperMod-native -------------------------- */
+/* ==========================================================================
+   Secure contact form — Apple-style
+   Uses the site tokens from assets/css/extended/typography.css
+   (--apple-*, --entry, --border) and follows the site's own theme toggle
+   ([data-theme="dark"]) instead of the OS setting.
+   ========================================================================== */
 
-/* Card */
 .pm-card {
-  max-width: 760px;
-  margin: 1.25rem auto;
+  --pm-field-bg: #ffffff;
+  --pm-field-border: #d2d2d7;
+  --pm-field-hover: #86868b;
+  --pm-focus-ring: rgba(0, 113, 227, 0.28);
+  --pm-error: #e30000;
+  --pm-success: #248a3d;
+
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 32px;
   background: var(--entry);
-  color: var(--content);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,.04);
+  color: var(--apple-text, var(--content));
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04), 0 12px 40px rgba(0, 0, 0, 0.06);
+  font-family: var(--font-family);
 }
 
-/* Header */
-.pm-card__header {
-  padding: .4rem 1.2rem .2rem;
-}
-.pm-card__title {
-  margin: .3rem 0 .2rem;
-  font-size: 1.55rem;
-  font-weight: 700;
-  line-height: 1.25;
-  color: var(--content);
+:root[data-theme="dark"] .pm-card {
+  --pm-field-bg: rgba(255, 255, 255, 0.04);
+  --pm-field-border: #424245;
+  --pm-field-hover: #6e6e73;
+  --pm-focus-ring: rgba(41, 151, 255, 0.35);
+  --pm-error: #ff453a;
+  --pm-success: #30d158;
+  box-shadow: none;
 }
 
-/* Body / footer */
-.pm-card__body   { padding: .6rem 1.2rem .4rem; }
-.pm-card__footer { padding: .6rem 1.2rem 1rem; display:flex; justify-content:flex-end; }
+/* ---- Header -------------------------------------------------------------- */
+.pm-card__header { padding: 0 0 4px; }
 
-/* Fields */
-.pm-field { margin: .9rem 0; }
+.pm-card .pm-card__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--apple-text, var(--content));
+}
+
+.pm-card__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+  font-size: 14px;
+  letter-spacing: -0.016em;
+  color: var(--apple-subtle, var(--secondary));
+}
+.pm-card__subtitle svg { flex: none; }
+
+/* ---- Fields -------------------------------------------------------------- */
+.pm-card__body { padding: 16px 0 0; }
+
+.pm-field { margin: 0 0 20px; }
+
 .pm-label {
-  display:block;
-  margin: 0 0 .45rem;
-  font-size: .95rem;
-  font-weight: 600;
-  color: color-mix(in oklab, var(--content) 82%, transparent);
+  display: block;
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.016em;
+  color: var(--apple-text, var(--content));
 }
+
 .pm-help {
-  margin:.4rem 0 0;
-  font-size:.86rem;
-  color: color-mix(in oklab, var(--content) 58%, transparent);
+  margin: 8px 0 0;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+  color: var(--apple-subtle, var(--secondary));
 }
 
-/* Inputs */
-.pm-input, .pm-textarea {
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  background: var(--theme);
-  color: var(--content);
-  padding: .7rem .85rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
-}
+.pm-input,
 .pm-textarea {
-  min-height: 2.2rem;       /* smaller initial height */
-  height: 4rem;
-  resize: vertical;         /* user can still expand */ 
-}
-
-.pm-input::placeholder, .pm-textarea::placeholder {
-  color: color-mix(in oklab, var(--content) 55%, transparent);
-}
-
-/* Focus */
-.pm-input:focus, .pm-textarea:focus {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 14px 16px;
+  font: inherit;
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: -0.022em;
+  color: var(--apple-text, var(--content));
+  background: var(--pm-field-bg);
+  border: 1px solid var(--pm-field-border);
+  border-radius: 12px;
   outline: none;
-  background: var(--entry);
-  border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
-  box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary) 18%, transparent);
+  -webkit-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/*.pm-textarea::placeholder {
-  opacity: 1;
-  transition: opacity 0.2s ease;
-}*/
-
-/* When focused, fade placeholder away */
-.pm-input:focus::placeholder, .pm-textarea:focus::placeholder {
-  opacity: 0;
+.pm-textarea {
+  min-height: 140px;
+  resize: vertical;
 }
 
-/* Button */
+.pm-input::placeholder,
+.pm-textarea::placeholder {
+  color: var(--apple-subtle, var(--secondary));
+  opacity: 0.8;
+}
+
+.pm-input:hover,
+.pm-textarea:hover { border-color: var(--pm-field-hover); }
+
+.pm-input:focus,
+.pm-textarea:focus {
+  border-color: var(--apple-blue, #0071e3);
+  box-shadow: 0 0 0 4px var(--pm-focus-ring);
+}
+
+.pm-input[aria-invalid="true"],
+.pm-textarea[aria-invalid="true"] {
+  border-color: var(--pm-error);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--pm-error) 18%, transparent);
+}
+
+/* ---- Footer: status + button -------------------------------------------- */
+.pm-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0 0;
+}
+
+.pm-status {
+  flex: 1;
+  margin: 0;
+  min-height: 1.4em;
+  font-size: 14px;
+  letter-spacing: -0.016em;
+  color: var(--apple-subtle, var(--secondary));
+}
+.pm-status--error { color: var(--pm-error); }
+.pm-status--success { color: var(--pm-success); }
+
 .pm-btn {
-  border: 1px solid var(--border);
-  background: var(--entry);
-  color: var(--content);
-  border-radius: 10px;
-  padding: .55rem .95rem;
-  font-weight: 600;
-  font-size: .98rem;
+  flex: none;
+  min-width: 120px;
+  padding: 12px 28px;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #ffffff;
+  background: var(--apple-blue, #0071e3);
+  border: none;
+  border-radius: 980px;
   cursor: pointer;
-  transition: background .15s ease, border-color .15s ease, filter .12s ease;
+  transition: background 0.2s ease, opacity 0.2s ease, transform 0.1s ease;
 }
-.pm-btn:hover { background: color-mix(in oklab, var(--entry) 85%, var(--theme)); }
-.pm-btn:active { filter: brightness(.98); }
+.pm-btn:hover { background: var(--apple-blue-hover, #0077ed); }
+.pm-btn:active { transform: scale(0.98); }
+.pm-btn:focus-visible { outline: none; box-shadow: 0 0 0 4px var(--pm-focus-ring); }
+.pm-btn:disabled { opacity: 0.6; cursor: default; transform: none; }
 
-.pm-btn--primary {
-  border-color: color-mix(in oklab, var(--primary) 45%, var(--border));
-  box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary) 14%, transparent);
+.pm-btn--sent,
+.pm-btn--sent:hover { background: var(--pm-success); }
+
+/* ---- Phones -------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .pm-card { padding: 24px 20px; margin: 1.5rem 0; border-radius: 16px; }
+  .pm-card .pm-card__title { font-size: 24px; }
+  .pm-card__footer { flex-direction: column-reverse; align-items: stretch; gap: 12px; }
+  .pm-btn { width: 100%; }
+  .pm-status { text-align: center; }
 }
-.pm-btn--sent {
-  border-color: color-mix(in oklab, var(--primary) 60%, var(--border));
-  background: color-mix(in oklab, var(--entry) 88%, var(--primary));
-}
-.pm-btn:disabled { opacity:.7; cursor:not-allowed; box-shadow:none; }
-
-/* --- Dark mode --------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
-  .pm-card {
-    background: var(--entry);
-    border-color: var(--border);
-    box-shadow: 0 4px 18px rgba(0,0,0,.25);
-  }
-
-  .pm-label { color: color-mix(in oklab, var(--content) 88%, transparent); }
-  .pm-help  { color: color-mix(in oklab, var(--content) 62%, transparent); }
-
-  /* Make field edges clearly visible */
-  .pm-input, .pm-textarea {
-    background: color-mix(in oklab, var(--entry) 90%, #0b0d10);
-    border-color: color-mix(in oklab, var(--content) 22%, var(--border));
-    color: var(--content);
-  }
-
-  .pm-input:hover, .pm-textarea:hover {
-    border-color: color-mix(in oklab, var(--primary) 28%, var(--border));
-  }
-
-  .pm-input:focus, .pm-textarea:focus {
-    background: color-mix(in oklab, var(--entry) 94%, #0b0d10);
-    border-color: color-mix(in oklab, var(--primary) 55%, var(--border));
-    box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary) 26%, transparent);
-  }
-
-  .pm-textarea {
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.03);
-  }
-
-  .pm-btn {
-    background: color-mix(in oklab, var(--entry) 94%, transparent);
-    color: var(--content);
-    border-color: var(--border);
-  }
-
-  .pm-btn--primary {
-    border-color: color-mix(in oklab, var(--primary) 45%, var(--border));
-    box-shadow: 0 0 0 2px color-mix(in oklab, var(--primary) 16%, transparent);
-  }
-
-  .pm-btn--sent {
-    background: color-mix(in oklab, var(--entry) 86%, var(--primary));
-  }
-}
-
-/* --- Fallback for browsers without color-mix support ------------------- */
-@supports not (color: color-mix(in oklab, white 50%, black)) {
-  @media (prefers-color-scheme: dark) {
-    .pm-input, .pm-textarea {
-      background: #1b1f24;
-      border-color: #3a3f46;
-    }
-    .pm-input:hover, .pm-textarea:hover { border-color: #5c6670; }
-    .pm-input:focus, .pm-textarea:focus {
-      border-color: #7aa2ff;
-      box-shadow: 0 0 0 2px rgba(122,162,255,.25);
-    }
-  }
-}
-
-/* Remove extra top gap */
-.pm-secure .pm-card__header { padding-top: .3rem; }
