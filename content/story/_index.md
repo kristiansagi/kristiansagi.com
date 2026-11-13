@@ -9,7 +9,7 @@ draft: false
 
 I am a technology and engineering leader who builds and scales high-performing organizations in global product companies. Today I serve as CEO of **Entringo**, a provider of integrated vehicle flow systems.
 
-Over the past two decades, I have founded companies, led large engineering teams, and operated within complex international environments. I scaled **Playtech Mobile** from inception to **$120M in annual revenue**, co-founded **Nevercode**, the company behind the globally used mobile CI/CD platform **Codemagic**, and built **Dynatrace Tallinn** into a high-impact engineering hub within a global observability organization.
+I started as a software engineer — as part of the original team behind **Persona**, an HR and payroll system still in daily use three decades later. Since then, I have founded companies, led large engineering teams, and operated within complex international environments. I scaled **Playtech Mobile** from inception to **$120M in annual revenue**, co-founded **Nevercode**, the company behind the globally used mobile CI/CD platform **Codemagic**, and built **Dynatrace Tallinn** into a high-impact engineering hub within a global observability organization.
 
 My work sits at the intersection of technology, product, and organizational design. I focus on building strong leadership layers, creating clarity in complex systems, and aligning long-term technical direction with disciplined execution.
 

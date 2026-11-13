@@ -91,6 +91,9 @@ story = [
         ("Chief Executive Officer", "2026 – Present", [
             "Leading a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic "
             "management — combining in-house software with purpose-built hardware.",
+            "Moving Tallinn Airport to fully ticketless, number-plate-based parking, unifying every parking product "
+            "(taxi lanes, rideshare, short and long term, VIP, tenant access) on one platform, delivered with Hansab Eesti.",
+            "Serving customers across the Baltics, including frictionless paid parking for Business Garden Vilnius.",
         ]),
     ]),
     *job("Dynatrace Inc — Tallinn, Estonia", [
@@ -125,10 +128,15 @@ story = [
             "and customer integrations.",
         ]),
     ]),
-    Paragraph("Earlier roles (selected)", S["org"]),
+    *job("Assert AS / Fujitsu Estonia — Tallinn, Estonia", [
+        ("Software Engineer → Product Manager, Persona", "1996 – 2003", [
+            "Part of the original team that built the first version of Persona, the HR and payroll software still in "
+            "daily use three decades later; later led the team responsible for Persona V2.",
+        ]),
+    ]),
+    Paragraph("Other roles", S["org"]),
     Paragraph(
-        "GreenhouseCI — Head of Business Development (2016 – 2017)  ·  Simplify OÜ — Design Thinking Coach (2016)  ·  "
-        "Fujitsu — Product Manager (1999 – 2003)  ·  Assert AS — Software Engineer (1996 – 1999)",
+        "GreenhouseCI — Head of Business Development (2016 – 2017)  ·  Simplify OÜ — Design Thinking Coach (2016)",
         S["body"]),
 
     h("Board, Advisory &amp; Mentorship"),
@@ -142,7 +150,7 @@ story = [
     h("Talks &amp; Media"),
     bullets([
         "Keynote: <i>To Build Fast, You Need to Be Slow</i> — sTARTUp Day 2022",
-        "Featured in <i>The Story of Codemagic</i> — documentary on the Google Flutter partnership",
+        "Featured in " + LINK.format("https://www.youtube.com/watch?v=vI9hbJPjkdA", "<i>The Story of Codemagic</i>") + " — documentary on the Google Flutter partnership",
         "Podcasts and interviews: The Pursuit of Scrappiness (2023), TalentHub (2022), Äripäev, Postimees — "
         + LINK.format("https://kristiansagi.com/media/", "kristiansagi.com/media"),
     ]),
