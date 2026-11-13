@@ -79,11 +79,20 @@
     }
   });
 
-  // Render Turnstile (attach sitekey dynamically)
+  // Render Turnstile explicitly (api.js?render=explicit ignores data-* attributes).
+  // execution: 'execute' = only run the challenge when Send calls turnstile.execute().
   const renderTurnstile = () => {
     if (!window.turnstile || !cfDiv) return;
-    cfDiv.setAttribute('data-sitekey', SITEKEY);
-    try { turnstile.render(cfDiv); } catch(_) {}
+    try {
+      turnstile.render(cfDiv, {
+        sitekey: SITEKEY,
+        execution: 'execute',
+        'refresh-expired': 'auto',
+        callback: (token) => window[id + '_cf_ok'](token),
+        'error-callback': () => window[id + '_cf_err'](),
+        'expired-callback': () => window[id + '_cf_expired'](),
+      });
+    } catch (e) { console.error('Turnstile render failed', e); }
   };
 
   // Crypto helpers
