@@ -23,7 +23,8 @@ The site is focused on:
 ## Key Features
 
 - **Static site with Hugo**
-  - Uses Hugo (extended) and a customized variant of the **PaperMod** theme
+  - Uses Hugo (extended, **v0.169.0+**; PaperMod requires ≥ 0.158) and a customized variant of the **PaperMod** theme (git submodule)
+  - Cloudflare Pages must have `HUGO_VERSION` set to match (Production and Preview)
   - Simple content-first structure: `content/`, `layouts/`, `assets/`, `static/`
 
 - **Custom typography**
@@ -47,8 +48,9 @@ The site is focused on:
   - Protected by **Cloudflare Turnstile** (CAPTCHA-like challenge)
 
 - **Privacy & security**
-  - No analytics, no tracking pixels
-  - Strict security headers configured via Cloudflare
+  - No ad trackers or tracking pixels; only cookieless **Cloudflare Web Analytics**
+  - Strict security headers (HSTS, CSP, frame/referrer/permissions policies) in `static/_headers`
+  - Staging and `*.pages.dev` previews are served with `X-Robots-Tag: noindex`
   - Fonts, JS, and CSS are self-hosted where possible
 
 ---

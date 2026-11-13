@@ -31,10 +31,10 @@ CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
 # Ensure clean working tree
 if [ -n "$(git status --porcelain)" ]; then
-  echo "⚠️  Uncommitted changes on ${CURRENT_BRANCH}."
-  echo "Creating a safety commit..."
-  git add -A
-  git commit -m "Auto-commit: save work before syncing main with staging"
+  echo "❌ Uncommitted changes on ${CURRENT_BRANCH}:"
+  git status --short
+  echo "Review and commit (or stash) them first, then re-run."
+  exit 1
 fi
 
 # Optionally update remotes (comment out if undesired)
@@ -80,6 +80,7 @@ git commit -m "${MSG}"
 # Push main (no force)
 echo "→ Pushing 'main' to origin..."
 git push origin main
+git push origin "${TAG}"
 
 # Return to previous branch (staging)
 echo "→ Returning to '${CURRENT_BRANCH}'..."

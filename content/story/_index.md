@@ -1,20 +1,18 @@
 ---
 title: "My Story"
-# subtitle: "From Founder to Leader — Now Ready to Lead at Scale"
 slug: "story"
 weight: 10
 draft: false
 ---
 
-### From Founder to Leader — Now Ready to Lead at Scale ###
+### Building and Leading at Scale ###
 
-I’m a technology leader who builds organizations that deliver — with purpose, precision, and heart.
+I am an engineering leader who builds and scales high-performing organizations in global product companies.
 
-Over the past two decades, I’ve built and led high-impact teams across startups and global tech companies.
-From scaling **Playtech Mobile** from an idea to **$120M in annual revenue**, to co-founding **Nevercode** and redefining developer tooling, to leading **Dynatrace Tallinn** into a world-class engineering hub — my path has always been about one thing: **turning vision into impact**.
+Over the past two decades, I have founded companies, led large engineering teams, and operated within complex international environments. I scaled **Playtech Mobile** from inception to **$120M in annual revenue**, co-founded **Nevercode**, a globally used developer platform, and built **Dynatrace Tallinn** into a high-impact engineering hub within a global observability organization.
 
-I believe technology leadership is more than architecture and metrics.
-It’s about creating systems where talented people can do their best work, where clarity turns into momentum, and where trust drives execution.
+My work sits at the intersection of technology, product, and organizational design. I focus on building strong leadership layers, creating clarity in complex systems, and aligning long-term technical direction with disciplined execution.
 
-I’m now seeking my next opportunity — a leadership role where **engineering**, **innovation**, and **organizational clarity** can create lasting value.
-I’m open to roles in **Estonia or internationally**, with relocation fully on the table for the right mission.
+I care deeply about quality, resilience, and building systems that last — both in software and in teams.
+
+I am open to select Director and VP opportunities in global product and platform organizations where engineering excellence and long-term thinking matter.

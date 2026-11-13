@@ -1,4 +1,4 @@
-baseURL = "https://staging.kristiansagi.com/"
+baseURL = "https://kristiansagi.com/"
 title = "Kristian Sägi"
 theme = "PaperMod"
 enableRobotsTXT = true
@@ -15,8 +15,17 @@ enableRobotsTXT = true
 
   # PaperMod site-wide OG defaults
 
-  env = "production"
-  description = "Kristian Sägi — Notes on leadership, clarity, stillness, and meaningful work."
+  # ---- Meta / SEO ----
+  description = "Engineering leader building world-class teams and resilient systems in global product organizations. Director and VP level technology leadership across Europe."
+  keywords = [
+    "Kristian Sägi",
+    "Kristian Sagi",
+    "Engineering Leadership",
+    "Director of Engineering",
+    "VP Engineering",
+    "Technology Leadership",
+    "Global Product Organizations"
+  ]
 
   # global opengraph settings (PaperMod supports these)
   images = ["https://kristiansagi.com/kristian-sagi.webp"]
@@ -32,12 +41,7 @@ enableRobotsTXT = true
 # Production key for kristiansagi.com
 site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 
-# Development key for localhost (Cloudflare test key)
-site_key_dev = "1x00000000000000000000AA"
  
- # ---- Meta / SEO ----
-  description = "Technology leader, builder, and quiet operator. Scaling people, product, and purpose."
-  keywords = ["Kristian Sägi", "Technology Leader", "CTO", "Quiet Operator"]
 
 [params.profileMode]
 enabled = true
