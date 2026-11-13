@@ -7,7 +7,16 @@ draft: false
 ShowBreadCrumbs: false
 ---
 
-#### _Selected talks, podcasts and interviews. Several are in Estonian; English summaries below._
+#### _A documentary and selected talks, podcasts and interviews. Several are in Estonian; English summaries below._
+
+---
+
+## Documentary
+
+### The Story of Codemagic — A Full Documentary
+A documentary on building Codemagic, the CI/CD platform for mobile app developers, and its partnership with Google’s Flutter team.
+
+{{< youtube vI9hbJPjkdA >}}
 
 ---
 

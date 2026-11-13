@@ -142,7 +142,7 @@ story = [
     h("Talks &amp; Media"),
     bullets([
         "Keynote: <i>To Build Fast, You Need to Be Slow</i> — sTARTUp Day 2022",
-        "Featured in <i>The Story of Codemagic</i> — documentary on the Google Flutter partnership",
+        "Featured in " + LINK.format("https://www.youtube.com/watch?v=vI9hbJPjkdA", "<i>The Story of Codemagic</i>") + " — documentary on the Google Flutter partnership",
         "Podcasts and interviews: The Pursuit of Scrappiness (2023), TalentHub (2022), Äripäev, Postimees — "
         + LINK.format("https://kristiansagi.com/media/", "kristiansagi.com/media"),
     ]),
