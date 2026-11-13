@@ -47,3 +47,5 @@ People have asked me countless times what’s next, and to be honest, I don’t 
 > _As the famous Buddhist quote says, “Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.”_
 
 That’s where I’ll be focusing my energy for now, before diving into my next adventure.
+
+_Update, 2026: today I lead [Entringo](https://entringo.com/) as CEO._

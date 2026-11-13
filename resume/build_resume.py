@@ -109,7 +109,7 @@ story = [
     Paragraph("Kristian Sägi", S["name"]),
     Paragraph("Technology Leader &amp; CEO. Building resilient companies, teams and systems.", S["tag"]),
     Paragraph(
-        "Tallinn, Estonia (open to relocation)  ·  "
+        "Tallinn, Estonia  ·  "
         + LINK.format("mailto:kristian@kristiansagi.com", "kristian@kristiansagi.com") + "  ·  "
         + LINK.format("https://kristiansagi.com", "kristiansagi.com") + "  ·  "
         + LINK.format("https://www.linkedin.com/in/kristiansagi/", "linkedin.com/in/kristiansagi"),

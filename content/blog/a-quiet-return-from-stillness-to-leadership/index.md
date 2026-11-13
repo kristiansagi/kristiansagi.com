@@ -14,7 +14,7 @@ TocOpen: false
 hidden: false
 canonicalURL: "https://medium.com/into-the-wide-open/the-quiet-operator-returns-from-stillness-to-leadership-ready-for-the-next-mission-1d5daffc113c"
 
-tags: ["Leadership", "Career Restar", "Mindfulness", "Technology", "Personal Growth"]
+tags: ["Leadership", "Reflection", "Mindfulness", "Technology", "Personal Growth"]
 
 
 cover:
@@ -107,9 +107,6 @@ Nine months later — system checked, signal clear.
 The mission hasn’t changed: **build strong teams, scalable systems, and lasting impact**.
 The core is the same. My edge is sharper. My focus tighter. My mission clearer.
 
-_I’m open now for **executive leadership roles** where technology serves purpose — where mission clarity meets disciplined execution._
-
-If you’re building that kind of company — **let’s talk**.
 
 ## Closing
 
@@ -121,3 +118,5 @@ Thank you, love — my co-pilot through every climb and dive.
 Now, the Quiet Operator returns — **Calm. Focused. Ready for the next mission.**
 
 {{< figure src="japan.webp" caption="The future ahead — quiet, steady, and open." >}}
+
+_Update, 2026: that next mission is [Entringo](https://entringo.com/), where I now serve as CEO._
