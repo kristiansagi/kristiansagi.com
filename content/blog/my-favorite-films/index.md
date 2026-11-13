@@ -26,7 +26,12 @@ type: post
 ShowToc: true
 TocOpen: false
 hidden: false
-
+# Unlisted: reachable by direct link, but hidden from lists, feeds, sitemap and search engines
+build:
+  list: never
+sitemap:
+  disable: true
+robotsNoIndex: true
 ---
 
 *Notes from my film shelf.*

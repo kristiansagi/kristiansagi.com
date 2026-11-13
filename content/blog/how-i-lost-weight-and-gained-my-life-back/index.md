@@ -22,7 +22,12 @@ cover:
   caption: "Photo by Ronit Shaked on Unsplash."
   alt: "Photo by Ronit Shaked on Unsplash."
   relative: true
-
+# Unlisted: reachable by direct link, but hidden from lists, feeds, sitemap and search engines
+build:
+  list: never
+sitemap:
+  disable: true
+robotsNoIndex: true
 ---
 
 A year ago, I found myself standing in a doctor’s office, unprepared for the reality I was about to face.

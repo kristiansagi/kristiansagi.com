@@ -46,14 +46,14 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 [params.profileMode]
 enabled = true
 subtitle = """
-<strong>Engineering Leadership at Scale.</strong><br>
-World-class teams. Resilient systems. Global impact.
+<strong>Technology leader and CEO.</strong><br>
+Building resilient companies, teams and systems.
 """
 
 
 
 # Sub title, not in the original theme
-notice = "Open to select Director and VP opportunities in global product organizations."
+notice = "CEO of Entringo · Open to board and advisory roles."
 
 # casual
 # imageUrl = "kristian-sagi.webp"
@@ -100,6 +100,10 @@ url = "https://x.com/kristiansagi"
     url = "/story/"
     weight = 10
   [[menu.main]]
+    name = "Now"
+    url = "/now/"
+    weight = 15
+  [[menu.main]]
     name = "My Track Record"
     url = "/work/"
     weight = 20
@@ -112,6 +116,10 @@ url = "https://x.com/kristiansagi"
     url = "/blog/"
 #    url = "https://blog.kristiansagi.com/"
     weight = 40
+  [[menu.main]]
+    name = "Media"
+    url = "/media/"
+    weight = 45
   [[menu.main]]
     name = "Résumé"
     url = "/kristian-sagi-resume.pdf"

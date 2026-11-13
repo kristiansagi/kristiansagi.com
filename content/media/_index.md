@@ -1,35 +1,46 @@
 ---
 title: "Media & Mentions"
-description: "Articles, podcasts, and interviews featuring Kristian Sägi"
-layout: "media"
-aliases: ["press", "in-the-media"]
-draft: true
-hidden: true
+slug: "media"
+description: "Talks, podcasts and interviews featuring Kristian Sägi."
+aliases: ["/press/", "/in-the-media/"]
+draft: false
+ShowBreadCrumbs: false
 ---
 
-# here we go ...
+#### _Selected talks, podcasts and interviews. Several are in Estonian; English summaries below._
 
-# 2022: Kristian Sägi - To Build Fast You Need To Be Slow │ sTARTUp Day 2022 
+---
+
+## Talks
+
+### To Build Fast, You Need to Be Slow — sTARTUp Day 2022
+Keynote on why sustainable speed in startups starts with focus, self-awareness and deliberate pace. [Read the essay →](/blog/to-build-fast-you-need-to-be-slow/)
+
 {{< youtube QTknd85rsvM >}}
 
-# 2022: TalentHub ep 42 - Kas ja kuidas säilitada kultuuri ning väärtusi kui kaks ettevõtet liituvad?
-{{< youtube 1vYTmvFow2w >}}
+### Journey in the Startup World — TalTech School of Business, 2021
+Talk for TalTech business students on building companies and careers in technology. _(In Estonian.)_
 
-# 2021: Teekond Startup Maailmas: TalTech Majandusteaduskonna Üliõpilaskogu
 {{< youtube t-xyJaL0Z5c >}}
 
-# 2023: The Pursuit of Scrappiness Podcast - Ep 96: Kristian Sägi
-https://www.pursuitofscrappiness.co/episodes/96-kristian-sagi
+---
 
-# 2022: Postimees: IT-kontserni Eesti juht: idufirmad õhutavad end tööga tapma
-https://majandus.postimees.ee/7655196/it-kontserni-eesti-juht-idufirmad-ohutavad-end-tooga-tapma
+## Podcasts
 
-# Forte: Tarkvaraettevõtte juht: Eestis on tööjõu leidmine läinud lihtsamaks – iduettevõtetest on õhku välja lastud
-https://forte.delfi.ee/artikkel/120276335/tarkvaraettevotte-juht-eestis-on-toojou-leidmine-lainud-lihtsamaks-iduettevotetest-on-ohku-valja-lastud
+### The Pursuit of Scrappiness — Episode 96, 2023
+Conversation on building and scaling technology companies.
+[Listen to the episode →](https://www.pursuitofscrappiness.co/episodes/96-kristian-sagi)
 
-# Koodikirjutajad versus reaalmajandus – kes paneb Eesti majanduse uuesti kasvama?
-https://arileht.delfi.ee/artikkel/120275038/video-koodikirjutajad-versus-reaalmajandus-kes-paneb-eesti-majanduse-uuesti-kasvama
+### TalentHub — Episode 42, 2022
+How to preserve culture and values when two companies merge. _(In Estonian.)_
 
-# 2024: Rahvusvaheline IT-gigant soovib Eestis kasvada: „Investeeringud tulevad kindlasti edasi“ 
-https://www.aripaev.ee/uudised/2024/03/04/rahvusvaheline-it-gigant-soovib-eestis-kasvada-investeeringud-tulevad-kindlasti-edasi
+{{< youtube 1vYTmvFow2w >}}
 
+---
+
+## Interviews & press
+
+- **Äripäev, 2024** — _“An international IT giant wants to grow in Estonia: ‘Investments will certainly continue’”_ — on Dynatrace’s growth in Tallinn. [Read (Estonian) →](https://www.aripaev.ee/uudised/2024/03/04/rahvusvaheline-it-gigant-soovib-eestis-kasvada-investeeringud-tulevad-kindlasti-edasi)
+- **Postimees, 2022** — _“Estonian head of an IT group: startups push people to work themselves to death”_ — on sustainable pace and work culture. [Read (Estonian) →](https://majandus.postimees.ee/7655196/it-kontserni-eesti-juht-idufirmad-ohutavad-end-tooga-tapma)
+- **Forte (Delfi)** — _“Software company leader: finding talent in Estonia has become easier as the air has gone out of startups”_ — on the tech talent market. [Read (Estonian) →](https://forte.delfi.ee/artikkel/120276335/tarkvaraettevotte-juht-eestis-on-toojou-leidmine-lainud-lihtsamaks-iduettevotetest-on-ohku-valja-lastud)
+- **Ärileht (Delfi), video debate** — _“Coders versus the real economy: who will get Estonia’s economy growing again?”_ [Watch (Estonian) →](https://arileht.delfi.ee/artikkel/120275038/video-koodikirjutajad-versus-reaalmajandus-kes-paneb-eesti-majanduse-uuesti-kasvama)
