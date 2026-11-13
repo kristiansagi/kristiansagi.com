@@ -1,0 +1,26 @@
+# Contact form endpoint Worker. These routes take precedence over the Pages Function
+# at functions/api/send-encrypted.js on kristiansagi.com and its subdomains.
+#
+# Deploy:   npx wrangler deploy --config workers/send-encrypted/wrangler.toml
+# Secrets (set once, kept across deploys):
+#   npx wrangler secret put RESEND_API_KEY       --config workers/send-encrypted/wrangler.toml
+#   npx wrangler secret put TURNSTILE_SECRET_KEY --config workers/send-encrypted/wrangler.toml
+
+name = "send-encrypted"
+main = "worker.js"
+compatibility_date = "2025-11-08"
+workers_dev = true
+preview_urls = false
+
+routes = [
+  { pattern = "kristiansagi.com/api/send-encrypted*", zone_name = "kristiansagi.com" },
+  { pattern = "*.kristiansagi.com/api/send-encrypted*", zone_name = "kristiansagi.com" },
+]
+
+[vars]
+MAIL_FROM = "no-reply@kristiansagi.com"
+MAIL_TO = "kristian@kristiansagi.com"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
