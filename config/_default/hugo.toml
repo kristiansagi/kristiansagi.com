@@ -46,8 +46,8 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 [params.profileMode]
 enabled = true
 subtitle = """
-<strong>Engineering Leadership at Scale.</strong><br>
-World-class teams. Resilient systems. Global impact.
+<strong>Technology leader and CEO.</strong><br>
+Building resilient companies, teams and systems.
 """
 
 

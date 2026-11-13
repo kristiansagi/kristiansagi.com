@@ -10,7 +10,7 @@ draft: false
 ---
 
 ### Entringo — Chief Executive Officer
-#### Present
+#### 2026 – Present
 
 + Leading Entringo, a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software and purpose-built hardware.
 
