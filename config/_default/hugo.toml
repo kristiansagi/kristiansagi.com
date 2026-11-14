@@ -16,15 +16,17 @@ enableRobotsTXT = true
   # PaperMod site-wide OG defaults
 
   # ---- Meta / SEO ----
-  description = "Engineering leader building world-class teams and resilient systems in global product organizations. Director and VP level technology leadership across Europe."
+  description = "Engineering leader and CEO of Entringo. Building resilient companies, teams and systems."
+  homeTitle = "Kristian Sägi — Engineering Leader, CEO of Entringo"
   keywords = [
     "Kristian Sägi",
     "Kristian Sagi",
+    "Entringo",
     "Engineering Leadership",
-    "Director of Engineering",
-    "VP Engineering",
     "Technology Leadership",
-    "Global Product Organizations"
+    "Playtech Mobile",
+    "Codemagic",
+    "Dynatrace"
   ]
 
   # global opengraph settings (PaperMod supports these)

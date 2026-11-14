@@ -44,7 +44,7 @@ People maintain systems. Leaders must maintain themselves.
 I needed to refit — the mental, physical, and strategic layers that make execution sharp.
 That’s what this pause was: a **leadership refit**.
 
-{{< figure src="jalgratas.webp" caption="Precision work teaches patience — the same skill that builds lasting systems." >}}
+{{< figure src="jalgratas.webp" alt="Close-up of an old bicycle wheel hub with a worn sprocket and spokes" caption="Precision work teaches patience — the same skill that builds lasting systems." >}}
 
 ## The Stillness
 
@@ -56,7 +56,7 @@ The pace slowed. My awareness sharpened.
 + Stopped optimizing. Started observing.
 + Found clarity in **Italy** and **Japan** — two cultures that understand discipline through beauty.
 
-{{< figure src="uaz.webp" caption="Our 1986 UAZ — rebuilt, tested, and ready for new roads." >}}
+{{< figure src="uaz.webp" alt="A green camouflage-painted 1986 UAZ van with a roof-top tent, parked among pine trees" caption="Our 1986 UAZ — rebuilt, tested, and ready for new roads." >}}
 
 Stillness isn’t inaction.
 It’s **controlled detachment** — the ability to see clearly when others react emotionally.
@@ -118,6 +118,6 @@ Thank you, love — my co-pilot through every climb and dive.
 
 Now, the Quiet Operator returns — **Calm. Focused. Ready for the next mission.**
 
-{{< figure src="japan.webp" caption="The future ahead — quiet, steady, and open." >}}
+{{< figure src="japan.webp" alt="A Japanese garden pond with a thatched pavilion and cherry blossoms under a grey sky" caption="The future ahead — quiet, steady, and open." >}}
 
 _Update, 2026: that next mission is [Entringo](https://entringo.com/), where I now serve as CEO._

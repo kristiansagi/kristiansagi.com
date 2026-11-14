@@ -1,0 +1,34 @@
+# Kristian Sägi
+
+> Kristian Sägi is an engineering leader and the CEO of Entringo, a Hansab Group company in Tallinn, Estonia, that builds integrated vehicle flow systems (ticketless ANPR parking, yard and traffic management) from its own software and purpose-built hardware. He co-founded Playtech Mobile and scaled it to $120M in annual revenue, co-founded the mobile CI/CD platform Codemagic, and built Dynatrace's Tallinn engineering hub.
+
+Key facts:
+
+- Current role: Chief Executive Officer, Entringo (since April 2026). Entringo projects include fully ticketless parking at Tallinn Airport and centralized parking management at Vilnius International Airport.
+- Dynatrace, Director of Engineering / Site Lead, Tallinn (2022–2025): built and led the Tallinn engineering lab after the acquisition of the local team, tripling headcount.
+- Nevercode / Codemagic, Co-Founder & Head of Product Strategy (2017–2019), then Advisory Board member (2019–2022): created Codemagic, a CI/CD platform for Flutter and mobile apps, in partnership with Google's Flutter team.
+- Playtech Mobile (Playtech plc), Co-Founder & CTO, Mobile Division (2005–2015): grew the division from inception to $120M in annual revenue and an organization of 100+ engineers and product managers.
+- Early career (1996–2004): software engineer on the original team that built Persona, an HR and payroll system still in daily use, and later product manager for Persona at Fujitsu Estonia.
+- Education: B.Sc. in Engineering Physics, University of Tartu. Co-author of a paper in the Journal of Applied Spectroscopy (2006).
+- Mentoring: Ajujaht startup accelerator; ESA Business Incubation Centre Estonia.
+- Languages: Estonian (native), English (full professional), Russian, German.
+- Based in Tallinn, Estonia.
+
+## About
+
+- [About](https://kristiansagi.com/story/): background and career story
+- [Track Record](https://kristiansagi.com/work/): roles, dates and outcomes
+- [How I Lead](https://kristiansagi.com/leadership/): leadership approach and principles
+- [Now](https://kristiansagi.com/now/): current focus
+
+## Writing and media
+
+- [Perspectives](https://kristiansagi.com/blog/): essays on engineering leadership and building companies
+- [To Build Fast, You Need To Be Slow](https://kristiansagi.com/blog/to-build-fast-you-need-to-be-slow/): keynote and essay, sTARTUp Day 2022
+- [Media](https://kristiansagi.com/media/): talks, podcasts, interviews and a speaker bio
+
+## Contact and profiles
+
+- [Contact](https://kristiansagi.com/contact/): encrypted contact form and PGP key
+- [LinkedIn](https://www.linkedin.com/in/kristiansagi/)
+- [Résumé (PDF)](https://kristiansagi.com/kristian-sagi-resume.pdf)

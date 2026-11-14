@@ -3,6 +3,7 @@ title: "Track Record"
 slug: "work"
 weight: 20
 draft: false
+seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of Engineering at Dynatrace Tallinn, co-founder of Codemagic and Playtech Mobile, and the original Persona team."
 ---
 
 #### _Selected experience building and scaling technology companies and engineering organizations._
