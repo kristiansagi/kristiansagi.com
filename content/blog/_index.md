@@ -1,6 +1,6 @@
 ---
 title: "Perspectives"
-subtitle: "Thoughts on leadership, purpose and quiet progress."
+subtitle: "Notes on leadership, building companies and a few personal things."
 description: "Essays on engineering leadership, building companies and long-term thinking."
 ShowBreadCrumbs: false
 showReadingTime: true

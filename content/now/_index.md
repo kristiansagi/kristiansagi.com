@@ -8,10 +8,10 @@ ShowBreadCrumbs: false
 
 #### _Updated November 2026_
 
-I lead **[Entringo](https://entringo.com/)** as Chief Executive Officer. Entringo builds integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software with purpose-built hardware. Our current flagship project is moving **Tallinn Airport** to fully ticketless parking on a single platform.
+I'm CEO of **[Entringo](https://entringo.com/)**. We build ticketless ANPR parking, yard and traffic management systems, both the software and the hardware. The biggest project right now is moving **Tallinn Airport** to fully ticketless parking on one platform.
 
-Alongside this role, I advise technology companies on scaling engineering organizations, product strategy and leadership, and I continue to mentor founders at the **Ajujaht** startup accelerator and the **ESA Business Incubation Centre Estonia**.
+Alongside that I advise a few technology companies on engineering organizations and product, and I mentor founders at **Ajujaht** and the **ESA Business Incubation Centre Estonia**.
 
-I am based in Tallinn, Estonia.
+I live in Tallinn.
 
-[Contact →](/contact/)
+[Get in touch](/contact/)

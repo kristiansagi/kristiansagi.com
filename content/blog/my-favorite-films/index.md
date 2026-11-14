@@ -8,7 +8,7 @@ cover:
   caption: "Photo by Eric TERRADE on Unsplash"
   relative: true
 tags: ["reflections", "film", "philosophy", "self-discovery"]
-description: "Stories that shaped how I see light, discipline, and meaning — films about reason, wonder, and the quiet pursuit of clarity."
+description: "The films I keep coming back to, and what they say about how I see the world."
 
 # These 4 new lines enhance metadata
 images: ["https://kristiansagi.com/blog/my-favourite-films/cinema-reflection.webp"]
@@ -43,8 +43,8 @@ personal: true
 
 Some stories keep returning because they test what it means to stay human.  
 [Se7en](https://www.imdb.com/title/tt0114369/). [The Green Mile](https://www.imdb.com/title/tt0120689/). [The Shawshank Redemption](https://www.imdb.com/title/tt0111161/). [Apocalypse Now](https://www.imdb.com/title/tt0078788/). [Oppenheimer](https://www.imdb.com/title/tt15398776/). [Full Metal Jacket](https://www.imdb.com/title/tt0093058/). [The Sixth Sense](https://www.imdb.com/title/tt0167404/). [Shutter Island](https://www.imdb.com/title/tt1130884/).  
-Each looks at conscience and consequence — the weight of choice, the cost of truth, and the fragile line between good intentions and regret.  
-Darkness here isn’t the enemy; it’s the space where light learns to matter.
+Each one is about conscience and consequence: the weight of a choice, the price of the truth, and how close good intentions sit to regret.  
+In these films the dark parts are what make the light matter.
 
 ---
 
@@ -52,20 +52,20 @@ Darkness here isn’t the enemy; it’s the space where light learns to matter.
 
 Brilliance without empathy burns fast.  
 [A Beautiful Mind](https://www.imdb.com/title/tt0268978/). [Good Will Hunting](https://www.imdb.com/title/tt0119217/). [Margin Call](https://www.imdb.com/title/tt1615147/). [Wall Street](https://www.imdb.com/title/tt0094291/). [Boiler Room](https://www.imdb.com/title/tt0181984/). [The Wolf of Wall Street](https://www.imdb.com/title/tt0993846/). [Steve Jobs](https://www.imdb.com/title/tt2080374/). [Casino](https://www.imdb.com/title/tt0112641/). [Memento](https://www.imdb.com/title/tt0209144/).  
-These stories show intellect at its best and worst — ambition turning into clarity, then collapsing into greed.  
-They remind that sharp minds alone don’t build meaning; awareness does.
+They show intellect at its best and worst, ambition that starts out clear and ends in greed.  
+A sharp mind on its own isn’t enough. You also have to know yourself.
 
 > *“Please, speak as you might to a young child… It wasn’t brains that got me here, I can assure you that.”*  
-> — **John Tuld, CEO of a Wall Street investment bank** (*Jeremy Irons, Margin Call, 2011*)
+> **John Tuld, CEO of a Wall Street investment bank** (*Jeremy Irons, Margin Call, 2011*)
 
 ---
 
 ### note on imagination and distance  
 
-The kind of science fiction that stays with me isn’t about escape — it’s about perception.  
+The kind of science fiction that stays with me isn’t about escape. It’s about how we see things.  
 [Interstellar](https://www.imdb.com/title/tt0816692/). [Arrival](https://www.imdb.com/title/tt2543164/). [Solaris](https://www.imdb.com/title/tt0069293/). [The Martian](https://www.imdb.com/title/tt3659388/).  
 Each explores time, isolation, and the stubborn persistence of hope.  
-Curiosity here feels like courage — the belief that survival begins with imagination.
+Curiosity in them looks a lot like courage.
 
 ---
 
@@ -73,25 +73,25 @@ Curiosity here feels like courage — the belief that survival begins with imagi
 
 Some stories slow the world down.  
 [My Neighbor Totoro](https://www.imdb.com/title/tt0096283/). [Spirited Away](https://www.imdb.com/title/tt0245429/). [Princess Mononoke](https://www.imdb.com/title/tt0119698/). [WALL·E](https://www.imdb.com/title/tt0910970/). [Toy Story](https://www.imdb.com/title/tt0114709/). [Howl’s Moving Castle](https://www.imdb.com/title/tt0347149/). [Ratatouille](https://www.imdb.com/title/tt0382932/). [Monsters, Inc.](https://www.imdb.com/title/tt0198781/). [Hachi: A Dog’s Tale](https://www.imdb.com/title/tt1028532/). [Green Book](https://www.imdb.com/title/tt6966692/).  
-They speak softly but clearly — about kindness, loyalty, and the quiet joy of being alive.  
-They remind that progress without compassion is just motion without meaning.
+They’re gentle films about kindness, loyalty and the plain joy of being alive.  
+They remind me that progress without compassion is just motion without meaning.
 
 ---
 
 ### note on fire and precision  
 
-Then there’s the other rhythm — stories that live in motion.  
+Then there are the fast ones.  
 [Heat](https://www.imdb.com/title/tt0113277/). [Point Break](https://www.imdb.com/title/tt0102685/). [Gone in 60 Seconds](https://www.imdb.com/title/tt0187078/). [Ford v Ferrari](https://www.imdb.com/title/tt1950186/). [Lone Survivor](https://www.imdb.com/title/tt1091191/). [Black Hawk Down](https://www.imdb.com/title/tt0265086/). [Pulp Fiction](https://www.imdb.com/title/tt0110912/).  
-They carry the same pulse — focus, speed, and the calm that comes when instinct and purpose finally align.  
-Courage here doesn’t roar; it breathes, counts, and keeps going.
+What they share is focus, speed and the calm that comes when you know exactly what you’re doing.  
+Courage in these films is quiet. It breathes, counts and keeps going.
 
 > *“I think fast, I talk fast, and I need you guys to act fast if you want to get out of this. So, pretty please... with sugar on top, clean the car.”*  
-> — **Winston Wolfe, professional fixer** (*Harvey Keitel, Pulp Fiction, 1994*)
+> **Winston Wolfe, professional fixer** (*Harvey Keitel, Pulp Fiction, 1994*)
 
-The Wolf’s efficiency and calm under pressure have always felt familiar — the kind of composure every leader should quietly master.
+I’ve always liked the Wolf’s calm under pressure. Every leader could use some of it.
 
 > *“You make a plan, you stick to the plan. Always.”*  
-> — **Frank Martin, professional driver** (*Jason Statham, The Transporter 3, 2008*)
+> **Frank Martin, professional driver** (*Jason Statham, The Transporter 3, 2008*)
 
 Not a favourite film, but a favourite truth: discipline creates clarity.
 
@@ -102,10 +102,10 @@ Not a favourite film, but a favourite truth: discipline creates clarity.
 And then come the climbs.  
 [Free Solo](https://www.imdb.com/title/tt7775622/). [Meru](https://www.imdb.com/title/tt2545428/).  
 Stories about fear, focus, and silence.  
-They show that mastery isn’t the absence of fear — it’s a relationship with it.  
+Mastery doesn’t mean having no fear. It means knowing your fear well.  
 
 > *“Perfection is fleeting. That’s what makes it so special.”*  
-> — **Alex Honnold, climber** (*Free Solo, 2018*)  
+> **Alex Honnold, climber** (*Free Solo, 2018*)  
 
 Control never lasts, but attention does.  
 Excellence is a moment, not a destination.
@@ -114,10 +114,10 @@ Excellence is a moment, not a destination.
 
 ### note on vision and failure  
 
-[General Magic](https://www.imdb.com/title/tt6918466/) tells a climb of another kind — a team that reached too high, too soon.  
+[General Magic](https://www.imdb.com/title/tt6918466/) is a different kind of climb: a team that reached too high, too soon.  
 A company that failed publicly but planted the roots of modern technology.  
-It’s the *Oppenheimer* of Silicon Valley — vision meeting reality, and losing beautifully.  
-Failure here isn’t the end; it’s the seed.
+It’s Silicon Valley’s *Oppenheimer*: a big vision that ran into reality and lost, beautifully.  
+Their failure turned out to be a beginning.
 
 ---
 
@@ -125,8 +125,8 @@ Failure here isn’t the end; it’s the seed.
 
 And finally, the question of identity.  
 [Being John Malkovich](https://www.imdb.com/title/tt0120601/). [The Truman Show](https://www.imdb.com/title/tt0120382/). [Now You See Me](https://www.imdb.com/title/tt1670345/). [Eternal Sunshine of the Spotless Mind](https://www.imdb.com/title/tt0338013/). [Dogtooth](https://www.imdb.com/title/tt1379182/). [The Man from Earth](https://www.imdb.com/title/tt0756683/). [Memento](https://www.imdb.com/title/tt0209144/). [Pulp Fiction](https://www.imdb.com/title/tt0110912/).  
-These stories peel back the mask — the performances we live by, and the truths we hide from ourselves.  
-They remind that freedom begins with honesty, even when it’s uncomfortable.
+These peel back the masks we wear and the truths we hide from ourselves.  
+They remind me that freedom begins with honesty, even when it’s uncomfortable.
 
 ---
 
@@ -136,17 +136,17 @@ When I look at the entire shelf of films together, a pattern appears.
 Light and shadow. Reason and wonder. Discipline and freedom.  
 They remind me that meaning isn’t found in perfection, but in persistence.  
 That clarity comes from movement.  
-That purpose is built — one quiet decision at a time.
+That purpose is built one small decision at a time.
 
 I often explore darkness, not to dwell in it, but to understand how light endures.  
 Meaning grows where intellect, empathy, and curiosity meet.  
-And I try to remind myself that to live awake, I need to see clearly, build wisely, feel deeply —  
+And I try to remind myself that to live awake, I need to see clearly, build carefully and feel deeply,  
 and still be able to laugh when the universe makes no sense.
 
 
 ---
 
-<small>**See also:** documentaries I return to for perspective — [Free Solo](https://www.imdb.com/title/tt7775622/), [Meru](https://www.imdb.com/title/tt2545428/), [General Magic](https://www.imdb.com/title/tt6918466/), [Racing Extinction](https://www.imdb.com/title/tt1618448/).</small>
+<small>**See also:** documentaries I return to: [Free Solo](https://www.imdb.com/title/tt7775622/), [Meru](https://www.imdb.com/title/tt2545428/), [General Magic](https://www.imdb.com/title/tt6918466/), [Racing Extinction](https://www.imdb.com/title/tt1618448/).</small>
 
 
 <!-- Full list of my favourite movies -->

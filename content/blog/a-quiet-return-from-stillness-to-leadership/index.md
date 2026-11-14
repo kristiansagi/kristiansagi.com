@@ -1,7 +1,7 @@
 ---
-title: "A Quiet Return — From Stillness to Leadership"
-description: "Nine months away from the noise. Focus rebuilt. Mission clear."
-summary: "Nine months away from the noise. Focus rebuilt. Mission clear."
+title: "A Quiet Return: From Stillness to Leadership"
+description: "Why I took nine months off after Dynatrace, and what the break taught me about leading."
+summary: "Why I took nine months off after Dynatrace, and what the break taught me about leading."
 slug: "a-quiet-return-from-stillness-to-leadership"
 draft: false
 ShowReadingTime: true
@@ -19,8 +19,8 @@ tags: ["Leadership", "Reflection", "Mindfulness", "Technology", "Personal Growth
 
 cover:
   image: "perspective.webp"
-  caption: "The view before the return — quiet, wide, and clear."
-  alt: "The view before the return — quiet, wide, and clear."
+  caption: "The view from where I spent part of the break."
+  alt: "The view from where I spent part of the break."
   relative: true
 
 featured: true
@@ -28,96 +28,84 @@ featured: true
 
 ## The Decision
 
-In January, I made a call.
-Not to rest — to reset.
-After decades of leading and scaling tech teams, I saw motion everywhere, but momentum was gone.
-So, I stepped away — to regain signal, clarity, and control.
+In January I made a call. I didn't need a holiday. I needed a reset.
 
-In leadership, you can’t command chaos if you’ve become part of it.
+After many years of leading and scaling tech teams, I could see plenty of motion around me but very little momentum. So I stepped away to get my head clear again.
+
+You can't calm a chaotic situation once you've become part of the chaos.
 
 ## The Pause
 
-In early 2025, I stepped back from my executive role in Dynatrace Tallinn.
-Not burnout — **maintenance**.
-People maintain systems. Leaders must maintain themselves.
+In early 2025 I left my executive role at Dynatrace Tallinn.
 
-I needed to refit — the mental, physical, and strategic layers that make execution sharp.
-That’s what this pause was: a **leadership refit**.
+It wasn't burnout. It was **maintenance**. We service servers and cars on a schedule, and the people leading teams need the same. I wanted to look after the mental, physical and strategic side of myself before something broke. I started calling it a **leadership refit**.
 
-{{< figure src="jalgratas.webp" alt="Close-up of an old bicycle wheel hub with a worn sprocket and spokes" caption="Precision work teaches patience — the same skill that builds lasting systems." >}}
+{{< figure src="jalgratas.webp" alt="Close-up of an old bicycle wheel hub with a worn sprocket and spokes" caption="Rebuilding an old hub takes patience. So does anything that's meant to last." >}}
 
 ## The Stillness
 
-The pace slowed. My awareness sharpened.
+Life slowed down, and I started noticing more.
 
-+ Rebuilt a vintage bicycle from the frame up — patience through precision.
-+ Restored and drove our **1986 UAZ van** through Latvia with my family — reconnecting with simplicity and endurance.
-+ Trained daily. Read. Wrote. Practiced Zen.
-+ Stopped optimizing. Started observing.
-+ Found clarity in **Italy** and **Japan** — two cultures that understand discipline through beauty.
++ I rebuilt a vintage bicycle, starting from the bare frame.
++ We restored our **1986 UAZ van** and drove it through Latvia as a family.
++ I trained every day, read, wrote and practiced Zen.
++ I stopped trying to optimize everything and simply watched.
++ I travelled to **Italy** and **Japan**, two countries that take discipline and beauty equally seriously.
 
-{{< figure src="uaz.webp" alt="A green camouflage-painted 1986 UAZ van with a roof-top tent, parked among pine trees" caption="Our 1986 UAZ — rebuilt, tested, and ready for new roads." >}}
+{{< figure src="uaz.webp" alt="A green camouflage-painted 1986 UAZ van with a roof-top tent, parked among pine trees" caption="Our 1986 UAZ, rebuilt, tested and ready for the road." >}}
 
-Stillness isn’t inaction.
-It’s **controlled detachment** — the ability to see clearly when others react emotionally.
-That’s a battlefield skill.
+Stillness isn't the same as doing nothing. For me it means **stepping back far enough** to see clearly while everyone else is reacting. When things get tense, that's worth a lot.
 
 ## What I Relearned About Leadership
 
-+ **Calm is Control.**
-    Chaos is contagious — so is calm.
-    When pressure rises, your tone, breath, and timing define the room.
-    Detachment is a weapon.
-+ **Discipline Equals Freedom.**
-    You can’t lead from chaos. Routine builds clarity.
-    A leader’s daily discipline — mental, physical, operational — is the anchor of performance.
-+ **Extreme Ownership.**
-    No excuses. If the mission fails, it’s mine.
-    Ownership builds trust — and trust builds speed.
-+ **Clarity Before Control.**
-    Explain the “why.” Set intent.
-    Then step back.
-    Empower your team to execute within commander’s intent.
-+ **Presence Creates Trust.**
-    Teams follow calm, not charisma.
-    They watch how you show up when things break.
-+ **Balance Sustains Performance.**
-    Burnout is not a badge of honor.
-    Rest is reload.
++ **Calm is control.**
+    Panic spreads through a team fast, and so does calm. When pressure rises, people take their cue from your tone and your timing.
 
-Leadership isn’t about volume.
-It’s about composure, consistency, and follow-through.
++ **Discipline equals freedom.**
+    Routine keeps your head clear. My daily habits are what I fall back on when work gets hectic.
+
++ **Extreme ownership.**
+    If the project fails, it's on me. Owning that builds trust, and trust is what lets a team move fast.
+
++ **Clarity before control.**
+    Explain why. Agree on the goal. Then step back and let the team work.
+
++ **Presence creates trust.**
+    Teams follow calm, not charisma. They watch how you behave when things break.
+
++ **Balance sustains performance.**
+    Burnout is not a badge of honor. Rest is part of the job.
+
+Good leadership isn't loud. It's staying composed, being consistent and finishing what you start.
 
 ## How I Lead
 
-Leadership, for me, is an operating system — a loop that repeats with precision.
-> **Set Intent — the Mission Brief**. Define the mission in one clear sentence. State what success looks like and what constraints apply. Then get out of the way.
+I think of leadership as a loop that I repeat over and over.
 
-> **Build Trust — the Unit**. Trust replaces micromanagement. Teams that trust each other move faster, adapt better, and need less correction. My role is to build that trust and maintain alignment.
+> **Set intent.** Describe the mission in one sentence: what success looks like and what the constraints are. Then get out of the way.
 
-> **Execute — with Decentralized Command**. Give direction, not dependency.
-Everyone leads at their level. Accountability flows both ways. No silos, no passengers.
+> **Build trust.** Trust replaces micromanagement. Teams that trust each other move faster and need less correcting. My job is to build that trust and keep everyone pointed the same way.
 
-> **Review — the After-Action Loop**. Every project ends with a debrief. What worked. What failed. What we’ll do better next time. No blame. Only lessons. Discipline in review builds culture.
+> **Execute with decentralized command.** Give direction, not dependency. Everyone leads at their own level, accountability goes both ways, and nobody is just along for the ride.
 
-> **Maintain the System**. Leadership is maintenance. Physical, mental, operational. If the leader decays, the system decays. So train, read, plan, repeat. Every day.
+> **Review.** Every project ends with a debrief: what worked, what didn't, what we'll do differently. No blame, only lessons.
+
+> **Maintain the system.** If the leader runs down, the team follows. So I train, read and plan, every day.
 
 ## The Return
 
-Nine months later — system checked, signal clear.
-The mission hasn’t changed: **build strong teams, scalable systems, and lasting impact**.
-The core is the same. My edge is sharper. My focus tighter. My mission clearer.
+Nine months later I felt ready to go back.
 
+The goal hasn't changed: **build strong teams, systems that scale and work that lasts**. I'm the same person, just more focused.
 
 ## Closing
 
-Stepping back wasn’t retreat.
-It was **strategic re-calibration** — a decision I’m deeply thankful for.
-It took courage to step into the void without a plan, and my wife **Helin**’s unwavering support was the parachute that made it possible.
-Thank you, love — my co-pilot through every climb and dive.
+Stepping back wasn't a retreat. It was one of the best decisions I've made, and I'm grateful I made it.
 
-Now, the Quiet Operator returns — **Calm. Focused. Ready for the next mission.**
+It took some nerve to leave without a plan, and I couldn't have done it without my wife **Helin**, who backed me from day one. Thank you, love.
 
-{{< figure src="japan.webp" alt="A Japanese garden pond with a thatched pavilion and cherry blossoms under a grey sky" caption="The future ahead — quiet, steady, and open." >}}
+Now I'm back, calm and ready for whatever comes next.
 
-_Update, 2026: that next mission is [Entringo](https://entringo.com/), where I now serve as CEO._
+{{< figure src="japan.webp" alt="A Japanese garden pond with a thatched pavilion and cherry blossoms under a grey sky" caption="A garden in Japan." >}}
+
+_Update, 2026: what came next is [Entringo](https://entringo.com/), where I'm now CEO._

@@ -1,12 +1,12 @@
 ---
-title: "Kristian Sägi — Engineering Leader, CEO of Entringo"
-description: "Technology and engineering leader. CEO of Entringo. Builder of Playtech Mobile, Codemagic and Dynatrace Tallinn. Based in Tallinn, Estonia."
+title: "Kristian Sägi | Engineering Leader, CEO of Entringo"
+description: "Engineering leader and CEO of Entringo in Tallinn, Estonia. Co-founded Playtech Mobile and Codemagic and built Dynatrace's engineering office in Tallinn."
 images:
   - "https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg"  # use JPG for OG previews
 
 cover:
   image: "/og/kristian-sagi-share-1200x630.jpg"     # local path served by Hugo
-  alt: "Kristian Sägi — Engineering Leader, CEO of Entringo"
+  alt: "Kristian Sägi, Engineering Leader and CEO of Entringo"
   hidden: true
 ---
 <!--

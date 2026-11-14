@@ -67,7 +67,6 @@ gpg --auto-key-locate clear,wkd --locate-key kristian@kristiansagi.com
 
 ---
 
-## Other contact options
+## LinkedIn
 
-Prefer a professional introduction or collaboration request?
-You’re welcome to connect on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
+You can also reach me on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).

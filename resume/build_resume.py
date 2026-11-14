@@ -119,31 +119,30 @@ story = [
 
     h("Professional summary"),
     Paragraph(
-        "Technology and engineering leader with over two decades of experience founding companies, building "
-        "high-performing teams and scaling global software organizations. Currently CEO of Entringo. Co-founded "
+        "Engineering leader with 30 years in software, from writing code to founding and running companies "
+        "and building large engineering teams. Currently CEO of Entringo. Co-founded "
         "Playtech Mobile and scaled it from inception to $120M in annual revenue, co-founded the globally used "
         "mobile CI/CD platform Codemagic, and built Dynatrace’s Tallinn engineering hub.",
         S["body"]),
     Spacer(1, 4),
     Paragraph(
-        "Combines a founder’s mindset with executive discipline — translating complex technology challenges into "
-        "scalable systems, empowered teams and measurable outcomes. Experienced in product strategy, P&amp;L "
-        "leadership and organizational transformation across multinational, distributed teams.",
+        "Has worked as founder, CTO, site lead and CEO, in startups and in public companies, with responsibility "
+        "for product strategy, P&amp;L and engineering teams spread across several countries.",
         S["body"]),
 
     rule(14, 0),
     h("Professional experience"),
-    *job("Entringo — Tallinn, Estonia", [
-        ("Chief Executive Officer", "2026 – Present", [
-            "Leading a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic "
-            "management — combining in-house software with purpose-built hardware.",
+    *job("Entringo  ·  Tallinn, Estonia", [
+        ("Chief Executive Officer", "2026–Present", [
+            "Leading a Hansab Group company that builds ticketless ANPR parking, yard and traffic management "
+            "systems on its own software and hardware.",
             "Moving Tallinn Airport to fully ticketless, number-plate-based parking, unifying every parking product "
             "(taxi lanes, rideshare, short and long term, VIP, tenant access) on one platform, delivered with Hansab Eesti.",
             "Serving airports and businesses across the Baltics, including centralized parking management at Vilnius International Airport.",
         ]),
     ]),
-    *job("Dynatrace Inc — Tallinn, Estonia", [
-        ("Director of Engineering / Site Lead", "2022 – 2025", [
+    *job("Dynatrace Inc  ·  Tallinn, Estonia", [
+        ("Director of Engineering / Site Lead", "2022–2025", [
             "Scaled Dynatrace’s Tallinn engineering hub, tripling headcount and establishing culture, processes "
             "and a new office from the ground up.",
             "Directed delivery of high-performance monitoring products, aligning releases with global strategy.",
@@ -151,55 +150,55 @@ story = [
             "Partnered with global leadership on portfolio strategy and long-term scaling plans.",
         ]),
     ]),
-    *job("Nevercode Ltd / Codemagic — London &amp; Tallinn", [
-        ("Co-Founder &amp; Head of Product Strategy", "2017 – 2019", [
+    *job("Nevercode Ltd / Codemagic  ·  London and Tallinn", [
+        ("Co-Founder &amp; Head of Product Strategy", "2017–2019", [
             "Co-founded and scaled Codemagic, a CI/CD platform for mobile developers now used globally.",
             "Defined and executed product strategy, achieving recognition in the Google Flutter ecosystem.",
             "Led engineering and product teams through early-stage growth and funding.",
         ]),
-        ("Advisory Board Member", "2019 – 2022", [
+        ("Advisory Board Member", "2019–2022", [
             "Advised leadership on scaling, product strategy, market positioning and investor relations.",
         ]),
     ]),
-    *job("Playtech Mobile (Playtech plc) — Estonia", [
-        ("Co-Founder &amp; CTO, Mobile Division", "2005 – 2015", [
+    *job("Playtech Mobile (Playtech plc)  ·  Estonia", [
+        ("Co-Founder &amp; CTO, Mobile Division", "2005–2015", [
             "Built and scaled Playtech Mobile from inception to $120M in annual revenue across multiple "
             "regulated international markets.",
             "Built and led an organization of 100+ engineers and product managers across distributed teams.",
             "Delivered product strategy, architecture and execution for 100+ clients globally.",
             "Introduced an agile delivery model, moving release cycles from quarterly to monthly.",
         ]),
-        ("Product Manager, Bingo Network", "2004 – 2005", [
+        ("Product Manager, Bingo Network", "2004–2005", [
             "Managed 24/7 global operations across multiple regulated markets; directed product enhancements "
             "and customer integrations.",
         ]),
     ]),
-    *job("Assert AS / Fujitsu Estonia — Tallinn, Estonia", [
-        ("Software Engineer → Product Manager, Persona", "1996 – 2004", [
+    *job("Assert AS / Fujitsu Estonia  ·  Tallinn, Estonia", [
+        ("Software Engineer, later Product Manager, Persona", "1996–2004", [
             "Part of the original team that built the first version of Persona, the HR and payroll software still in "
             "daily use three decades later; later led the team responsible for Persona V2.",
         ]),
     ]),
     Paragraph("Other roles", S["org"]),
     Paragraph(
-        "GreenhouseCI — Head of Business Development (2016 – 2017)  ·  Simplify OÜ — Design Thinking Coach (2016)",
+        "GreenhouseCI, Head of Business Development (2016–2017)  ·  Simplify OÜ, Design Thinking Coach (2016)",
         S["body"]),
 
     rule(14, 0),
     h("Board, advisory &amp; mentorship"),
     bullets([
         "<b>Advisor</b> to technology companies on scaling engineering organizations, product strategy and leadership (Present)",
-        "<b>Key Mentor</b> — Ajujaht Startup Accelerator (2022 – Present)",
-        "<b>Coach</b> — ESA Business Incubation Centre Estonia (2018 – Present)",
-        "Member — Estonian Business Angels Network, EstBAN (2015 – 2018); Estonian Startup Leaders Club (2017 – 2018)",
+        "<b>Key Mentor</b>, Ajujaht Startup Accelerator (2022–Present)",
+        "<b>Coach</b>, ESA Business Incubation Centre Estonia (2018–Present)",
+        "Member, Estonian Business Angels Network, EstBAN (2015–2018); Estonian Startup Leaders Club (2017–2018)",
     ]),
 
     rule(14, 0),
     h("Talks &amp; media"),
     bullets([
-        "Keynote: <i>To Build Fast, You Need to Be Slow</i> — sTARTUp Day 2022",
-        "Featured in " + LINK.format("https://www.youtube.com/watch?v=vI9hbJPjkdA", "<i>The Story of Codemagic</i>") + " — documentary on the Google Flutter partnership",
-        "Podcasts and interviews: The Pursuit of Scrappiness (2023), TalentHub (2022), Äripäev, Postimees — "
+        "Keynote: <i>To Build Fast, You Need to Be Slow</i>, sTARTUp Day 2022",
+        "Featured in " + LINK.format("https://www.youtube.com/watch?v=vI9hbJPjkdA", "<i>The Story of Codemagic</i>") + ", a documentary about the Google Flutter partnership",
+        "Podcasts and interviews: The Pursuit of Scrappiness (2023), TalentHub (2022), Äripäev, Postimees. Full list: "
         + LINK.format("https://kristiansagi.com/media/", "kristiansagi.com/media"),
     ]),
 
@@ -252,7 +251,7 @@ def footer(canvas, doc):
 doc = SimpleDocTemplate(
     str(OUT), pagesize=A4,
     leftMargin=20 * mm, rightMargin=20 * mm, topMargin=18 * mm, bottomMargin=18 * mm,
-    title="Kristian Sägi — Résumé", author="Kristian Sägi",
+    title="Kristian Sägi, Résumé", author="Kristian Sägi",
     subject="Technology Leader & CEO", creator="kristiansagi.com",
     keywords="Kristian Sägi, CEO, Technology Leadership, Engineering Leadership",
 )

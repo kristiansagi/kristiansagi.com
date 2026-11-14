@@ -3,21 +3,19 @@ title: "About"
 slug: "story"
 weight: 10
 draft: false
-seoDescription: "Kristian Sägi is an engineering leader and CEO of Entringo. He co-founded Playtech Mobile ($120M annual revenue) and Codemagic, and built Dynatrace's Tallinn engineering hub."
+seoDescription: "Kristian Sägi is an engineering leader and CEO of Entringo. He co-founded Playtech Mobile ($120M annual revenue) and Codemagic, and built Dynatrace's engineering office in Tallinn."
 pageLang: en
 alternates:
   et: /et/
 ---
 
-### Building and Leading at Scale ###
+I'm the CEO of **Entringo**. We build the systems that run parking and vehicle traffic at airports and businesses around the Baltics, from the software to the hardware it runs on.
 
-I am a technology and engineering leader who builds and scales high-performing organizations in global product companies. Today I serve as CEO of **Entringo**, a provider of integrated vehicle flow systems.
+I started in 1996 as a software engineer on the small team that wrote **Persona**, an HR and payroll system companies still use every day. Since then I've co-founded **Playtech Mobile** and grown it to $120M in annual revenue, co-founded **Nevercode**, the company behind the mobile CI/CD platform **Codemagic**, and built **Dynatrace**'s engineering office in Tallinn, which tripled in size while I ran it.
 
-I started as a software engineer — as part of the original team behind **Persona**, an HR and payroll system still in daily use three decades later. Since then, I have founded companies, led large engineering teams, and operated within complex international environments. I scaled **Playtech Mobile** from inception to **$120M in annual revenue**, co-founded **Nevercode**, the company behind the globally used mobile CI/CD platform **Codemagic**, and built **Dynatrace Tallinn** into a high-impact engineering hub within a global observability organization.
+Most of my career has been spent at the point where a company outgrows the way it started. The first managers have to be found, decisions need owners, and the architecture has to survive ten times the load. That's the part of the job I like most.
 
-My work sits at the intersection of technology, product, and organizational design. I focus on building strong leadership layers, creating clarity in complex systems, and aligning long-term technical direction with disciplined execution.
-
-I care deeply about quality, resilience, and building systems that last — both in software and in teams.
+Outside work I mentor founders at Ajujaht and the ESA Business Incubation Centre Estonia, rebuild old machines (lately a vintage bicycle and a 1986 UAZ van), and take sleep seriously.
 
 ## What colleagues say
 
@@ -33,4 +31,4 @@ Kristian is a shrewd, no-nonsense business person with the ability to excite eve
 Kristian is a real professional, highly experienced with software development and new methodologies. Kristian brought with him to the table great enthusiasm and leadership which enabled him to build a great mobile team [in Estonia].
 {{< /testimonial >}}
 
-See what I am [focused on now →](/now/)
+What I'm working on [now](/now/).
