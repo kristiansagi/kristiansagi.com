@@ -627,3 +627,36 @@ body:has(.main .profile) .main {
   background: var(--entry);
 }
 .post-content .speaker-bio p:last-child { margin-bottom: 0; }
+
+/* ---- Testimonials (About page) ------------------------------------------ */
+.post-content .testimonial {
+  margin: 0 0 16px;
+  padding: 28px 32px;
+  border-radius: 18px;
+  background: var(--entry);
+}
+.post-content .testimonial blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: 0.011em;
+  color: var(--apple-text);
+}
+.post-content .testimonial blockquote p { margin: 0; }
+.post-content .testimonial figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.post-content .testimonial .testimonial-name { font-weight: 600; color: var(--apple-text); }
+.post-content .testimonial .testimonial-role { font-weight: 400; color: var(--apple-subtle); }
+@media (max-width: 600px) {
+  .post-content .testimonial { padding: 22px 20px; }
+  .post-content .testimonial blockquote { font-size: 19px; }
+}

@@ -1,0 +1,8 @@
+{{- /* Quote card. Usage: {{< testimonial name="…" role="…" >}}Quote text{{< /testimonial >}} */ -}}
+<figure class="testimonial">
+  <blockquote>{{ .Inner | strings.TrimSpace | .Page.RenderString }}</blockquote>
+  <figcaption>
+    <span class="testimonial-name">{{ .Get "name" }}</span>
+    {{- with .Get "role" }}<span class="testimonial-role">{{ . }}</span>{{ end }}
+  </figcaption>
+</figure>
