@@ -28,6 +28,7 @@ build:
 sitemap:
   disable: true
 robotsNoIndex: true
+personal: true
 ---
 
 A year ago, I found myself standing in a doctor’s office, unprepared for the reality I was about to face.

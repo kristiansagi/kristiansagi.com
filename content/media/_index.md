@@ -53,3 +53,24 @@ How to preserve culture and values when two companies merge. _(In Estonian.)_
 - **Postimees, 2022** — _“Estonian head of an IT group: startups push people to work themselves to death”_ — on sustainable pace and work culture. [Read (Estonian) →](https://majandus.postimees.ee/7655196/it-kontserni-eesti-juht-idufirmad-ohutavad-end-tooga-tapma)
 - **Forte (Delfi)** — _“Software company leader: finding talent in Estonia has become easier as the air has gone out of startups”_ — on the tech talent market. [Read (Estonian) →](https://forte.delfi.ee/artikkel/120276335/tarkvaraettevotte-juht-eestis-on-toojou-leidmine-lainud-lihtsamaks-iduettevotetest-on-ohku-valja-lastud)
 - **Ärileht (Delfi), video debate** — _“Coders versus the real economy: who will get Estonia’s economy growing again?”_ [Watch (Estonian) →](https://arileht.delfi.ee/artikkel/120275038/video-koodikirjutajad-versus-reaalmajandus-kes-paneb-eesti-majanduse-uuesti-kasvama)
+
+---
+
+## Speaker bio
+
+For event organizers. Feel free to use either version.
+
+{{< panel >}}
+
+**Short**
+
+Kristian Sägi is an engineering leader and the CEO of Entringo, a Hansab Group company building integrated vehicle flow systems.
+
+**Full**
+
+Kristian Sägi is an engineering leader and the CEO of Entringo, a Hansab Group company that builds integrated vehicle flow systems — ticketless parking, yard and traffic management — combining its own software with purpose-built hardware. Over more than two decades he co-founded Playtech Mobile and scaled it to $120M in annual revenue, co-founded the mobile CI/CD platform Codemagic, and built Dynatrace’s Tallinn engineering hub. He began his career as a software engineer on the original team behind Persona, an HR and payroll system still in daily use. Kristian mentors founders at the Ajujaht accelerator and ESA Business Incubation Centre Estonia, and speaks about engineering leadership, building companies and sustainable pace. He holds a B.Sc. in Engineering Physics from the University of Tartu and is based in Tallinn, Estonia.
+
+{{< /panel >}}
+
+[Download headshot (JPG, 1024 × 1024) →](/press/kristian-sagi-headshot.jpg)
+

@@ -25,3 +25,22 @@
   | resources.Minify
   | resources.Fingerprint -}}
 <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}">
+
+{{- /* Homepage: Person profile for search engines (schema.org), feeds Google's profile panel */ -}}
+{{- if .IsHome }}
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" "Kristian Sägi"
+  "url" ("" | absURL)
+  "image" ("kristian-sagi-profile-suit1.webp" | absURL)
+  "jobTitle" "Chief Executive Officer"
+  "description" "Engineering leader. CEO of Entringo."
+  "worksFor" (dict "@type" "Organization" "name" "Entringo" "url" "https://entringo.com/")
+  "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "University of Tartu")
+  "address" (dict "@type" "PostalAddress" "addressLocality" "Tallinn" "addressCountry" "EE")
+  "knowsAbout" (slice "Engineering leadership" "Software architecture" "Product strategy" "Scaling engineering organizations")
+  "sameAs" (slice "https://www.linkedin.com/in/kristiansagi/" "https://x.com/kristiansagi")
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- end }}
