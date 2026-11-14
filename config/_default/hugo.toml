@@ -129,4 +129,4 @@ url = "https://x.com/kristiansagi"
 
 # Footer: copyright · Contact (apple.com-style quiet footer link)
 [params.footer]
-  text = "[Contact](/contact/)"
+  text = "[Contact](/contact/) · [Eesti keeles](/et/)"

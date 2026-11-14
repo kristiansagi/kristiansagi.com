@@ -341,7 +341,8 @@ body:has(.main .profile) .main {
 .post-content h3 { margin-top: 1.4em; margin-bottom: 0.25em; }
 
 /* Intro line written as "#### _text_" at the top of a page → Apple intro copy */
-.post-content > h4:first-child {
+.post-content > h4:first-child,
+.post-content > div[lang] > h4:first-child {
   margin: 0 0 8px;
   font-size: 21px;
   font-weight: 400;
@@ -349,7 +350,8 @@ body:has(.main .profile) .main {
   letter-spacing: 0.011em;
   color: var(--apple-subtle);
 }
-.post-content > h4:first-child em { font-style: normal; }
+.post-content > h4:first-child em,
+.post-content > div[lang] > h4:first-child em { font-style: normal; }
 
 /* Dates written as "#### 2026 – Present" under a role → small grey eyebrow */
 .post-content h3 + h4 {

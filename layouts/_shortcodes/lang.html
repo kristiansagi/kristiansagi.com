@@ -1,0 +1,5 @@
+{{- /* Marks a block's language for browsers, screen readers and search engines.
+       Usage: {{< lang "et" >}} … Markdown … {{< /lang >}} */ -}}
+<div lang="{{ .Get 0 }}">
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

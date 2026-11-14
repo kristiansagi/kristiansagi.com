@@ -98,9 +98,18 @@
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" title="{{ .Name }}">
 {{ end -}}
+{{- /* Site override: hand-made language pairs (e.g. About ↔ /et/) via front matter
+       pageLang: et   alternates: { en: /story/ } */ -}}
+{{- with .Params.alternates }}
+<link rel="alternate" hreflang="{{ $.Params.pageLang | default site.Language.Lang }}" href="{{ $.Permalink }}">
+{{- range $lang, $url := . }}
+<link rel="alternate" hreflang="{{ $lang }}" href="{{ $url | absURL }}">
+{{- end }}
+{{ else }}
 {{- range .AllTranslations -}}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{ end -}}
+{{- end }}
 
 <noscript>
     <style>
