@@ -15,4 +15,18 @@ My work sits at the intersection of technology, product, and organizational desi
 
 I care deeply about quality, resilience, and building systems that last — both in software and in teams.
 
+## What colleagues say
+
+{{< testimonial name="Gordon Meyer" role="Director, AI Product Innovation, Dynatrace · worked with Kristian on the same team" >}}
+Kristian joined to lead and grow the new Tallinn location when we acquired a team there a few years ago. He did it with dedication and passion, building up strong relationships with all of the newly arrived employees in the lab. … The Tallinn teams are highly skilled and engaged and will be an important part of our future growth.
+{{< /testimonial >}}
+
+{{< testimonial name="Ray Rischpater" role="Software engineer · worked with Kristian at Nevercode while at Google" >}}
+Kristian is a shrewd, no-nonsense business person with the ability to excite everyone around him with his ideas and leadership. … Kristian shows both clear business acumen and technical skills.
+{{< /testimonial >}}
+
+{{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass · managed Kristian directly at Playtech" >}}
+Kristian is a real professional, highly experienced with software development and new methodologies. Kristian brought with him to the table great enthusiasm and leadership which enabled him to build a great mobile team [in Estonia].
+{{< /testimonial >}}
+
 See what I am [focused on now →](/now/)
