@@ -1,0 +1,45 @@
+{{- /*
+  Perspectives (section list) — site override of PaperMod's list.html.
+  Featured essays ("Start here") → other essays → personal notes as a quiet list.
+  Front matter flags on posts:  featured: true  |  personal: true
+*/ -}}
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <div class="post-description">{{ . | markdownify }}</div>
+  {{- end }}
+  {{- with .OutputFormats.Get "rss" }}
+  <p class="perspectives-subscribe"><a href="{{ .RelPermalink }}">Subscribe via RSS</a></p>
+  {{- end }}
+</header>
+
+{{- $all := .RegularPages.ByDate.Reverse }}
+{{- $featured := where $all "Params.featured" true }}
+{{- $personal := where $all "Params.personal" true }}
+{{- $essays := complement $featured $personal $all }}
+
+{{- with $featured }}
+<h2 class="perspectives-heading">Start here</h2>
+{{- range . }}{{ partial "post_card.html" . }}{{ end }}
+{{- end }}
+
+{{- with $essays }}
+<h2 class="perspectives-heading">More essays</h2>
+{{- range . }}{{ partial "post_card.html" . }}{{ end }}
+{{- end }}
+
+{{- with $personal }}
+<h2 class="perspectives-heading">Personal</h2>
+<ul class="perspectives-personal">
+  {{- range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <span>{{ .Date | time.Format ":date_long" }}</span>
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+
+{{- end }}

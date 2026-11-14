@@ -18,6 +18,7 @@ cover:
   alt: "Kristian Sägi speaking at sTARTUp Day 2022"
   relative: true
 
+featured: true
 ---
 
 ## How It All Started

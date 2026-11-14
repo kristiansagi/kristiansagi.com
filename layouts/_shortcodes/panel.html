@@ -1,0 +1,4 @@
+{{- /* Grey rounded panel for a block of Markdown. Usage: {{< panel >}} … {{< /panel >}} */ -}}
+<div class="speaker-bio">
+{{ .Inner | .Page.RenderString (dict "display" "block") }}
+</div>

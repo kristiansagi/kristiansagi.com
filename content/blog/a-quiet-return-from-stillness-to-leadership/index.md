@@ -23,6 +23,7 @@ cover:
   alt: "The view before the return — quiet, wide, and clear."
   relative: true
 
+featured: true
 ---
 
 ## The Decision

@@ -32,6 +32,7 @@ build:
 sitemap:
   disable: true
 robotsNoIndex: true
+personal: true
 ---
 
 *Notes from my film shelf.*
