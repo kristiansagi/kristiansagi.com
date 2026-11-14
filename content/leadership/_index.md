@@ -3,49 +3,41 @@ title: "How I Lead"
 slug: "leadership"
 weight: 30
 draft: false
-seoDescription: "How Kristian Sägi leads engineering organizations: clear ownership, strong leadership layers, high standards and systems built to last."
+seoDescription: "How Kristian Sägi runs engineering organizations: fast decisions, clear goals, one owner per problem, strong managers and a sustainable pace."
 ---
 
-I operate at the intersection of engineering, product, and organizational design. My focus is building environments where strong teams can execute with clarity and long-term direction.
-
----
-
-### Engineering Leadership
-
-I build and scale engineering organizations that balance ambition with discipline.  
-This means clear ownership, strong leadership layers, and systems that support consistent execution across teams.
-
-I expect high standards. I remove noise. I protect focus.
+#### _What I've learned about running engineering organizations, mostly by getting it wrong first._
 
 ---
 
-### Technical Direction & Delivery
+### Decide, then adjust
 
-I align long-term technical direction with day-to-day delivery.  
-Architecture, process, and product decisions must reinforce each other.
+Playtech taught me that a quick decision is usually better than a slow perfect one. You can fix a wrong call next week. Waiting costs you the week.
 
-Scalable systems are not accidental. They are the result of deliberate trade-offs, clear priorities, and engineering maturity.
+### Say what success looks like
+
+Before a project starts, I write down in one sentence what we're trying to achieve and what we won't do. Then I leave the team to work out how. Most micromanagement comes from a goal nobody stated clearly.
+
+### One owner per problem
+
+Every system, decision and open problem should have one name next to it, not a committee. When something goes wrong in my organization, it's mine first.
+
+### Grow managers early
+
+A team can't grow faster than its leaders. I hire and develop engineering managers before the team feels it needs them, because by the time it does, it's late.
+
+### Cut more than you add
+
+Removing a feature, a meeting or a process takes as much effort as adding one, and it's usually worth more.
+
+### Look back without blame
+
+Every project ends with a short review: what worked, what didn't, what we'll change next time. Nobody gets blamed for an honest mistake.
+
+### Sleep
+
+I learned this one the hard way, after crashing my car on the way home during the 100-hour weeks at Nevercode. Tired people make bad decisions, me included. A team that works at a pace it can keep gets more done in a year than one that sprints and burns out.
 
 ---
 
-### Organizational Clarity
-
-Growth introduces complexity.  
-My role is to simplify without oversimplifying — to define structure, decision-making boundaries, and accountability.
-
-Healthy organizations are built on trust, transparency, and shared responsibility.
-
----
-
-### Developing Leaders
-
-Strong organizations are built by strong leaders.  
-I invest in developing engineering managers and senior engineers, creating leadership capacity that sustains growth beyond individual contribution.
-
----
-
-## Let’s Build Something That Lasts
-
-I am drawn to global product and platform organizations where engineering excellence, resilience, and long-term thinking matter.
-
-If that aligns with what you are building, I would welcome the conversation.
+More on that in [To Build Fast, You Need To Be Slow](/blog/to-build-fast-you-need-to-be-slow/).

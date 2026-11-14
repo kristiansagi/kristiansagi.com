@@ -4,8 +4,8 @@ date: 2022-08-25
 tags: ["leadership", "startups", "self-awareness", "product", "culture", "focus", "growth"]
 type: post
 author: Kristian Sägi
-summary: "A reflection on why speed without awareness leads nowhere — and how slowing down became the foundation for building better companies, better teams, and a better life."
-description: "A reflection on why speed without awareness leads nowhere — and how slowing down became the foundation for building better companies, better teams, and a better life."
+summary: "Why rushing gets you nowhere, and how slowing down made me better at building companies and teams."
+description: "Why rushing gets you nowhere, and how slowing down made me better at building companies and teams."
 ShowToc: true
 ShowReadingTime: true
 TocOpen: false
@@ -23,17 +23,17 @@ featured: true
 
 ## How It All Started
 
-I started working — meaning actually getting paid — when I was seven years old.  
-Back then it wasn’t called *child labor* — it was just normal.
+I started working, and I mean actually getting paid, when I was seven years old.  
+Back then nobody called it *child labor*. It was just normal.
 
 My father is a carpenter, and when I was small, I wanted to be exactly like him.  
-He has this ability to know how to build everything, and I admired that — the ability to create something tangible, something real.
+He knows how to build pretty much anything, and I admired that. He made real things you could touch.
 
-When I grew older, during the summer before high school, I discovered computers — these strange boxes with buttons and a screen.  
+When I grew older, during the summer before high school, I discovered computers, these strange boxes with buttons and a screen.  
 I didn’t have the faintest idea what to do with them, so I went to the local library, borrowed every book I could find about computer science, and read through all of them that summer. By autumn, I was hooked.  
 
-That curiosity led me to study computer science — especially how it all *actually works*, applied physics and all — and eventually to work full-time as a software developer.  
-Within a few years, I had become a project manager, then a product manager, running large teams and big products — all while studying full-time at university.
+That curiosity led me to study computer science and applied physics, because I wanted to know how it all *actually works*, and eventually to work full-time as a software developer.  
+Within a few years, I had become a project manager, then a product manager, running large teams and big products, all while studying full-time at university.
 
 Everything seemed to go extremely well.  
 Until it didn’t.
@@ -53,16 +53,16 @@ It changed my life. I took a year off from university, reduced my workload, and 
 
 ## Lessons From the Army-Run Company
 
-In 2004, I joined **Playtech** — back then a mysterious company in Tartu.  
+In 2004 I joined **Playtech**, which back then was a fairly mysterious company in Tartu.  
 It was run with military precision; everything was a mission. You accomplished it, or you went home.  
 
 It taught me discipline and decisiveness.  
-I learned that **making a quick decision is better than waiting** — even if it’s the wrong one. You can always adjust.  
+I learned that **making a quick decision is better than waiting**, even if it turns out to be wrong. You can always adjust.  
 But hesitation kills everything.
 
 I spent 11 years there. My department grew from two people to 150.  
 We went from spending money to generating nine figures in revenue.  
-Yet, after a decade, I felt I needed to move on. The company was big, successful, and slow — and I was ready to make mistakes again.
+Yet, after a decade, I felt I needed to move on. The company was big, successful and slow, and I wanted to be somewhere I could make mistakes again.
 
 So I left.
 
@@ -82,19 +82,19 @@ It forced me to separate **who I am** from **what I do.**
 ## Building, Crashing, and Learning My Limits
 
 Soon after, I co-founded **Nevercode** with my friend Triin.  
-I thought I knew everything — I had seen it all at Playtech.  
+I thought I knew everything. I had seen it all at Playtech.  
 I was wrong.
 
 We worked like maniacs, believing that long hours equaled success.  
 We copied Silicon Valley’s mythology of 100-hour weeks.  
 We didn’t sleep, didn’t eat properly, just built and built.
 
-Then one night, driving home, I crashed my car. Completely destroyed — yet I walked away without a scratch.  
+Then one night, driving home, I crashed my car. The car was completely destroyed, and I walked away without a scratch.  
 That night changed my life for the second time.  
 
 I realized **I do have limits.**  
 I started sleeping again. Every night.  
-And I tell this to everyone — *if you didn’t sleep well today, go home and sleep. Everything starts from there.*
+And I tell this to everyone: *if you didn’t sleep well today, go home and sleep. Everything starts from there.*
 
 ---
 
@@ -106,13 +106,13 @@ So we did something radical: **we stopped.**
 
 We sat down and just listened.  
 When you’re quiet, you start hearing small signals that others ignore.  
-That silence led us in a direction no one else was noticing — and a year later, we signed a contract with **Google HQ in Mountain View.**
+That silence pointed us in a direction nobody else had noticed, and a year later we signed a contract with **Google HQ in Mountain View.**
 
 Slowing down saved the company.  
 Listening saved it.
 
-Later, at the right moment — when we were on top — we stepped away and handed the company to new leadership.  
-It felt like letting your child walk away — painful, but the only right choice to make.  
+Later, at the right moment, while we were on top, we stepped away and handed the company to new leadership.  
+It felt like watching your child walk away. Painful, but the right choice.  
 Sometimes, moving forward means letting go.
 
 ---

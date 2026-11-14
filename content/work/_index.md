@@ -6,55 +6,52 @@ draft: false
 seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of Engineering at Dynatrace Tallinn, co-founder of Codemagic and Playtech Mobile, and the original Persona team."
 ---
 
-#### _Selected experience building and scaling technology companies and engineering organizations._
+#### _Where I've worked and what we built._
 
 ---
 
-### Entringo — Chief Executive Officer
-#### 2026 – Present
+### Entringo
+#### Chief Executive Officer · 2026–present
 
-+ Leading Entringo, a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software and purpose-built hardware.
-+ Moving **Tallinn Airport** to fully ticketless, number-plate-based parking, with every parking product — taxi lanes, rideshare, short and long term, VIP and tenant access — unified on one Entringo platform, delivered with Hansab Eesti.
-+ Serving airports and businesses across the Baltics, including centralized parking management at **Vilnius International Airport**.
-
-***
-
-### Dynatrace Tallinn — Director of Engineering & Site Lead
-#### 2022 – 2025
-
-+ Built and scaled the Tallinn engineering hub of a global observability platform, tripling headcount and establishing culture, processes and a new office from the ground up.
-+ Directed delivery of high-performance monitoring products, aligning teams across multiple countries with global product and architectural direction.
-+ Partnered with global leadership on portfolio strategy, hiring standards and long-term scaling plans.
++ Entringo, part of Hansab Group, makes ticketless ANPR parking, yard and traffic management systems on its own software and hardware.
++ We're moving **Tallinn Airport** to fully ticketless parking based on number plates. Taxi lanes, rideshare, short and long term parking, VIP and tenant access all run on one Entringo platform, delivered together with Hansab Eesti.
++ Customers include airports and businesses across the Baltics, among them **Vilnius International Airport**, where parking is managed centrally on Entringo.
 
 ***
 
-### Nevercode / Codemagic — Co-Founder & Head of Product Strategy
-#### 2017 – 2019 · Advisory Board Member 2019 – 2022
+### Dynatrace
+#### Director of Engineering and Site Lead, Tallinn · 2022–2025
 
-+ Co-founded and scaled Codemagic, a CI/CD platform for mobile developers now used globally, recognized in the Google Flutter ecosystem.
-+ Defined and executed product strategy and led engineering and product teams through early-stage growth and funding.
-+ As advisory board member, advised leadership on scaling, product strategy, market positioning and investor relations.
-
-***
-
-### Playtech Mobile (Playtech plc) — Co-Founder & CTO, Mobile Division
-#### 2005 – 2015
-
-+ Built and scaled the mobile division from inception to $120M in annual revenue across multiple regulated international markets.
-+ Built and led an organization of 100+ engineers and product managers delivering high-availability, revenue-critical systems for 100+ clients.
-+ Introduced an agile delivery model that moved release cycles from quarterly to monthly.
++ Took over the Tallinn team after Dynatrace acquired it and tripled its headcount, with a new office, a hiring process and engineering practices built from scratch.
++ Ran delivery of monitoring products built together with teams in several other countries, in line with global product and architecture direction.
++ Worked with global leadership on portfolio strategy, hiring standards and how the site would grow.
 
 ***
 
-### Assert / Fujitsu Estonia — Software Engineer → Product Manager, Persona
-#### 1996 – 2004
+### Nevercode / Codemagic
+#### Co-Founder and Head of Product Strategy · 2017–2019 · Advisory Board 2019–2022
 
-+ Part of the original team that built the first version of **Persona**, the HR and payroll software still in daily use three decades later; later led the team responsible for Persona V2.
++ Co-founded Nevercode and created Codemagic, a CI/CD service for mobile apps built in partnership with Google's Flutter team. Developers around the world use it today.
++ Owned product strategy and led the product and engineering teams through early growth and funding.
++ Stayed on the advisory board until 2022, advising on scaling, positioning and investor relations.
 
 ***
 
-## Let’s Build What’s Next
+### Playtech Mobile (Playtech plc)
+#### Co-Founder and CTO, Mobile Division · 2005–2015
 
-I work best at moments where growth requires structure — when technology, people, and long-term direction must align.
++ Grew the mobile division from two people to an organization of more than 100 engineers and product managers.
++ Revenue went from zero to $120M a year across several regulated international markets.
++ Our systems were revenue-critical and ran around the clock for more than 100 clients.
++ Introduced agile delivery and moved releases from quarterly to monthly.
 
-If you are building a global product or platform organization and value engineering excellence, clarity, and disciplined execution, I would welcome the conversation.
+***
+
+### Assert and Fujitsu Estonia
+#### Software Engineer, later Product Manager for Persona · 1996–2004
+
++ One of the original engineers who wrote the first version of **Persona**, the HR and payroll software still in daily use 30 years later. Later led the team that built Persona V2.
+
+***
+
+How I run teams: [How I Lead](/leadership/).
