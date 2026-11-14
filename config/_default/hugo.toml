@@ -28,7 +28,7 @@ enableRobotsTXT = true
   ]
 
   # global opengraph settings (PaperMod supports these)
-  images = ["https://kristiansagi.com/og/home-1200x630.jpg"]
+  images = ["https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg"]
   title = "Kristian Sägi"
 
   # end of site-wide OG defaults

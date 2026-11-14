@@ -1,4 +1,4 @@
-"""Builds static/og/home-1200x630.jpg — the share image used when kristiansagi.com
+"""Builds static/og/kristian-sagi-share-1200x630.jpg — the share image used when kristiansagi.com
 is posted on LinkedIn, X, Slack etc. Apple-style: light grey, round portrait, Inter.
 
     python tools/make_og_image.py      (needs Pillow)
@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "resume" / "fonts"
-OUT = ROOT / "static" / "og" / "home-1200x630.jpg"
+OUT = ROOT / "static" / "og" / "kristian-sagi-share-1200x630.jpg"
 PHOTO = ROOT / "static" / "kristian-sagi-profile-suit1.webp"
 
 W, H, SS = 1200, 630, 2                      # render at 2x, then downscale for crisp edges
