@@ -3,6 +3,7 @@ title: "How I Lead"
 slug: "leadership"
 weight: 30
 draft: false
+seoDescription: "How Kristian Sägi leads engineering organizations: clear ownership, strong leadership layers, high standards and systems built to last."
 ---
 
 I operate at the intersection of engineering, product, and organizational design. My focus is building environments where strong teams can execute with clarity and long-term direction.

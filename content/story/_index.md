@@ -3,6 +3,7 @@ title: "About"
 slug: "story"
 weight: 10
 draft: false
+seoDescription: "Kristian Sägi is an engineering leader and CEO of Entringo. He co-founded Playtech Mobile ($120M annual revenue) and Codemagic, and built Dynatrace's Tallinn engineering hub."
 ---
 
 ### Building and Leading at Scale ###

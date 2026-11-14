@@ -4,6 +4,7 @@ slug: "contact"
 weight: 50
 draft: false
 ShowCodeCopyButtons: true
+seoDescription: "Contact Kristian Sägi through an end-to-end encrypted form, by email, or verify his public PGP key."
 ---
 
 Your message will be encrypted before it leaves your browser and only I can read it.
