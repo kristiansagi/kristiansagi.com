@@ -1,5 +1,5 @@
 ---
-title: "My Track Record"
+title: "Track Record"
 slug: "work"
 weight: 20
 draft: false
@@ -14,7 +14,7 @@ draft: false
 
 + Leading Entringo, a provider of integrated vehicle flow systems — ticketless ANPR parking, yard and traffic management — combining in-house software and purpose-built hardware.
 + Moving **Tallinn Airport** to fully ticketless, number-plate-based parking, with every parking product — taxi lanes, rideshare, short and long term, VIP and tenant access — unified on one Entringo platform, delivered with Hansab Eesti.
-+ Serving customers across the Baltics, including frictionless paid parking for Business Garden Vilnius.
++ Serving airports and businesses across the Baltics, including centralized parking management at **Vilnius International Airport**.
 
 ***
 

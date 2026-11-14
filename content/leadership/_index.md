@@ -1,5 +1,5 @@
 ---
-title: "What I Do Best"
+title: "How I Lead"
 slug: "leadership"
 weight: 30
 draft: false

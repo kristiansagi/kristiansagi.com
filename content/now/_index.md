@@ -12,8 +12,6 @@ I lead **[Entringo](https://entringo.com/)** as Chief Executive Officer. Entring
 
 Alongside this role, I advise technology companies on scaling engineering organizations, product strategy and leadership, and I continue to mentor founders at the **Ajujaht** startup accelerator and the **ESA Business Incubation Centre Estonia**.
 
-I am open to **non-executive board and advisory roles** with technology and product companies where engineering excellence, resilience and long-term thinking matter.
-
 I am based in Tallinn, Estonia.
 
-[Start a conversation →](/contact/)
+[Contact →](/contact/)

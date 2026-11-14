@@ -1,5 +1,5 @@
 ---
-title: "My Story"
+title: "About"
 slug: "story"
 weight: 10
 draft: false

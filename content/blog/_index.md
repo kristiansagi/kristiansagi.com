@@ -1,7 +1,7 @@
 ---
-title: "Reflections by Kristian Sägi"
+title: "Perspectives"
 subtitle: "Thoughts on leadership, purpose and quiet progress."
-description: "Personal essays and reflections on leadership, stillness and building meaningful technology."
+description: "Essays on engineering leadership, building companies and long-term thinking."
 ShowBreadCrumbs: false
 showReadingTime: true
 ShowToc: false
