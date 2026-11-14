@@ -1,5 +1,5 @@
 ---
-title: "My Track Record"
+title: "Track Record"
 slug: "work"
 weight: 20
 draft: false

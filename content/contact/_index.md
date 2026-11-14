@@ -1,5 +1,5 @@
 ---
-title: "Contact Kristian"
+title: "Contact"
 slug: "contact"
 weight: 50
 draft: false

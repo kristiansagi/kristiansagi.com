@@ -1,5 +1,5 @@
 ---
-title: "Media & Mentions"
+title: "Media"
 slug: "media"
 description: "Talks, podcasts and interviews featuring Kristian Sägi."
 aliases: ["/press/", "/in-the-media/"]

@@ -45,15 +45,12 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 
 [params.profileMode]
 enabled = true
-subtitle = """
-<strong>Technology leader and CEO.</strong><br>
-Building resilient companies, teams and systems.
-"""
+subtitle = "Engineering leader. CEO of Entringo."
 
 
 
 # Sub title, not in the original theme
-notice = "CEO of Entringo · Open to board and advisory roles."
+notice = "Building resilient companies, teams and systems."
 
 # casual
 # imageUrl = "kristian-sagi.webp"
@@ -69,12 +66,12 @@ imageHeight = 240
 
 # Buttons (array of tables)
 [[params.profileMode.buttons]]
-name = "See My Work"
-url = "/work"
+name = "Track Record"
+url = "/work/"
 
 [[params.profileMode.buttons]]
-name = "Start a Conversation"
-url = "/contact"
+name = "Perspectives"
+url = "/blog/"
 
 # [[params.profileMode.buttons]]
 # name = "Download My Résumé (PDF)"
@@ -96,19 +93,19 @@ url = "https://x.com/kristiansagi"
 
 [menu]
   [[menu.main]]
-    name = "My Story"
+    name = "About"
     url = "/story/"
     weight = 10
   [[menu.main]]
     name = "Now"
     url = "/now/"
-    weight = 15
+    weight = 50
   [[menu.main]]
-    name = "My Track Record"
+    name = "Track Record"
     url = "/work/"
     weight = 20
   [[menu.main]]
-    name = "Leadership & Impact"
+    name = "Leadership"
     url = "/leadership/"
     weight = 30
   [[menu.main]]
@@ -127,3 +124,7 @@ url = "https://x.com/kristiansagi"
 #    name = "Contact"
 #    url = "/contact/"
 #    weight = 50
+
+# Footer: copyright · Contact (apple.com-style quiet footer link)
+[params.footer]
+  text = "[Contact](/contact/)"
