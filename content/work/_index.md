@@ -46,7 +46,7 @@ draft: false
 ***
 
 ### Assert / Fujitsu Estonia — Software Engineer → Product Manager, Persona
-#### 1996 – 2003
+#### 1996 – 2004
 
 + Part of the original team that built the first version of **Persona**, the HR and payroll software still in daily use three decades later; later led the team responsible for Persona V2.
 
