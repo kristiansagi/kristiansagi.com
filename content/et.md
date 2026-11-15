@@ -14,7 +14,7 @@ ShowShareButtons: false
 ---
 
 {{< lang "et" >}}
-#### _Tutvustused ajakirjanikele ja ürituste korraldajatele. Kasutage julgelt seda, mis pikkuselt sobib._
+#### _Ametlik tutvustus avalikuks kasutamiseks._
 
 **Ühe lausega**
 

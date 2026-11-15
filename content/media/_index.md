@@ -58,7 +58,7 @@ How to keep a company's culture and values when two companies merge. _(In Estoni
 
 ## Speaker bio
 
-For journalists and event organizers. Use whichever length fits. [Eesti keeles](/et/)
+Official bio for public use. [Eesti keeles](/et/)
 
 {{< panel >}}
 
