@@ -15,7 +15,7 @@ seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of En
 
 + Entringo, part of Hansab Group, makes ticketless ANPR parking, yard and traffic management systems on its own software and hardware.
 + We're moving **Tallinn Airport** to fully ticketless parking based on number plates. Taxi lanes, rideshare, short and long term parking, VIP and tenant access all run on one Entringo platform, delivered together with Hansab Eesti.
-+ Customers include airports and businesses across the Baltics, among them **Vilnius International Airport**, where parking is managed centrally on Entringo.
++ Customers include airports and businesses in 11 countries, among them **Vilnius International Airport**, where parking is managed centrally on Entringo.
 
 ***
 

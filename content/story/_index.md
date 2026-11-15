@@ -9,7 +9,7 @@ alternates:
   et: /et/
 ---
 
-I'm the CEO of **Entringo**. We build the systems that run parking and vehicle traffic at airports and businesses around the Baltics, from the software to the hardware it runs on.
+I'm the CEO of **Entringo**. We build the systems that run parking and vehicle traffic at airports and businesses in 11 countries, from the software to the hardware it runs on.
 
 I started in 1996 as a software engineer on the small team that wrote **Persona**, an HR and payroll system companies still use every day. Since then I've co-founded **Playtech Mobile** and grown it to $120M in annual revenue, co-founded **Nevercode**, the company behind the mobile CI/CD platform **Codemagic**, and built **Dynatrace**'s engineering office in Tallinn, which tripled in size while I ran it.
 
