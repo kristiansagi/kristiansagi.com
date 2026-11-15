@@ -58,7 +58,7 @@ How to keep a company's culture and values when two companies merge. _(In Estoni
 
 ## Speaker bio
 
-For journalists and event organizers. Use whichever length fits. [Eesti keeles](/et/)
+Official bio for public use. [Eesti keeles](/et/)
 
 {{< panel >}}
 
@@ -68,11 +68,15 @@ Kristian Sägi is the CEO of Entringo and a co-founder of Playtech Mobile and Co
 
 **Short**
 
-Kristian Sägi leads Entringo, a Hansab Group company that builds ticketless parking, yard and traffic management systems. He co-founded Playtech Mobile and grew it to $120M in annual revenue, co-founded the mobile CI/CD platform Codemagic, and ran Dynatrace’s engineering office in Tallinn.
+Kristian Sägi leads Entringo, a Hansab Group company that builds parking, yard and traffic management systems based on number plate recognition. He co-founded Playtech Mobile, Playtech’s mobile division, served as its CTO and grew it from zero to $120M in annual revenue. He is one of the founders of the mobile app development platform Codemagic and led Dynatrace’s engineering office in Tallinn.
 
 **Long**
 
-Kristian Sägi is the CEO of Entringo, a Hansab Group company that makes ticketless parking, yard and traffic management systems on its own software and hardware. He started his career in 1996 as a software engineer on the original team behind Persona, an HR and payroll system still in daily use. In 2005 he co-founded Playtech Mobile and grew it to $120M in annual revenue and more than 100 engineers and product managers. He went on to co-found Nevercode, which built the mobile CI/CD platform Codemagic together with Google’s Flutter team, and from 2022 to 2025 he ran Dynatrace’s engineering office in Tallinn, tripling its headcount. Kristian mentors founders at Ajujaht and the ESA Business Incubation Centre Estonia and speaks about engineering leadership, building companies and why rushing makes you slower. He has a B.Sc. in Engineering Physics from the University of Tartu and lives in Tallinn, Estonia.
+Kristian Sägi is the CEO of Entringo. Entringo, part of Hansab Group, develops and manufactures vehicle flow systems: ticketless parking based on number plate recognition, and yard and traffic management. Its systems are used by airports and businesses in 11 countries, including Vilnius International Airport. At Tallinn Airport, Entringo and Hansab Eesti are moving all parking to ticketless number plate recognition.
+
+Kristian started his career in 1996 as a software engineer on the team that built the first version of Persona, an HR and payroll system. Later, at Fujitsu Estonia, he led development, sales and customer relations for the second version of Persona. The number of organizations using Persona grew from around twenty to a couple of hundred. In 2005 he founded Playtech Mobile, the mobile division of Playtech plc, served as its CTO and over ten years grew it into an organization of more than 100 engineers and product managers with annual revenue of $120M. In 2017 he founded Nevercode together with Triin Agan. Working with Google’s Flutter team, Nevercode built the mobile CI/CD platform Codemagic. From 2022 to 2025 he led Dynatrace’s engineering office in Tallinn, where headcount tripled under his leadership.
+
+Kristian is a mentor at the Ajujaht business idea competition and advises startups through various organizations and competitions. He speaks about leading technology organizations, building a company and why rushing slows you down in the long run. He has a B.Sc. in Engineering Physics from the University of Tartu and lives in Tallinn.
 
 {{< /panel >}}
 

@@ -138,7 +138,7 @@ story = [
             "systems on its own software and hardware.",
             "Moving Tallinn Airport to fully ticketless, number-plate-based parking, unifying every parking product "
             "(taxi lanes, rideshare, short and long term, VIP, tenant access) on one platform, delivered with Hansab Eesti.",
-            "Serving airports and businesses across the Baltics, including centralized parking management at Vilnius International Airport.",
+            "Serving airports and businesses in 11 countries, including centralized parking management at Vilnius International Airport.",
         ]),
     ]),
     *job("Dynatrace Inc  ·  Tallinn, Estonia", [

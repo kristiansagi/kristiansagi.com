@@ -4,7 +4,7 @@
 
 Key facts:
 
-- Current role: Chief Executive Officer, Entringo (since April 2026). Entringo projects include fully ticketless parking at Tallinn Airport and centralized parking management at Vilnius International Airport.
+- Current role: Chief Executive Officer, Entringo (since April 2026). Entringo systems are used by airports and businesses in 11 countries. Projects include fully ticketless parking at Tallinn Airport and centralized parking management at Vilnius International Airport.
 - Dynatrace, Director of Engineering / Site Lead, Tallinn (2022–2025): built and led the Tallinn engineering lab after the acquisition of the local team, tripling headcount.
 - Nevercode / Codemagic, Co-Founder & Head of Product Strategy (2017–2019), then Advisory Board member (2019–2022): created Codemagic, a CI/CD platform for Flutter and mobile apps, in partnership with Google's Flutter team.
 - Playtech Mobile (Playtech plc), Co-Founder & CTO, Mobile Division (2005–2015): grew the division from inception to $120M in annual revenue and an organization of 100+ engineers and product managers.
