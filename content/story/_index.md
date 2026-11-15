@@ -21,7 +21,7 @@ From 2005 to 2015 he was co-founder and chief technology officer of Playtech Mob
 
 Kristian is a mentor at the Ajujaht business idea competition and advises startups through various organizations and competitions. He holds a Bachelor of Science degree in Engineering Physics from the University of Tartu.
 
-## What colleagues say
+### What colleagues say
 
 {{< testimonial name="Gordon Meyer" role="Director, AI Product Innovation, Dynatrace · worked with Kristian on the same team" >}}
 Kristian joined to lead and grow the new Tallinn location when we acquired a team there a few years ago. He did it with dedication and passion, building up strong relationships with all of the newly arrived employees in the lab. … The Tallinn teams are highly skilled and engaged and will be an important part of our future growth.

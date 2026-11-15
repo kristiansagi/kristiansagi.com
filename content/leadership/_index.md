@@ -3,32 +3,40 @@ title: "How I Lead"
 slug: "leadership"
 weight: 30
 draft: false
-seoDescription: "How Kristian Sägi runs engineering organizations: fast decisions, clear goals, one owner per problem, strong managers and a sustainable pace."
+seoDescription: "How Kristian Sägi leads: people first, the team before the problem, honest feedback given with care, clear decisions and a pace people can keep."
 ---
 
 #### _What I've learned about running engineering organizations, mostly by getting it wrong first._
 
 ---
 
-### Decide, then adjust
+### People first
 
-Playtech taught me that a quick decision is usually better than a slow perfect one. You can fix a wrong call next week. Waiting costs you the week.
+My title makes me a manager. Whether I'm a leader is decided by the people I work with. My job is to help them do the best work of their careers, and that is where most of my week goes.
 
-### Say what success looks like
+### The team before the problem
 
-Before a project starts, I write down in one sentence what we're trying to achieve and what we won't do. Then I leave the team to work out how. Most micromanagement comes from a goal nobody stated clearly.
+When something is stuck, I look at the team before I look at the plan. Who needs to talk to whom, who is missing from the room, where trust has worn thin. Fix that, and the problem usually gets easier to solve.
 
-### One owner per problem
+### Care about the whole person
 
-Every system, decision and open problem should have one name next to it, not a committee. When something goes wrong in my organization, it's mine first.
+I want to know how the people I work with are doing outside work too: family, health, what they want to do next. People do their best work for someone who cares about them, not only about their output.
+
+### Honest, and kind
+
+I tell people the truth early and in private, and I make sure they know I'm on their side while I do it. Feedback that comes too late, or without care, helps no one.
+
+### Listen fully
+
+In one-on-ones I put the phone away and listen. More often than not, people already know the answer. They need someone to think it through with.
+
+### Hear everyone, then decide
+
+Before a decision I want every view on the table, especially the uncomfortable ones. Then I decide and we move together. Playtech taught me that a quick decision usually beats a slow perfect one: you can fix a wrong call next week, but waiting costs you the week.
 
 ### Grow managers early
 
-A team can't grow faster than its leaders. I hire and develop engineering managers before the team feels it needs them, because by the time it does, it's late.
-
-### Cut more than you add
-
-Removing a feature, a meeting or a process takes as much effort as adding one, and it's usually worth more.
+A team can't grow faster than its leaders. I hire and coach engineering managers before the team feels it needs them, because by the time it does, it's late.
 
 ### Look back without blame
 
@@ -36,8 +44,8 @@ Every project ends with a short review: what worked, what didn't, what we'll cha
 
 ### Sleep
 
-I learned this one the hard way, after crashing my car on the way home during the 100-hour weeks at Nevercode. Tired people make bad decisions, me included. A team that works at a pace it can keep gets more done in a year than one that sprints and burns out.
+I learned this one the hard way, after a traffic accident on the way home during the 100-hour weeks at Nevercode. Tired people make bad decisions, me included. A team that works at a pace it can keep gets more done in a year than one that sprints and burns out.
 
 ---
 
-More on that in [To Build Fast, You Need To Be Slow](/blog/to-build-fast-you-need-to-be-slow/).
+Much of how I think about this comes from Bill Campbell, the coach behind many of Silicon Valley's best leaders. More on pace and focus in [To Build Fast, You Need To Be Slow](/blog/to-build-fast-you-need-to-be-slow/).
