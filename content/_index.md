@@ -2,10 +2,10 @@
 title: "Kristian Sägi | Engineering Leader, CEO of Entringo"
 description: "Engineering leader and CEO of Entringo in Tallinn, Estonia. Co-founded Playtech Mobile and Codemagic and built Dynatrace's engineering office in Tallinn."
 images:
-  - "https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg"  # use JPG for OG previews
+  - "https://kristiansagi.com/og/kristian-sagi-1200x630.jpg"  # use JPG for OG previews
 
 cover:
-  image: "/og/kristian-sagi-share-1200x630.jpg"     # local path served by Hugo
+  image: "/og/kristian-sagi-1200x630.jpg"     # local path served by Hugo
   alt: "Kristian Sägi, Engineering Leader and CEO of Entringo"
   hidden: true
 ---
@@ -18,8 +18,8 @@ I need to get more into this ...
 <meta property="og:profile:last_name" content="Sägi" />
 <meta property="og:profile:username" content="kristiansagi" />
 <meta property="og:profile:gender" content="kristiansagi" />
-<meta name="twitter:card" content="https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg" />
+<meta name="twitter:card" content="https://kristiansagi.com/og/kristian-sagi-1200x630.jpg" />
 <meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
-<meta name="twitter:image" content="https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg" />
+<meta name="twitter:image" content="https://kristiansagi.com/og/kristian-sagi-1200x630.jpg" />
 -->

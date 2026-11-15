@@ -29,11 +29,13 @@
         {{- end }}
         <h1>{{ .title | default site.Title | markdownify }}</h1>
         <span>{{ .subtitle | markdownify }}</span>
+        {{- with .notice }}
         <span>
             <p class="profile-notice">
-            {{ .notice | markdownify }}
+            {{ . | markdownify }}
             </p>
         </span>
+        {{- end }}
 
         {{- partial "social_icons.html" -}}
         {{- with .buttons }}

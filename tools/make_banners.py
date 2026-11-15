@@ -34,3 +34,8 @@ def banner(w, h, name, size1, size2, right):
 
 banner(1584, 396, "kristian-sagi-linkedin-1584x396.jpg", 34, 26, 150)
 banner(1500, 500, "kristian-sagi-x-1500x500.jpg", 36, 28, 130)
+
+# Plain versions (no text), like the banners of most Apple and Google leaders
+for w, h, name in [(1584, 396, "kristian-sagi-linkedin-plain-1584x396.jpg"), (1500, 500, "kristian-sagi-x-plain-1500x500.jpg")]:
+    Image.new("RGB", (w, h), BG).save(OUT / name, quality=95)
+    print("Wrote", OUT / name)

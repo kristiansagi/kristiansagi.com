@@ -1,5 +1,5 @@
-"""Builds static/og/kristian-sagi-share-1200x630.jpg — the share image used when kristiansagi.com
-is posted on LinkedIn, X, Slack etc. Apple-style: light grey, round portrait, Inter.
+"""Builds static/og/kristian-sagi-1200x630.jpg (the share image used when kristiansagi.com
+is posted on LinkedIn, X, Slack etc.). Apple-style: light grey, round portrait, Inter.
 
     python tools/make_og_image.py      (needs Pillow)
 """
@@ -8,7 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "resume" / "fonts"
-OUT = ROOT / "static" / "og" / "kristian-sagi-share-1200x630.jpg"
+OUT = ROOT / "static" / "og" / "kristian-sagi-1200x630.jpg"
 PHOTO = ROOT / "static" / "kristian-sagi-profile-suit1.webp"
 
 W, H, SS = 1200, 630, 2                      # render at 2x, then downscale for crisp edges
@@ -32,9 +32,7 @@ img.paste(photo, (px, py), mask)
 x = px + D + 70 * SS
 lines = [
     ("Kristian Sägi", font("InterDisplay-SemiBold.ttf", 72), INK, 0),
-    ("Engineering leader. CEO of Entringo.", font("Inter-Regular.ttf", 32), INK, 22),
-    ("Building resilient companies,", font("Inter-Regular.ttf", 28), MUTED, 26),
-    ("teams and systems.", font("Inter-Regular.ttf", 28), MUTED, 6),
+    ("Chief Executive Officer, Entringo", font("Inter-Regular.ttf", 32), INK, 22),
     ("kristiansagi.com", font("Inter-Medium.ttf", 24), BLUE, 34),
 ]
 heights = [f.getbbox(t)[3] for t, f, _, _ in lines]
