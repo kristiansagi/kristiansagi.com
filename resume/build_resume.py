@@ -107,7 +107,7 @@ def job(org, roles):
 
 story = [
     Paragraph("Kristian Sägi", S["name"]),
-    Paragraph("Technology Leader &amp; CEO. Building resilient companies, teams and systems.", S["tag"]),
+    Paragraph("Chief Executive Officer, Entringo", S["tag"]),
     Paragraph(
         "Tallinn, Estonia  ·  "
         + LINK.format("mailto:kristian@kristiansagi.com", "kristian@kristiansagi.com") + "  ·  "

@@ -23,7 +23,6 @@ cover:
   alt: "The view from where I spent part of the break."
   relative: true
 
-featured: true
 ---
 
 ## The Decision

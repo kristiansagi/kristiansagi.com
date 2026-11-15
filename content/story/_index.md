@@ -9,13 +9,17 @@ alternates:
   et: /et/
 ---
 
-I'm the CEO of **Entringo**. We build the systems that run parking and vehicle traffic at airports and businesses in 11 countries, from the software to the hardware it runs on.
+#### _Chief Executive Officer, Entringo_
 
-I started in 1996 as a software engineer on the small team that wrote **Persona**, an HR and payroll system companies still use every day. Since then I've co-founded **Playtech Mobile** and grown it to $120M in annual revenue, co-founded **Nevercode**, the company behind the mobile CI/CD platform **Codemagic**, and built **Dynatrace**'s engineering office in Tallinn, which tripled in size while I ran it.
+Kristian Sägi is the chief executive officer of Entringo, a Hansab Group company.
 
-Most of my career has been spent at the point where a company outgrows the way it started. The first managers have to be found, decisions need owners, and the architecture has to survive ten times the load. That's the part of the job I like most.
+Kristian oversees Entringo’s development and manufacturing of vehicle flow systems: ticketless parking based on number plate recognition, and yard and traffic management. Entringo’s systems are used by airports and businesses in 11 countries, including Vilnius International Airport. At Tallinn Airport, Entringo and Hansab Eesti are moving all parking to ticketless number plate recognition.
 
-Outside work I mentor founders at Ajujaht and the ESA Business Incubation Centre Estonia, rebuild old machines (lately a vintage bicycle and a 1986 UAZ van), and take sleep seriously.
+From 2022 to 2025 Kristian led Dynatrace’s engineering office in Tallinn as director of engineering and site lead, and headcount tripled under his leadership. In 2017 he co-founded Nevercode with Triin Agan. Working with Google’s Flutter team, Nevercode built the mobile CI/CD platform Codemagic. Kristian led product strategy until 2019 and served on the advisory board until 2022.
+
+From 2005 to 2015 he was co-founder and chief technology officer of Playtech Mobile, the mobile division of Playtech plc, which he grew into an organization of more than 100 engineers and product managers with annual revenue of $120M. He began his career in 1996 as a software engineer on the team that built the first version of the HR and payroll system Persona, and later led development, sales and customer relations for the second version of Persona at Fujitsu Estonia.
+
+Kristian is a mentor at the Ajujaht business idea competition and advises startups through various organizations and competitions. He holds a Bachelor of Science degree in Engineering Physics from the University of Tartu.
 
 ## What colleagues say
 
@@ -31,4 +35,3 @@ Kristian is a shrewd, no-nonsense business person with the ability to excite eve
 Kristian is a real professional, highly experienced with software development and new methodologies. Kristian brought with him to the table great enthusiasm and leadership which enabled him to build a great mobile team [in Estonia].
 {{< /testimonial >}}
 
-What I'm working on [now](/now/).

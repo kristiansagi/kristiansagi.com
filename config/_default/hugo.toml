@@ -16,7 +16,7 @@ enableRobotsTXT = true
   # PaperMod site-wide OG defaults
 
   # ---- Meta / SEO ----
-  description = "Engineering leader and CEO of Entringo. Building resilient companies, teams and systems."
+  description = "Kristian Sägi is the CEO of Entringo and a co-founder of Playtech Mobile and Codemagic."
   homeTitle = "Kristian Sägi | Engineering Leader, CEO of Entringo"
   keywords = [
     "Kristian Sägi",
@@ -30,7 +30,7 @@ enableRobotsTXT = true
   ]
 
   # global opengraph settings (PaperMod supports these)
-  images = ["https://kristiansagi.com/og/kristian-sagi-share-1200x630.jpg"]
+  images = ["https://kristiansagi.com/og/kristian-sagi-1200x630.jpg"]
   title = "Kristian Sägi"
 
   # end of site-wide OG defaults
@@ -47,12 +47,12 @@ site_key     = "0x4AAAAAAB_59oz2MfQ9JLVO"
 
 [params.profileMode]
 enabled = true
-subtitle = "Engineering leader. CEO of Entringo."
+subtitle = "Chief Executive Officer, Entringo"
 
 
 
 # Sub title, not in the original theme
-notice = "Building resilient companies, teams and systems."
+notice = ""
 
 # casual
 # imageUrl = "kristian-sagi.webp"
