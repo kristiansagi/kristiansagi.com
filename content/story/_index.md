@@ -23,15 +23,15 @@ Kristian is a mentor at the Ajujaht business idea competition and advises startu
 
 ### What colleagues say
 
-{{< testimonial name="Gordon Meyer" role="Director, AI Product Innovation, Dynatrace · worked with Kristian on the same team" >}}
+{{< testimonial name="Gordon Meyer" role="Director, AI Product Innovation, Dynatrace" >}}
 Kristian joined to lead and grow the new Tallinn location when we acquired a team there a few years ago. He did it with dedication and passion, building up strong relationships with all of the newly arrived employees in the lab. … The Tallinn teams are highly skilled and engaged and will be an important part of our future growth.
 {{< /testimonial >}}
 
-{{< testimonial name="Ray Rischpater" role="Software engineer · worked with Kristian at Nevercode while at Google" >}}
+{{< testimonial name="Ray Rischpater" role="Software engineer, Google" >}}
 Kristian is a shrewd, no-nonsense business person with the ability to excite everyone around him with his ideas and leadership. … Kristian shows both clear business acumen and technical skills.
 {{< /testimonial >}}
 
-{{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass · managed Kristian directly at Playtech" >}}
+{{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass" >}}
 Kristian is a real professional, highly experienced with software development and new methodologies. Kristian brought with him to the table great enthusiasm and leadership which enabled him to build a great mobile team [in Estonia].
 {{< /testimonial >}}
 
