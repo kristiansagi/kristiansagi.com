@@ -28,11 +28,11 @@ Kristian advises a few technology companies on engineering organizations and pro
 Kristian joined to lead and grow the new Tallinn location when we acquired a team there a few years ago. He did it with dedication and passion, building up strong relationships with all of the newly arrived employees in the lab. … The Tallinn teams are highly skilled and engaged and will be an important part of our future growth.
 {{< /testimonial >}}
 
-{{< testimonial name="Ray Rischpater" role="Software engineer, Google" >}}
+{{< testimonial name="Ray Rischpater" role="Software engineer, Flutter team, Google" >}}
 Kristian is a shrewd, no-nonsense business person with the ability to excite everyone around him with his ideas and leadership. … Kristian shows both clear business acumen and technical skills.
 {{< /testimonial >}}
 
-{{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass" >}}
+{{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass · formerly Head of Mobile, Playtech" >}}
 Kristian is a real professional, highly experienced with software development and new methodologies. Kristian brought with him to the table great enthusiasm and leadership which enabled him to build a great mobile team [in Estonia].
 {{< /testimonial >}}
 
