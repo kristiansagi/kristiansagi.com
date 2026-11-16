@@ -107,8 +107,8 @@ url = "https://x.com/kristiansagi"
     url = "/work/"
     weight = 20
   [[menu.main]]
-    name = "Leadership"
-    url = "/leadership/"
+    name = "Values"
+    url = "/values/"
     weight = 30
   [[menu.main]]
     name = "Perspectives"

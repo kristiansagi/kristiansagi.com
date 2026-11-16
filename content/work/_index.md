@@ -54,4 +54,4 @@ seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of En
 
 ***
 
-How I run teams: [How I Lead](/leadership/).
+How I run teams: [What I Believe](/values/).
