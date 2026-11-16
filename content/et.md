@@ -32,6 +32,17 @@ Kristian alustas 1996. aastal tarkvaraarendajana meeskonnas, mis lõi personali-
 
 Kristian on äriideede konkursi Ajujaht mentor ja nõustab idufirmasid mitmesuguste organisatsioonide ja võistluste kaudu. Esinemistel räägib ta tehnoloogiaorganisatsioonide juhtimisest, ettevõtte ülesehitamisest ja sellest, miks kiirustamine pikas plaanis aeglustab. Tal on Tartu Ülikooli bakalaureusekraad tehnilises füüsikas ja ta elab Tallinnas.
 
+**Meedias**
+
+- **Äripäev, 2024:** [„Rahvusvaheline IT-gigant soovib Eestis kasvada: investeeringud tulevad kindlasti edasi“](https://www.aripaev.ee/uudised/2024/03/04/rahvusvaheline-it-gigant-soovib-eestis-kasvada-investeeringud-tulevad-kindlasti-edasi)
+- **Geenius, 2024:** [„Dynatrace avas Tallinnas uue kontori, kus polegi kohalkäimine kohustuslik“](https://geeniusdigipro.delfi.ee/artikkel/120472679/dynatrace-avas-tallinnas-uue-kontori-kus-polegi-kohalkaimine-kohustuslik)
+- **Geenius, 2022:** [„Nevercode’i asutamise järel palgatööle läinud Kristian Sägi: natuke on see startup’i mentaliteet paigast ära“](https://geeniusdigipro.delfi.ee/artikkel/120534818/nevercode-i-asutamise-jarel-palgatoole-lainud-kristian-sagi-natuke-on-see-startup-i-mentaliteet-paigast-ara)
+- **Geenius, 2022:** [„Dynatrace Tallinna IT-keskust asub vedama tuntud tehnoloogiajuht Kristian Sägi“](https://geeniusdigipro.delfi.ee/artikkel/120535257/dynatrace-tallinna-it-keskust-asub-vedama-tuntud-tehnoloogiajuht-kristian-sagi)
+- **Geenius, 2022:** [„Vastu koondamislainet sõudes: kuidas Eesti IT-firmadel suurte värbamisplaanidega läheb?“](https://geeniusdigipro.delfi.ee/artikkel/120483755/vastu-koondamislainet-soudes-kuidas-eesti-it-firmadel-suurte-varbamisplaanidega-laheb)
+- **Postimees, 2022:** [„IT-kontserni Eesti juht: idufirmad õhutavad end tööga tapma“](https://majandus.postimees.ee/7655196/it-kontserni-eesti-juht-idufirmad-ohutavad-end-tooga-tapma)
+- **Forte:** [„Tarkvaraettevõtte juht: Eestis on tööjõu leidmine läinud lihtsamaks, idufirmadest on õhku välja lastud“](https://forte.delfi.ee/artikkel/120276335/tarkvaraettevotte-juht-eestis-on-toojou-leidmine-lainud-lihtsamaks-iduettevotetest-on-ohku-valja-lastud)
+- **Ärileht, videodebatt:** [„Koodikirjutajad versus reaalmajandus: kes paneb Eesti majanduse uuesti kasvama?“](https://arileht.delfi.ee/artikkel/120275038/video-koodikirjutajad-versus-reaalmajandus-kes-paneb-eesti-majanduse-uuesti-kasvama)
+
 **Foto**
 
 [Portreefoto (JPG, 1024 × 1024 px)](/press/kristian-sagi-headshot.jpg)
