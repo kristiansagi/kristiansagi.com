@@ -30,7 +30,7 @@ Polishing the wrong thing is the most expensive mistake a team can make. Before 
 Every good team has more good ideas than it can execute. My job is to protect a few great ones from many good ones. Deleting is as important as adding, whether it's features, projects, meetings or process.
 
 ### Own the details
-Customers feel the details even when they can't name them. I stay close enough to the work to know where the bar is and to notice when we're under it. Admiral McRaven says that if you want to change the world, you start by making your bed. The small things set the standard for the big ones. Discipline equals freedom.
+Customers feel the details even when they can't name them. I stay close enough to the work to know where the bar is and to notice when we're under it. Admiral McRaven says that if you want to change the world, you start by making your bed. The small things set the standard for the big ones. As Jocko Willink puts it, discipline equals freedom.
 
 ---
 
@@ -69,6 +69,6 @@ I learned this the hard way. During the 100-hour weeks at Nevercode, I had a car
 
 ---
 
-Much of this comes from Bill Campbell, the coach behind many of Silicon Valley's best leaders (*Trillion Dollar Coach* tells his story), and from Admiral William H. McRaven's *Make Your Bed*. Both say the same thing in different words: leadership is about people, and it's built in small, daily acts.
+Much of this comes from Bill Campbell, the coach behind many of Silicon Valley's best leaders (*Trillion Dollar Coach* tells his story), from Admiral William H. McRaven's *Make Your Bed*, and from Jocko Willink's *Discipline Equals Freedom*. All three say the same thing in different words: leadership is about people, and it's built in small, daily acts.
 
 More on this: [To Build Fast, You Need To Be Slow](/blog/to-build-fast-you-need-to-be-slow/) · [A Quiet Return: From Stillness to Leadership](/blog/a-quiet-return-from-stillness-to-leadership/)
