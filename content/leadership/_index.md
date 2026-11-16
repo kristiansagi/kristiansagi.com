@@ -1,9 +1,10 @@
 ---
-title: "How I Lead"
-slug: "leadership"
+title: "What I Believe"
+slug: "values"
+aliases: ["/leadership/"]
 weight: 30
 draft: false
-seoDescription: "How Kristian Sägi leads: people first, trust, the right product before the product right, experts leading experts, and a pace people can keep."
+seoDescription: "What Kristian Sägi believes about leading: people first, trust, the right product before the product right, experts leading experts, and a pace people can keep."
 ---
 
 #### _What I've learned about building products and the organizations behind them, mostly by getting it wrong first._
