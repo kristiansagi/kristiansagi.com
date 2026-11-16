@@ -5,6 +5,7 @@ weight: 10
 draft: false
 seoDescription: "Kristian Sägi is an engineering leader and CEO of Entringo. He co-founded Playtech Mobile ($120M annual revenue) and Codemagic, and built Dynatrace's engineering office in Tallinn."
 pageLang: en
+aliases: ["/now/"]
 alternates:
   et: /et/
 ---
@@ -19,7 +20,7 @@ From 2022 to 2025 Kristian led Dynatrace’s engineering office in Tallinn as di
 
 From 2005 to 2015 he was co-founder and chief technology officer of Playtech Mobile, the mobile division of Playtech plc, which he grew into an organization of more than 100 engineers and product managers with annual revenue of $120M. He began his career in 1996 as a software engineer on the team that built the first version of the HR and payroll system Persona, and later led development, sales and customer relations for the second version of Persona at Fujitsu Estonia.
 
-Kristian is a mentor at the Ajujaht business idea competition and advises startups through various organizations and competitions. He holds a Bachelor of Science degree in Engineering Physics from the University of Tartu.
+Kristian advises a few technology companies on engineering organizations and product, and mentors founders at the Ajujaht business idea competition and the ESA Business Incubation Centre Estonia. He holds a Bachelor of Science degree in Engineering Physics from the University of Tartu and lives in Tallinn.
 
 ### What colleagues say
 
