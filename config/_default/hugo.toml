@@ -72,8 +72,8 @@ name = "Track Record"
 url = "/work/"
 
 [[params.profileMode.buttons]]
-name = "Perspectives"
-url = "/blog/"
+name = "Values"
+url = "/values/"
 
 # [[params.profileMode.buttons]]
 # name = "Download My Résumé (PDF)"
