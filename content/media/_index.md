@@ -7,7 +7,7 @@ draft: false
 ShowBreadCrumbs: false
 ---
 
-#### _A documentary and selected talks, podcasts and interviews. Several are in Estonian; English summaries below._
+#### _A documentary and selected talks, podcasts and interviews. Several are in Estonian; English summaries below. Geenius articles need a subscription to read in full._
 
 ---
 
@@ -49,8 +49,12 @@ How to keep a company's culture and values when two companies merge. _(In Estoni
 
 ## Interviews & press
 
+- **Geenius, 2024:** _“Dynatrace opens a new office in Tallinn where coming in isn’t mandatory”_. About the new Tallinn office. [Read in Estonian](https://geeniusdigipro.delfi.ee/artikkel/120472679/dynatrace-avas-tallinnas-uue-kontori-kus-polegi-kohalkaimine-kohustuslik)
 - **Äripäev, 2024:** _“An international IT giant wants to grow in Estonia: ‘Investments will certainly continue’”_. About Dynatrace’s growth in Tallinn. [Read in Estonian](https://www.aripaev.ee/uudised/2024/03/04/rahvusvaheline-it-gigant-soovib-eestis-kasvada-investeeringud-tulevad-kindlasti-edasi)
 - **Postimees, 2022:** _“Estonian head of an IT group: startups push people to work themselves to death”_. About work culture and pace. [Read in Estonian](https://majandus.postimees.ee/7655196/it-kontserni-eesti-juht-idufirmad-ohutavad-end-tooga-tapma)
+- **Geenius, 2022:** _“After founding Nevercode, Kristian Sägi took a salaried job: the startup mentality is a little off”_. Interview about his ambitions and today’s generation of founders. [Read in Estonian](https://geeniusdigipro.delfi.ee/artikkel/120534818/nevercode-i-asutamise-jarel-palgatoole-lainud-kristian-sagi-natuke-on-see-startup-i-mentaliteet-paigast-ara)
+- **Geenius, 2022:** _“Well-known technology leader Kristian Sägi to lead Dynatrace’s Tallinn IT centre”_. [Read in Estonian](https://geeniusdigipro.delfi.ee/artikkel/120535257/dynatrace-tallinna-it-keskust-asub-vedama-tuntud-tehnoloogiajuht-kristian-sagi)
+- **Geenius, 2022:** _“Rowing against the layoff wave: how are Estonian IT companies doing with their big hiring plans?”_ With Bolt and Wise. [Read in Estonian](https://geeniusdigipro.delfi.ee/artikkel/120483755/vastu-koondamislainet-soudes-kuidas-eesti-it-firmadel-suurte-varbamisplaanidega-laheb)
 - **Forte (Delfi):** _“Software company leader: finding talent in Estonia has become easier as the air has gone out of startups”_. About the tech hiring market. [Read in Estonian](https://forte.delfi.ee/artikkel/120276335/tarkvaraettevotte-juht-eestis-on-toojou-leidmine-lainud-lihtsamaks-iduettevotetest-on-ohku-valja-lastud)
 - **Ärileht (Delfi), video debate:** _“Coders versus the real economy: who will get Estonia’s economy growing again?”_ [Watch in Estonian](https://arileht.delfi.ee/artikkel/120275038/video-koodikirjutajad-versus-reaalmajandus-kes-paneb-eesti-majanduse-uuesti-kasvama)
 
