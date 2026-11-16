@@ -34,6 +34,15 @@ seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of En
 + Co-founded Nevercode and created Codemagic, a CI/CD service for mobile apps built in partnership with Google's Flutter team. Developers around the world use it today.
 + Owned product strategy and led the product and engineering teams through early growth and funding.
 + Stayed on the advisory board until 2022, advising on scaling, positioning and investor relations.
++ Nevercode later took the name Codemagic and still runs today. My co-founder and I both made full exits and moved on.
+
+***
+
+### Independent Advisor
+#### Growth Advisor and Executive Coach · 2015–2017
+
++ Advised smaller companies on growth and coached C-level executives as an independent consultant.
++ Member of the Estonian Business Angels Network (EstBAN), 2015–2018.
 
 ***
 
