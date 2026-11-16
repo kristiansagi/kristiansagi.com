@@ -2,7 +2,7 @@
 
 Edit the content below, then run (needs reportlab):
     python resume/build_resume.py
-Keep facts in sync with content/work/_index.md and content/now/_index.md.
+Keep facts in sync with content/work/_index.md and content/story/_index.md.
 
 Look: Apple-style — Inter (the site's font, static TTFs in resume/fonts/, SIL OFL),
 Apple greys, blue links without underlines, sentence-case headings, hairline rules,

@@ -52,7 +52,7 @@ subtitle = "Chief Executive Officer, Entringo"
 
 
 # Sub title, not in the original theme
-notice = ""
+notice = "Built Playtech Mobile from two people to more than 100 engineers. Co-founded Codemagic. Led Dynatrace's engineering site in Tallinn."
 
 # casual
 # imageUrl = "kristian-sagi.webp"
@@ -99,10 +99,6 @@ url = "https://x.com/kristiansagi"
     url = "/story/"
     weight = 10
   [[menu.main]]
-    name = "Now"
-    url = "/now/"
-    weight = 50
-  [[menu.main]]
     name = "Track Record"
     url = "/work/"
     weight = 20
@@ -115,10 +111,6 @@ url = "https://x.com/kristiansagi"
     url = "/blog/"
 #    url = "https://blog.kristiansagi.com/"
     weight = 40
-  [[menu.main]]
-    name = "Media"
-    url = "/media/"
-    weight = 45
     
     
 
@@ -129,4 +121,4 @@ url = "https://x.com/kristiansagi"
 
 # Footer: copyright · Contact (apple.com-style quiet footer link)
 [params.footer]
-  text = "[Contact](/contact/) · [Eesti keeles](/et/)"
+  text = "[Contact](/contact/) · [Media](/media/) · [Eesti keeles](/et/)"
