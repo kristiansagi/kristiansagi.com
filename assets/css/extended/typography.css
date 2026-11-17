@@ -445,7 +445,13 @@ body:has(.main .profile) .main {
 }
 .post-content pre span { color: inherit !important; }
 .post-content pre { border-radius: 12px; padding: 16px 20px; font-size: 13px; line-height: 1.5; }
-.post-content .highlight { border-radius: 12px; overflow: hidden; }
+.post-content .highlight,
+.post-content .highlight:not(table),
+.md-content .highlight:not(table) {
+  background: var(--code-bg) !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
 .post-content :not(pre) > code {
   padding: 2px 6px;
   border-radius: 6px;
