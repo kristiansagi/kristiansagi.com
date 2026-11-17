@@ -88,6 +88,10 @@ url = "https://www.linkedin.com/in/kristiansagi/"
 name = "x"
 url = "https://x.com/kristiansagi"
 
+[[params.socialIcons]]
+name = "threema"
+url = "https://threema.id/RY47BXU7"
+
 # [[params.socialIcons]]
 # name = "facebook"
 # url = "https://facebook.com/kristiansagi.public"
