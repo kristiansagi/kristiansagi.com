@@ -15,8 +15,29 @@
     <p class="pm-card__subtitle">
       <svg width="12" height="14" viewBox="0 0 12 14" aria-hidden="true" fill="currentColor"><path d="M6 0a3.5 3.5 0 0 0-3.5 3.5V6H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-.5V3.5A3.5 3.5 0 0 0 6 0Zm2 6H4V3.5a2 2 0 1 1 4 0V6Z"/></svg>
       OpenPGP encrypted · Protected by Cloudflare Turnstile
+      <span class="pm-info">
+        <button type="button" class="pm-info__btn" aria-label="How this form keeps your message private"
+                aria-describedby="{{ $id }}-info" aria-expanded="false">
+          <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="6.85"/><path d="M8 7.2v4.3" stroke-linecap="round"/><circle cx="8" cy="4.9" r=".8" fill="currentColor" stroke="none"/></svg>
+        </button>
+        <span id="{{ $id }}-info" role="tooltip" class="pm-info__tip">
+          <strong>End-to-end encrypted.</strong> Your message and contact details are encrypted in your browser with OpenPGP (Curve25519) before anything is sent. The server accepts only valid ciphertext from this site after an invisible Turnstile check, stores nothing and forwards it by email. Only my private key can decrypt it.
+        </span>
+      </span>
     </p>
   </header>
+  <script>
+  (function(){
+    var root = document.getElementById('{{ $id }}');
+    var info = root && root.querySelector('.pm-info');
+    if (!info) return;
+    var btn = info.querySelector('.pm-info__btn');
+    function set(open){ info.classList.toggle('is-open', open); btn.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+    btn.addEventListener('click', function(e){ e.stopPropagation(); set(!info.classList.contains('is-open')); });
+    document.addEventListener('click', function(e){ if (!info.contains(e.target)) set(false); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { set(false); } });
+  })();
+  </script>
 
   <div class="pm-card__body">
     <div class="pm-field">

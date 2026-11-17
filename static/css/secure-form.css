@@ -58,6 +58,59 @@
 }
 .pm-card__subtitle svg { flex: none; }
 
+/* ---- Info tooltip ---------------------------------------------------------- */
+.pm-card__header { position: relative; }
+.pm-info { display: inline-flex; }
+.pm-info__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 0;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  color: var(--apple-subtle, var(--secondary));
+  cursor: help;
+  transition: color 0.2s ease;
+}
+.pm-info__btn:hover,
+.pm-info.is-open .pm-info__btn { color: var(--apple-text, var(--content)); }
+.pm-info__btn:focus-visible { outline: none; box-shadow: 0 0 0 4px var(--pm-focus-ring); }
+.pm-info__tip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 10;
+  max-width: 440px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--apple-text, #1d1d1f);
+  color: var(--apple-bg, #fff);
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+  pointer-events: none;
+}
+.pm-info__tip strong { font-weight: 600; }
+.pm-info:hover .pm-info__tip,
+.pm-info:focus-within .pm-info__tip,
+.pm-info.is-open .pm-info__tip {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pm-info__tip { transition: none; transform: none; }
+}
+
 /* ---- Fields -------------------------------------------------------------- */
 .pm-card__body { padding: 16px 0 0; }
 
