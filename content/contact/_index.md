@@ -67,6 +67,12 @@ gpg --auto-key-locate clear,wkd --locate-key kristian@kristiansagi.com
 
 ---
 
+## Threema
+
+You can also message me privately on [Threema](https://threema.id/RY47BXU7), a secure Swiss-made messaging app.
+
+---
+
 ## LinkedIn
 
 You can also reach me on [LinkedIn](https://www.linkedin.com/in/kristiansagi/).
