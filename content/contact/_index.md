@@ -21,6 +21,8 @@ Your message will be encrypted before it leaves your browser and only I can read
 
 **Email me directly:** [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com)
 
+**Threema:** [RY47BXU7](https://threema.id/RY47BXU7)
+
 For verified communication, you can use my public PGP key:
 
 |PGP Fingerprint:| `0E3C 00EA 9C00 3AD0 DEE3  4132 CAB8 CDE8 7D02 BDB9`|
