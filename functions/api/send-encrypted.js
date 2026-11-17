@@ -5,7 +5,8 @@
 // standalone Worker (default export), which local development posts to.
 //
 // Env: TURNSTILE_SECRET_KEY, RESEND_API_KEY (secrets); MAIL_FROM, MAIL_TO,
-//      ALLOWED_ORIGINS (comma-separated, optional), ALLOWED_HOSTNAMES (comma-separated, optional)
+//      ALLOWED_ORIGINS (comma-separated, optional), ALLOWED_HOSTNAMES (comma-separated, optional),
+//      MAIL_SUBJECT (optional), ALLOW_TEST_TURNSTILE ("1" only for local development)
 
 const DEFAULT_ORIGINS = [
   "https://kristiansagi.com",
@@ -14,11 +15,12 @@ const DEFAULT_ORIGINS = [
   "http://localhost:1313",
 ];
 const DEFAULT_SUBJECT = "Encrypted message via contact page";
-const MAX_SUBJECT_LEN = 120;
 const MAX_CIPHERTEXT_LEN = 64 * 1024; // armored text; a long message is a few KB
 
+// Strict ASCII armor: no armor header lines (OpenPGP.js never writes any), so nothing
+// readable can be smuggled into the email next to the ciphertext.
 const ARMOR_RE =
-  /^-----BEGIN PGP MESSAGE-----\n(?:[A-Za-z0-9-]+: [^\n]*\n)*\n[A-Za-z0-9+/=\n]+\n(?:=[A-Za-z0-9+/]{4}\n)?-----END PGP MESSAGE-----\n?$/;
+  /^-----BEGIN PGP MESSAGE-----\n\n([A-Za-z0-9+/=\n]+)\n(?:=[A-Za-z0-9+/]{4}\n)?-----END PGP MESSAGE-----\n?$/;
 
 // -- helpers ---------------------------------------------------------------
 
@@ -63,17 +65,27 @@ function json(request, env, obj, status = 200) {
   });
 }
 
-/** Returns a normalized armored PGP message, or null if the input is not one. */
-function parseArmor(input) {
-  const t = input.replace(/^﻿/, "").replace(/\r\n?/g, "\n").trim() + "\n";
-  return ARMOR_RE.test(t) ? t : null;
+/** Packet tag of the first OpenPGP packet (new or old packet format), or -1. */
+function firstPacketTag(base64) {
+  try {
+    const b = atob(base64.replace(/\n/g, "").slice(0, 8)).charCodeAt(0);
+    if ((b & 0x80) === 0) return -1;
+    return b & 0x40 ? b & 0x3f : (b >> 2) & 0x0f;
+  } catch {
+    return -1;
+  }
 }
 
-function cleanSubject(input) {
-  if (typeof input !== "string") return DEFAULT_SUBJECT;
-  // Strip control characters (incl. CR/LF) and collapse whitespace
-  const s = input.replace(/[\u0000-\u001F\u007F]+/g, " ").replace(/\s+/g, " ").trim();
-  return (s || DEFAULT_SUBJECT).slice(0, MAX_SUBJECT_LEN);
+/**
+ * Returns a normalized armored PGP message, or null if the input is not one.
+ * The first packet must be a public-key encrypted session key (tag 1), as in every
+ * message OpenPGP.js encrypts to a recipient key.
+ */
+function parseArmor(input) {
+  const t = input.replace(/^\uFEFF/, "").replace(/\r\n?/g, "\n").trim() + "\n";
+  const m = ARMOR_RE.exec(t);
+  if (!m || firstPacketTag(m[1]) !== 1) return null;
+  return t;
 }
 
 // -- main handler ----------------------------------------------------------
@@ -97,7 +109,7 @@ async function handleSendEncrypted(request, env) {
   } catch {
     return json(request, env, { error: "invalid_json" }, 400);
   }
-  const { subject, ciphertext, cfToken } = body || {};
+  const { ciphertext, cfToken } = body || {}; // any client-sent subject is ignored
 
   if (typeof ciphertext !== "string" || ciphertext.length > MAX_CIPHERTEXT_LEN) {
     return json(request, env, { error: "invalid_ciphertext" }, 400);
@@ -124,7 +136,8 @@ async function handleSendEncrypted(request, env) {
     console.error("Turnstile verification failed", verifyRes.status, JSON.stringify(verify));
     return json(request, env, { error: "captcha_failed" }, 400);
   }
-  const testKey = verify.hostname === "example.com"; // Cloudflare test keys report example.com
+  // Cloudflare test keys report example.com; accept them only when explicitly enabled for local dev
+  const testKey = env.ALLOW_TEST_TURNSTILE === "1" && verify.hostname === "example.com";
   if (!testKey && !allowedHostnames(env).includes(verify.hostname)) {
     console.error("Turnstile hostname not allowed:", verify.hostname);
     return json(request, env, { error: "captcha_failed" }, 400);
@@ -140,7 +153,7 @@ async function handleSendEncrypted(request, env) {
     body: JSON.stringify({
       from: env.MAIL_FROM || "Secure Form <no-reply@kristiansagi.com>",
       to: (env.MAIL_TO || "kristian@kristiansagi.com").split(/\s*,\s*/),
-      subject: cleanSubject(subject),
+      subject: env.MAIL_SUBJECT || DEFAULT_SUBJECT, // fixed server-side, never from the client
       text: armored,
     }),
   });
