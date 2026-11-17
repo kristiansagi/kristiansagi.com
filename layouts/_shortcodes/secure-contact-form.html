@@ -148,9 +148,16 @@
   }
   let pubKey;
   async function loadKey(){ return pubKey || (pubKey = await fetchTxt(PUBKEY_URL)); }
+  // Pinned fingerprint of my public key (also shown on the Contact page).
+  // If the downloaded key file was ever swapped, nothing is encrypted to it.
+  const PINNED_FPR = '0e3c00ea9c003ad0dee34132cab8cde87d02bdb9';
   async function encryptPlain(text){
     const k   = await loadKey();
     const key = await openpgp.readKey({ armoredKey: k });
+    if (key.getFingerprint().toLowerCase() !== PINNED_FPR) {
+      pubKey = null;
+      throw new Error('Security check failed: the encryption key does not match. Your message was not sent. Please email me instead.');
+    }
     const msg = await openpgp.createMessage({ text });
     return openpgp.encrypt({ message: msg, encryptionKeys: key });
   }
