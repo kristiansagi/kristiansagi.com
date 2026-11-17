@@ -72,7 +72,8 @@
 
 <!-- Turnstile + OpenPGP -->
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
-<script src="/js/openpgp.min.js"></script>
+{{- $jsv := readFile "static/js/openpgp.min.js" | md5 | truncate 10 "" -}}
+<script src="/js/openpgp.min.js?v={{ $jsv }}"></script>
 
 <script>
 (function init(id){
