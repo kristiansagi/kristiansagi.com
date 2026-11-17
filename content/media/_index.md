@@ -86,3 +86,5 @@ Kristian is a mentor at the Ajujaht business idea competition and advises startu
 
 [Download headshot (JPG, 1024 × 1024)](/press/kristian-sagi-headshot.jpg)
 
+Write to [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com) or use the [encrypted contact form](/contact/).
+

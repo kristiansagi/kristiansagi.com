@@ -49,7 +49,7 @@ Kristian on äriideede konkursi Ajujaht mentor ja nõustab idufirmasid mitmesugu
 
 ---
 
-Küsimuste ja intervjuusoovidega kirjutage aadressil [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com) või [krüpteeritud kontaktivormi kaudu](/contact/).
+Kirjutage aadressil [kristian@kristiansagi.com](mailto:kristian@kristiansagi.com) või [krüpteeritud kontaktivormi kaudu](/contact/).
 
 [In English](/media/#speaker-bio)
 {{< /lang >}}
