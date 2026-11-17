@@ -5,7 +5,8 @@
 {{- $title   := .Get "title"   | default "Send a secure message" -}}
 {{- $id      := printf "contact-secure-%d" now.UnixNano -}}
 
-<link rel="stylesheet" href="/css/secure-form.css">
+{{- $cssv := readFile "static/css/secure-form.css" | md5 | truncate 10 "" -}}
+<link rel="stylesheet" href="/css/secure-form.css?v={{ $cssv }}">
 
 <section id="{{ $id }}" class="pm-card pm-secure"
          data-origin="{{ $origin }}"
