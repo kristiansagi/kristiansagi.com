@@ -161,6 +161,16 @@
     const msg = await openpgp.createMessage({ text });
     return openpgp.encrypt({ message: msg, encryptionKeys: key });
   }
+  // Send time in Estonian local time (handles summer/winter time), e.g. "17.11.2026 14:52"
+  function tallinnTime(d){
+    try {
+      const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Tallinn', year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', hourCycle: 'h23'
+      }).formatToParts(d).map(x => [x.type, x.value]));
+      return `${p.day}.${p.month}.${p.year} ${p.hour}:${p.minute}`;
+    } catch (e) { return d.toISOString(); }
+  }
   function clearForm(){ fromEl.value=''; msgEl.value=''; }
 
   // ---- Submission state (prevents idle popups) ---------------------------
@@ -260,7 +270,7 @@
       const composed = [
         `From: ${from}`,
         `Origin: ${location.origin}`,
-        `Time: ${new Date().toISOString()}`,
+        `Time: ${tallinnTime(new Date())} (Tallinn)`,
         '---',
         body
       ].join('\n');
