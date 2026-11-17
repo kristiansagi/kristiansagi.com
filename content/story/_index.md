@@ -33,7 +33,7 @@ Kristian is a shrewd, no-nonsense business person with the ability to excite eve
 {{< /testimonial >}}
 
 {{< testimonial name="Triin Agan" role="CEO, Eesti Loto · formerly Co-Founder & CEO, Nevercode" >}}
-Kristian is a visionary by nature who has mastered the ability to see strategy from both business and technology perspective. His out of the box thinking was a major factor that led to the successful launch of Codemagic together with the Google Flutter team back in 2018.
+Kristian is a visionary by nature who has mastered the ability to see strategy from both a business and a technology perspective. His out of the box thinking was a major factor that led to the successful launch of Codemagic together with the Google Flutter team back in 2018.
 {{< /testimonial >}}
 
 {{< testimonial name="Moty Arcuschin" role="Co-Founder & CEO, SensePass · formerly Head of Mobile, Playtech" >}}
