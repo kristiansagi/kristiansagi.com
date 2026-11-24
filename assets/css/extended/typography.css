@@ -354,7 +354,8 @@ body:has(.main .profile) .main {
 .post-content > div[lang] > h4:first-child em { font-style: normal; }
 
 /* Dates written as "#### 2026 – Present" under a role → small grey eyebrow */
-.post-content h3 + h4 {
+.post-content h3 + h4,
+.post-content h3 + h4 + h4 {
   margin: 0 0 10px;
   font-family: var(--font-family);
   font-size: 14px;
@@ -362,6 +363,8 @@ body:has(.main .profile) .main {
   letter-spacing: -0.016em;
   color: var(--apple-subtle);
 }
+/* A second role line under the same company sits tight under the first */
+.post-content h3 + h4 + h4 { margin-top: -6px; }
 
 .post-content hr {
   height: 1px;
