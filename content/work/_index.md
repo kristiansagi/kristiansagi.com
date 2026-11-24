@@ -37,7 +37,8 @@ My focus: taking a Baltic-proven product international and building the foundati
 ***
 
 ### Nevercode / Codemagic
-#### Co-Founder and Head of Product Strategy · 2017–2019 · Advisory Board 2019–2022
+#### Co-Founder and Head of Product Strategy · 2017–2019
+#### Advisory Board · 2019–2022
 
 + Co-founded Nevercode and created Codemagic, a CI/CD service for mobile apps built in partnership with Google's Flutter team. Developers around the world use it today.
 + Owned product strategy and led the product and engineering teams through early growth and funding.
@@ -65,7 +66,8 @@ My focus: taking a Baltic-proven product international and building the foundati
 ***
 
 ### Assert and Fujitsu Estonia
-#### Software Engineer, later Product Manager for Persona · 1996–2004
+#### Software Engineer · 1996–1997
+#### Product Manager for Persona · 1998–2004
 
 + One of the original engineers who wrote the first version of **Persona**, the HR and payroll software still in daily use 30 years later. Later led the team that built Persona V2.
 
