@@ -11,11 +11,11 @@ seoDescription: "Track record of Kristian Sägi: CEO of Entringo, Director of En
 ---
 
 ### Entringo
-#### Chief Executive Officer · Hansab Group · April–November 2026
+#### Chief Executive Officer · Hansab Group · 2026
 
-Led Entringo, the smart-parking and vehicle-flow technology company within Hansab Group, a Baltic tech group backed by private equity fund BaltCap. Entringo designs and builds ANPR-based ticketless parking systems in Estonia for airports, hospitals, park-and-ride networks and commercial properties.
+Entringo is the smart-parking and vehicle-flow technology company within Hansab Group, a Baltic tech group backed by private equity fund BaltCap. It designs and builds ANPR-based ticketless parking systems in Estonia for airports, hospitals, park-and-ride networks and commercial properties.
 
-My focus was taking a Baltic-proven product international and building the foundations of a scalable export business.
+My focus: taking a Baltic-proven product international and building the foundations of a scalable export business.
 
 **What we delivered**
 
