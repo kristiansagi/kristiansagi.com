@@ -50,7 +50,7 @@ My focus: taking a Baltic-proven product international and building the foundati
 ### Independent Advisor
 #### Growth Advisor and Executive Coach · 2015–2017
 
-+ Advised smaller companies on growth and coached C-level executives (Skandinaviska Enskilda Banken, BNP Paribas) as an independent consultant.
++ Advised smaller companies on growth and coached management-level leaders (Skandinaviska Enskilda Banken, BNP Paribas) as an independent consultant.
 + Member of the Estonian Business Angels Network (EstBAN), 2015–2018.
 
 ***
